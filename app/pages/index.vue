@@ -10,6 +10,13 @@ interface Stats {
   currentWeek: number
 }
 
+interface CaseStat {
+  caseType: string
+  attempts: number
+  avgScore: number | null
+  bestScore: number | null
+}
+
 interface PlanTask {
   id: number
   week: number
@@ -29,6 +36,19 @@ const DAY_MS = 24 * 60 * 60 * 1000
 
 const { data: stats, refresh: refreshStats } = await useFetch<{ data: Stats }>('/api/stats')
 const { data: plan } = await useFetch<{ data: PlanWeek[] }>('/api/plan')
+const { data: caseStats } = await useFetch<{ data: CaseStat[] }>('/api/cases/stats')
+
+function caseBarColor(avg: number | null): string {
+  if (avg == null) return 'bg-muted'
+  if (avg < 0.45) return 'bg-error'
+  if (avg <= 0.75) return 'bg-warning'
+  return 'bg-success'
+}
+
+function caseSummary(stat: CaseStat): string {
+  if (stat.avgScore == null) return '未练'
+  return `${stat.attempts} 次 · 均 ${Math.round(stat.avgScore * 100)}%`
+}
 
 const daysLeft = computed(() => Math.max(0, Math.ceil((EXAM_DATE.getTime() - Date.now()) / DAY_MS)))
 
@@ -82,6 +102,7 @@ const quickLinks = [
   { label: '去写论文', to: '/essay', icon: 'i-lucide-pen-line' },
   { label: '维护项目背景', to: '/essay/bg', icon: 'i-lucide-folder-cog' },
   { label: '看完整计划', to: '/plan', icon: 'i-lucide-calendar' },
+  { label: '练案例', to: '/case', icon: 'i-lucide-book-open-check' },
 ]
 </script>
 
@@ -154,6 +175,40 @@ const quickLinks = [
       <p v-else class="py-4 text-center text-sm text-muted">
         本周暂无任务
       </p>
+    </UCard>
+
+    <UCard data-case-stats>
+      <template #header>
+        <div class="flex items-center justify-between">
+          <h2 class="font-semibold text-highlighted">
+            案例训练
+          </h2>
+          <UButton to="/case" size="sm" variant="link" color="primary" trailing-icon="i-lucide-arrow-right">
+            去练题
+          </UButton>
+        </div>
+      </template>
+      <ul class="space-y-3">
+        <li
+          v-for="stat in caseStats?.data ?? []"
+          :key="stat.caseType"
+          class="flex items-center gap-3"
+          data-case-row
+        >
+          <span class="w-28 shrink-0 text-sm text-default" data-case-type>{{ stat.caseType }}</span>
+          <div class="h-2 min-w-0 flex-1 rounded-full bg-elevated">
+            <div
+              class="h-full rounded-full"
+              :class="caseBarColor(stat.avgScore)"
+              :style="{ width: `${(stat.avgScore ?? 0) * 100}%` }"
+              data-case-bar
+            />
+          </div>
+          <span class="w-28 shrink-0 text-right text-sm text-muted" data-case-summary>
+            {{ caseSummary(stat) }}
+          </span>
+        </li>
+      </ul>
     </UCard>
 
     <div class="flex flex-wrap gap-3">

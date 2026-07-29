@@ -98,11 +98,16 @@ onBeforeUnmount(() => {
   if (timer) clearInterval(timer)
 })
 
-const timeText = computed(() => {
-  const m = String(Math.floor(remaining.value / 60)).padStart(2, '0')
-  const s = String(remaining.value % 60).padStart(2, '0')
+function formatSec(total: number) {
+  const m = String(Math.floor(total / 60)).padStart(2, '0')
+  const s = String(total % 60).padStart(2, '0')
   return `${m}:${s}`
-})
+}
+
+// SSR 初始快照（静态，不参与后续响应式更新），供 ClientOnly fallback 渲染，避免布局跳动
+const initialTimeText = formatSec(Math.max(0, TOTAL_SEC - baseDurationSec))
+
+const timeText = computed(() => formatSec(remaining.value))
 
 const timerClass = computed(() => {
   if (remaining.value <= 15 * 60) return 'text-red-500'
@@ -114,6 +119,8 @@ const timerClass = computed(() => {
 const wordCount = computed(() => content.value.replace(/\s/g, '').length)
 const WORD_GOAL = 3000
 const WORD_PASS = 2500
+// reka-ui ProgressRoot 要求 value <= max，超目标字数时钳制（视觉满格，真实字数仍显示在文本里）
+const progressValue = computed(() => Math.min(wordCount.value, WORD_GOAL))
 const wordBarColor = computed(() => (wordCount.value >= WORD_PASS ? 'success' : 'primary') as 'success' | 'primary')
 
 // ---------- 保存 ----------
@@ -315,16 +322,17 @@ async function submitFinish() {
         <div class="flex items-center gap-6 flex-wrap">
           <div class="flex items-center gap-2">
             <UIcon name="i-lucide-timer" class="size-5 text-muted" />
+            <!-- 倒计时客户端每秒驱动，ClientOnly 包裹避免 SSR/CSR 文本 hydration mismatch；fallback 为同一初始值，无跳动 -->
             <span
               class="text-2xl font-mono font-bold tabular-nums"
               :class="timerClass"
               data-timer
-            >{{ timeText }}</span>
+            ><ClientOnly>{{ timeText }}<template #fallback>{{ initialTimeText }}</template></ClientOnly></span>
           </div>
 
           <div class="flex items-center gap-3 min-w-64 flex-1">
             <UProgress
-              :model-value="wordCount"
+              :model-value="progressValue"
               :max="WORD_GOAL"
               :color="wordBarColor"
               class="flex-1"
@@ -336,7 +344,8 @@ async function submitFinish() {
           </div>
 
           <div class="flex items-center gap-3">
-            <span class="text-sm text-muted" data-save-status>{{ saveStatusText }}</span>
+            <!-- 保存状态依赖客户端运行时状态（lastSavedAt/dirty），ClientOnly 防 hydration mismatch -->
+            <span class="text-sm text-muted" data-save-status><ClientOnly>{{ saveStatusText }}<template #fallback>尚未保存</template></ClientOnly></span>
             <UButton
               icon="i-lucide-save"
               variant="outline"

@@ -1,6 +1,6 @@
 # sabench
 
-软考（系统分析师）备考训练台。Nuxt 4 + Nuxt UI + Drizzle ORM（libsql）+ nuxt-auth-utils，单人使用，含周计划、项目背景库、限时论文写作器、学习统计。
+软考（系统分析师）备考训练台。Nuxt 4 + Nuxt UI + Drizzle ORM（libsql）+ nuxt-auth-utils，单人使用，含周计划、项目背景库、限时论文写作器、案例训练场、学习统计。
 
 ## 技术栈
 
@@ -20,6 +20,33 @@ pnpm dev            # 启动开发服务器，默认 http://localhost:3000
 ```
 
 浏览器打开 `http://localhost:3000/auth/dev` 即可一键登录进入首页（该路由仅 dev 模式存在，生产构建中为 404）。
+
+## 模块：案例训练场（/case）
+
+下午案例分析题的专项训练，三个页面：
+
+| 页面 | 说明 |
+|---|---|
+| `/case` | 题目列表（14 道：9 道历年真题 + 5 道 2026 模拟题），按五类题型（需求分析/系统设计/架构评估/数据库设计/项目管理计算）筛选 |
+| `/case/cards` | 解题框架卡（8 张），按题型分组的方法论速查（如 ATAM 评估四步、E-R 转关系模式、挣值计算） |
+| `/case/[id]` | 做题页：读材料作答 → 提交后才下发采分点（作答前 API 与页面源码均不含采分点）→ 逐点自评勾选 → 得分率与答案对照、历史记录 |
+
+### 数据种子（框架卡 + 题目）
+
+两个脚本均用 `@libsql/client` 直连，读 `NUXT_TURSO_DATABASE_URL`（未设置则写本地 `.data/local.db`），按标题查重、可重复执行：
+
+```bash
+# 8 张框架卡（data/framework-cards.json）
+node_modules/.bin/tsx scripts/seed-framework-cards.ts
+
+# 14 道题（data/cases/*.json：mock-2026 5 道 + ruankao 2021-2023 9 道）
+# 不带参数全量导入；带子串参数只导入匹配文件，如 scripts/import-cases.ts mock
+node_modules/.bin/tsx scripts/import-cases.ts
+```
+
+对 Turso 执行：先 `set -a; . ./.env; set +a` 再跑同一命令即可（表结构有变更时先 `pnpm db:push`）。
+
+真题题面与参考答案采集自公开网页（希赛 educity 题面、CSDN 网友解析答案，串行间隔 ≥2s、无登录/付费墙），逐题来源见 `~/.sisyphus/evidence/batch2-task-B8-crawl.txt`；2024 下及 2025 年公开渠道无完整题面，按"宁缺毋滥"未收录。
 
 ## 环境变量
 
@@ -91,3 +118,5 @@ pnpm dev            # 启动开发服务器，默认 http://localhost:3000
 | `pnpm dev` | 启动开发服务器（默认 3000 端口） |
 | `pnpm build` | 生产构建（输出 `.output/`） |
 | `pnpm db:push` | 按 `server/database/schema.ts` 推送表结构（读 `NUXT_TURSO_DATABASE_URL`，无则写本地文件） |
+| `tsx scripts/seed-framework-cards.ts` | 导入 8 张案例框架卡（幂等，按标题查重） |
+| `tsx scripts/import-cases.ts [过滤子串]` | 导入案例题（mock 5 + 真题 9，幂等；可选按文件名过滤） |

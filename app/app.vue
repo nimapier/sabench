@@ -7,6 +7,7 @@ const links = [
   { label: '计划', to: '/plan' },
   { label: '论文', to: '/essay' },
   { label: '背景库', to: '/essay/bg' },
+  { label: '案例', to: '/case' },
 ]
 
 // 取最长前缀匹配，避免 /essay/bg 同时高亮 /essay

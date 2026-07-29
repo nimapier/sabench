@@ -44,9 +44,11 @@ export const caseQuestion = sqliteTable('case_question', {
   id: integer('id').primaryKey({ autoIncrement: true }),
   year: text('year'),
   caseType: text('case_type'),
+  title: text('title'),
   material: text('material'),
   question: text('question'),
   points: text('points'), // JSON 采分点数组
+  derived: integer('derived', { mode: 'boolean' }).default(false),
 })
 
 export const caseAttempt = sqliteTable('case_attempt', {
@@ -56,6 +58,7 @@ export const caseAttempt = sqliteTable('case_attempt', {
   durationSec: integer('duration_sec'),
   hitPoints: text('hit_points'), // JSON
   score: real('score'),
+  createdAt: integer('created_at', { mode: 'timestamp' }).$defaultFn(() => new Date()),
 })
 
 export const question = sqliteTable('question', {
