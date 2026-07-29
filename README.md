@@ -60,7 +60,7 @@ pnpm dev            # 启动开发服务器，默认 http://localhost:3000
 > **git init / commit / push 由你本人执行**，本项目不代为提交。
 
 1. 你自己把代码推到 GitHub：`git init` → `git add -A && git commit` → 建远程仓库 → `git push`。
-2. 到 https://vercel.com 用 GitHub 登录，**Add New → Project**，import 该仓库。Vercel 会自动识别 Nuxt，构建命令 `pnpm build`、输出目录 `.output` 均无需改动。
+2. 到 https://vercel.com 用 GitHub 登录，**Add New → Project**，import 该仓库。**关键：Framework Preset 选 `Other`（不要选 Nuxt.js——那是 Nuxt 2 的静态预设，会报 `No Output Directory named "dist"`）**，构建命令与输出目录保持默认即可。仓库已显式配置 `nitro.preset: 'vercel'`，构建产出 `.vercel/output` 标准 serverless 格式，Vercel 自动接管。
 3. 在项目 **Settings → Environment Variables** 配置上面表格中的 6 个变量（Production 环境）。
 4. **首次部署后需要建一次表**：在你本地终端执行（把 env 指向 Turso）：
    ```bash
