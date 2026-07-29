@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     fonts: false,
   },
   nitro: {
+    preset: 'vercel',
     hooks: {
       // libsql 运行时按平台动态 require(`@libsql/${target}`) 加载原生绑定，
       // nitro 静态追踪不到（traceInclude 在 pnpm 隔离 + 插件自拦截下也失效），
