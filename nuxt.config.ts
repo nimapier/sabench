@@ -12,21 +12,26 @@ export default defineNuxtConfig({
   },
   nitro: {
     preset: 'vercel',
-    hooks: {
-      // libsql 运行时按平台动态 require(`@libsql/${target}`) 加载原生绑定，
-      // nitro 静态追踪不到（traceInclude 在 pnpm 隔离 + 插件自拦截下也失效），
-      // 构建完成后把平台包实体拷入产物；未安装的平台包跳过。
-      // 包列在 devDependencies 并与 libsql 版本对齐，Vercel 装依赖时会带上。
-      compiled(nitro) {
-        for (const pkg of ['@libsql/darwin-x64', '@libsql/linux-x64-gnu']) {
-          try {
-            const src = dirname(require.resolve(`${pkg}/package.json`))
-            cpSync(src, join(nitro.options.output.dir, 'server/node_modules', pkg), { recursive: true })
-          }
-          catch { /* 该平台包未安装，跳过 */ }
-        }
+    modules: [
+      {
+        // libsql 运行时按平台动态 require(`@libsql/${target}`) 加载原生绑定，nitro 静态追踪不到。
+        // 必须以 nitro module 注册 compiled 钩子：nuxt.config 的 nitro.hooks 会覆盖 preset 的
+        // 同名钩子，导致 vercel preset 不写 .vercel/output/config.json（Vercel 部署失败）。
+        // 拷贝目标是 serverDir（函数包内），不是 output.dir/server。
+        // 平台包列在 devDependencies 并与 libsql 版本对齐，未安装的平台跳过。
+        setup(nitro: { hooks: { hook: (name: string, fn: (n: { options: { output: { serverDir: string } } }) => void) => void } }) {
+          nitro.hooks.hook('compiled', (n) => {
+            for (const pkg of ['@libsql/darwin-x64', '@libsql/linux-x64-gnu']) {
+              try {
+                const src = dirname(require.resolve(`${pkg}/package.json`))
+                cpSync(src, join(n.options.output.serverDir, 'node_modules', pkg), { recursive: true })
+              }
+              catch { /* 该平台包未安装，跳过 */ }
+            }
+          })
+        },
       },
-    },
+    ],
   },
   runtimeConfig: {
     tursoDatabaseUrl: '',
