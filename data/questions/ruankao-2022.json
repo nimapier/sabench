@@ -1,0 +1,1202 @@
+[
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 1,
+  "chapter": "系统规划与需求工程",
+  "stem": "（1）是从系统的应用领域而不是从系统用户的特定需要中得出的，它们可以是新的功能性需求，或 者是对已有功能性需求的约束，或者是陈述特定的计算必须遵守的要求。",
+  "options": {
+   "A": "功能性需求",
+   "B": "用户需求",
+   "C": "产品需求",
+   "D": "领域需求"
+  },
+  "answer": "D",
+  "analysis": "领域需求来自系统应用领域而非特定用户需要，可以是新功能需求或对功能需求的约束。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 2,
+  "chapter": "软件工程与项目管理",
+  "stem": "对于安全关键系统，需要额外的安全保证、软件验证以及系统分析过程。（2）是检查系统是否安全运 行的一组活动，包含在软件开发过程的所有阶段中，记录了所进行的分析以及负责分析的相关人员。",
+  "options": {
+   "A": "软件测试",
+   "B": "安全保证",
+   "C": "软件验证",
+   "D": "系统分析"
+  },
+  "answer": "B",
+  "analysis": "安全保证(Safety Assurance)是检查系统是否安全运行的一组活动，贯穿开发各阶段并记录分析与责任人。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 3,
+  "chapter": "系统分析与设计",
+  "stem": "模型驱动的体系结构是一种关注模型的软件设计和实现方法，使用了UML 模型的子集描述系统， 创建不同抽象层次上的模型，其中不包括（3）",
+  "options": {
+   "A": "计算无关模型",
+   "B": "计算相关模型",
+   "C": "平台无关模型",
+   "D": "平台相关模型"
+  },
+  "answer": "B",
+  "analysis": "MDA包含CIM(计算无关)、PIM(平台无关)、PSM(平台相关)三层模型，没有\"计算相关模型\"。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 4,
+  "chapter": "软件工程与项目管理",
+  "stem": "敏捷软件开发方法是一种增量式开发方法，它将（4）视为软件过程的中心活动，将其他开发活动融 入其中。",
+  "options": {
+   "A": "可行性分析",
+   "B": "需求分析和设计",
+   "C": "设计和实现",
+   "D": "实现和测试"
+  },
+  "answer": "D",
+  "analysis": "敏捷开发将实现(编码)和测试视为软件过程的中心活动，其他活动融入其中。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 5,
+  "chapter": "系统分析与设计",
+  "stem": "UML 中的（5）主要用于参与者与系统中对象之间的交互，以及这些对象之间交互的建模。",
+  "options": {
+   "A": "顺序图",
+   "B": "活动图",
+   "C": "用例图",
+   "D": "状态图"
+  },
+  "answer": "A",
+  "analysis": "顺序图用于对参与者与系统对象之间以及对象之间的交互进行建模。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 6,
+  "chapter": "计算机基础与新技术",
+  "stem": "TCP/IP 的四层模型中，每一层都提供了安全协议，下列属于网络层安全协议的是（6）。",
+  "options": {
+   "A": "HTTPS",
+   "B": "SSH",
+   "C": "IPSec",
+   "D": "Socks"
+  },
+  "answer": "C",
+  "analysis": "IPSec工作在网络层;HTTPS/SSH在应用层,Socks在会话层。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 7,
+  "chapter": "计算机基础与新技术",
+  "stem": "（7）不属于基于生物特征的认证技术。",
+  "options": {
+   "A": "指纹识别",
+   "B": "人脸识别",
+   "C": "口令",
+   "D": "虹膜识别"
+  },
+  "answer": "C",
+  "analysis": "口令属于基于知识的认证,指纹/人脸/虹膜为生物特征认证。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 8,
+  "chapter": "计算机基础与新技术",
+  "stem": "（8）属于公钥加密算法。",
+  "options": {
+   "A": "AES",
+   "B": "RSA",
+   "C": "MD5",
+   "D": "DES"
+  },
+  "answer": "B",
+  "analysis": "RSA为公钥加密算法;AES/DES为对称加密,MD5为散列。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 9,
+  "chapter": "计算机基础与新技术",
+  "stem": "确保计算机系统机密性的方法不包括（9）",
+  "options": {
+   "A": "加密",
+   "B": "认证",
+   "C": "授权",
+   "D": "备份"
+  },
+  "answer": "D",
+  "analysis": "备份保障可用性而非机密性;加密、认证、授权均可保护机密性。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 10,
+  "chapter": "法规与英语",
+  "stem": "以下商标注册申请，经审查，不能获准注册的是（10）",
+  "options": {
+   "A": "青铜",
+   "B": "华山",
+   "C": "湖北",
+   "D": "麒麟"
+  },
+  "answer": "C",
+  "analysis": "县级以上行政区划地名不得作为商标注册,\"湖北\"不能获准注册。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 11,
+  "chapter": "法规与英语",
+  "stem": "下列关于计算机软件著作权的叙述，错误的是（11）",
+  "options": {
+   "A": "为了学习和研究软件内涵的设计思想和原理，通过安装、传输或存储软件等方式使用软件，可以不经软件著作权人许可，不向其支付报酬",
+   "B": "软件著作权属于自然人的，该自然人死亡后，在软件著作权的保护期内，软件著作权的继承人可以继承各项软件著作权",
+   "C": "软件著作权人可以许可他人行使其软件著作权，并有权获得报酬",
+   "D": "软件著作权人可以全部或部分转让其软件著作权，并有权获得报酬"
+  },
+  "answer": "B",
+  "analysis": "著作权中的人身权(如署名权)不能被继承,继承人只能继承财产性权利,\"继承各项软件著作权\"说法错误。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 12,
+  "chapter": "法规与英语",
+  "stem": "郭一在单位运营管理部工作，负责经营报表和统计分析，为便于及时、准确完成报表，郭一利用自身 软件开发基础，在下班后的业余时间与家人共同开发了一个统计软件。以下说法中，正确的是（12）",
+  "options": {
+   "A": "该软件没有商业用途，没有著作权的问题",
+   "B": "郭一在开发软件的过程中，没有利用企业的物质技术条件，该软件的著作权属于郭一",
+   "C": "按照软件著作权归属的一般原则，该软件的著作权归属于郭一",
+   "D": "该软件的著作权属于企业，因其是郭一为完成本职工作而产生的结果"
+  },
+  "answer": "D",
+  "analysis": "为完成本职工作(经营报表统计分析)所开发的软件属职务作品,著作权归企业。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 13,
+  "chapter": "法规与英语",
+  "stem": "韩国甲公司生产的平板电脑在其本国享有“Upad\"注册商标专用权，但未在中国申请注册。中国乙公 司生产的平板电脑也使用“Upad”商标，并享有中国注册商标专用权，但未在韩国申请注册。甲公司与 乙公司生产的平板电脑都在中国市场上销售，此情形下，依据中国商标法，（13）。",
+  "options": {
+   "A": "甲公司侵犯了乙公司的商标权",
+   "B": "甲公司未侵犯乙公司的商标权",
+   "C": "乙公司侵犯了甲公司的商标权",
+   "D": "甲公司与乙公司均未侵犯商标权"
+  },
+  "answer": "A",
+  "analysis": "商标权具有地域性,甲公司未在中国注册,其在中国销售使用\"Upad\"侵犯了乙公司在中国的注册商标专用权。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 14,
+  "chapter": "计算机基础与新技术",
+  "stem": "嵌入式系统已被广泛应用到各行各业。嵌入式系统是一一个内置于设备中，对设备的各种传感器进行 管理与控制的系统。通常，根据系统对时间的敏感程度可将嵌入式系统划分为（14）两种，而实时系 统又可分为强实时（Hard Real-Time）系统和弱实时（WeakReal-Time）系统;如果从安全性要求看，嵌 入式系统还可分为（15）。",
+  "options": {
+   "A": "嵌入式系统和嵌入式实时系统",
+   "B": "控制系统和业务系统",
+   "C": "安全攸关系统和非安全攸关系统",
+   "D": "CPS 系统和非CPS 系统"
+  },
+  "answer": "A",
+  "analysis": "按对时间的敏感程度,嵌入式系统分为嵌入式系统和嵌入式实时系统。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 15,
+  "chapter": "计算机基础与新技术",
+  "stem": "嵌入式系统已被广泛应用到各行各业。嵌入式系统是一一个内置于设备中，对设备的各种传感器进行 管理与控制的系统。通常，根据系统对时间的敏感程度可将嵌入式系统划分为（14）两种，而实时系 统又可分为强实时（Hard Real-Time）系统和弱实时（WeakReal-Time）系统;如果从安全性要求看，嵌 入式系统还可分为（15）。",
+  "options": {
+   "A": "高可靠系统和高安全系统",
+   "B": "实时系统和强实时系统",
+   "C": "安全攸关系统和非安全攸关系统",
+   "D": "网络系统和分布式系统"
+  },
+  "answer": "C",
+  "analysis": "从安全性要求看,嵌入式系统分为安全攸关系统和非安全攸关系统。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 16,
+  "chapter": "计算机基础与新技术",
+  "stem": "嵌入式软件开发方法与传统软件开发方法存在较大差异，（16）的说法对嵌入式软件开发而言是错误 的。",
+  "options": {
+   "A": "嵌入式软件开发的结果通常需要固化在目标系统的储存器或处理器内部储存器资源中",
+   "B": "嵌入式软件的开发一般需要专门的开发工具，目标系统和测试设备",
+   "C": "嵌入式软件对安全性和可靠性的要求较高",
+   "D": "嵌入式软件开发不用考虑代码的规模"
+  },
+  "answer": "D",
+  "analysis": "嵌入式系统资源受限,开发必须考虑代码规模,\"不用考虑代码规模\"错误。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 17,
+  "chapter": "计算机基础与新技术",
+  "stem": "由于处理器芯片在不同领域应用时，需要考虑对环境的适应性。通常，我们把芯片分为民用级、工业 级和军用级。（17）分别是民用级、工业级和军用级芯片的标准工作温度范围。",
+  "options": {
+   "A": "-10℃~+70℃、-40℃~+80℃、-50℃+150℃",
+   "B": "0℃~+70℃、-30℃~+85℃、-60℃~+150℃",
+   "C": "0℃~+70℃、-40℃~+85℃、-55℃~+150℃",
+   "D": "-0℃~+60℃、-40℃~+90℃、-55℃~+150℃"
+  },
+  "answer": "C",
+  "analysis": "民用级0℃~+70℃、工业级-40℃~+85℃、军用级-55℃~+150℃。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 18,
+  "chapter": "计算机基础与新技术",
+  "stem": "嵌入式实时系统存在许多调皮解法。如果调度程序根据任务的紧急程度确定该任务的优先级，任务紧 急程度高，被赋予的优先级就高，可被优先执行。出先执行。这种调度算法称 之为（18）。",
+  "options": {
+   "A": "最早截止时间优先（Earliest Deadline First, EDF）算法",
+   "B": "最低松弛度优先（Least Laxity First, LLF 算法",
+   "C": "单调速率调度（Rate Monotonic Scheduling, RMS）算法",
+   "D": "抢占式优先级调度（Preemptive Priority Scheduling, PPS）算法"
+  },
+  "answer": "D",
+  "analysis": "按任务紧急程度确定优先级、紧急任务可优先执行(抢占)的调度算法为抢占式优先级调度(PPS)。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 19,
+  "chapter": "系统规划与需求工程",
+  "stem": "企业信息化工程是将（19）相结合，改善企业的经营、管理、产品开发和生产等各个环节，提高生产 效率、产品质量和企业的创新能力，从而实现产品设计制造和企业管理的信息化、生产过程的智能化、 制造装备的数控化以及咨询服务的网络化，全面提高我国企业的竞争力。",
+  "options": {
+   "A": "信息技术、自动化技术、现代管理技术、制造技术",
+   "B": "信息技术、自动化技术、现代管理技术、建模技术",
+   "C": "信息技术、测试技术、现代管理技术、制造技术",
+   "D": "需求分析技术、建模技术、测试技术、现代管理技术"
+  },
+  "answer": "A",
+  "analysis": "企业信息化工程将信息技术、自动化技术、现代管理技术与制造技术相结合。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 20,
+  "chapter": "计算机基础与新技术",
+  "stem": "数据中台依据企业特有的业务模式和组织架构，通过有形的产品和实施方法论支撑，构建了一套持 续不断将数据变成资产并服务于业务的机制。数据中台需要具备的4 个核心能力为（20），让企业员 工、客户、伙伴能够方便地应用数据。",
+  "options": {
+   "A": "数据汇聚整合、数据清洗、数据加密、数据建模",
+   "B": "数据汇聚整合、数据清洗、数据加密、数据分发",
+   "C": "数据汇聚整合、数据提纯加工、数据服务可视化、数据价值变现",
+   "D": "数据清洗、数据加密、数据解密、数据建模"
+  },
+  "answer": "C",
+  "analysis": "数据中台四大核心能力:数据汇聚整合、提纯加工、服务可视化、价值变现。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 21,
+  "chapter": "计算机基础与新技术",
+  "stem": "【题干原文缺失,仅存选项】平台(如工业互联网平台)参考架构通常划分为边缘层、IaaS层、平台层(PaaS)、应用层(SaaS)等层次,下列(21)不属于该架构的层次。",
+  "options": {
+   "A": "应用层",
+   "B": "平台层",
+   "C": "用户访问层",
+   "D": "管理层"
+  },
+  "answer": "C",
+  "analysis": "【AI推导】原PDF题干文字层缺失(仅存选项)。按工业互联网/平台类分层(边缘层、IaaS、平台层、应用层)推断题目问\"不属于该架构层次的是\",用户访问层不是标准层次,故选C。题干缺失已入隔离区。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 22,
+  "chapter": "计算机基础与新技术",
+  "stem": "相比传统SOA 的服务实现方式，微服务更具有灵活性、可实施性以及可扩展性，其强调的是一种（22） 的软件架构模式。",
+  "options": {
+   "A": "联合测试、独立部署、独立运行",
+   "B": "联合测试、独立部署、集中运行",
+   "C": "独立测试、独立部署、独立运行",
+   "D": "独立测试、独立部署、集中运行"
+  },
+  "answer": "C",
+  "analysis": "微服务强调服务可独立测试、独立部署、独立运行。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 23,
+  "chapter": "系统规划与需求工程",
+  "stem": "TOGAF 框架是一个多视图的体系结构，它由企业的业务架构、信息架构、应用架构和技术架构共同 构成。企业信息架构是将企业业务实体抽象成为信息对象，将企业的业务运作模式抽象为信息对象的 属性和方法，建立面向对象的企业信息模型。企业信息架构实现了从（23） ①业务模式向信息模型的转变 ②业务需求向信息功能的映射 ③企业基础数据向企业信息的抽象 ④业务逻辑向功能逻辑的演化",
+  "options": {
+   "A": "①②③",
+   "B": "①②④",
+   "C": "①③④",
+   "D": "②③④"
+  },
+  "answer": "A",
+  "analysis": "TOGAF企业信息架构实现①业务模式向信息模型的转变、②业务需求向信息功能的映射、③企业基础数据向企业信息的抽象;④业务逻辑向功能逻辑演化不属于。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 24,
+  "chapter": "计算机基础与新技术",
+  "stem": "智能制造系统架构从生命周期、系统层级和智能特征3 个维度对智能制造所涉及的活动、装备、特征 等内容进行描述，主要用于明确智能制造的（24），指导国家智能制造标准体系建设。其中，系统层 级是对与企业生产活动相关的组织结构的层级划分，包括(25)。",
+  "options": {
+   "A": "标准化需求、业务和对象",
+   "B": "标准化需求、对象和范围",
+   "C": "标准化需求、业务和流程",
+   "D": "标准化需求、流程和范围"
+  },
+  "answer": "B",
+  "analysis": "智能制造系统架构主要用于明确智能制造的标准化需求、对象和范围。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 25,
+  "chapter": "计算机基础与新技术",
+  "stem": "智能制造系统架构从生命周期、系统层级和智能特征3 个维度对智能制造所涉及的活动、装备、特征 等内容进行描述，主要用于明确智能制造的（24），指导国家智能制造标准体系建设。其中，系统层 级是对与企业生产活动相关的组织结构的层级划分，包括(25)。",
+  "options": {
+   "A": "设备层、单元层、车间层、企业层和应用层",
+   "B": "设备层、单元层、传输层、企业层和应用层",
+   "C": "设备层、单元层、传输层、企业层和协同层",
+   "D": "设备层、单元层、车间层、企业层和协同层"
+  },
+  "answer": "D",
+  "analysis": "智能制造系统层级包括设备层、单元层、车间层、企业层和协同层。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 26,
+  "chapter": "系统规划与需求工程",
+  "stem": "基于模型的系统工程作为一种（26），为了应对基于文档的传统系统工程工作模式在复杂产品和系统 研发时面临的挑战，以逻辑连贯一致的多视角系统模型为桥梁和框架，实现跨领域模型的可追踪、可 验证和动态关联，驱动人工系统生存周期内各阶段和各层级内的系统工程过程和活动，使其可管理、 可复现、可重用，进而打破专业壁垒，破解设计和工艺、研发和制造、研制和使用维护的分离，极大 地提高沟通协同效率，实现以模型驱动的方法来采集、捕获和提炼数据、信息和知识。",
+  "options": {
+   "A": "形式化的建模方法学",
+   "B": "非形式化的建模方法学",
+   "C": "结构化建模方法学",
+   "D": "面向对象建模方法学"
+  },
+  "answer": "A",
+  "analysis": "MBSE是一种形式化的建模方法学,以模型驱动系统工程各阶段活动。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 27,
+  "chapter": "系统规划与需求工程",
+  "stem": "Iso 9000 定义业务过程（Busines Process）为一组将输入转化为输出的相互关联或相互作用的活动。该 过程包括6 个基本要素，分布是（27）、活动、活动的相互作用、输出结果、用户和价值。",
+  "options": {
+   "A": "输入资源",
+   "B": "需求说明",
+   "C": "活动环境",
+   "D": "活动前提"
+  },
+  "answer": "A",
+  "analysis": "业务过程六要素:输入资源、活动、活动的相互作用、输出结果、用户和价值。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 28,
+  "chapter": "系统规划与需求工程",
+  "stem": "工作流管理系统（Workflow Management System，WFMS）通过软件定义、创建工作流并管理其执行。 其中，监控和管理进度完成情况和数据所处状态、工作分配与均衡情况等执行中的业务，体现着工作 流管理系统（28）的基本功能。",
+  "options": {
+   "A": "工作流执行",
+   "B": "业务过程的设计和实现",
+   "C": "业务过程管理和分析",
+   "D": "对工作流进行建模"
+  },
+  "answer": "C",
+  "analysis": "监控管理执行中业务的进度、状态、工作分配等,属于工作流管理系统\"业务过程管理和分析\"功能。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 29,
+  "chapter": "系统规划与需求工程",
+  "stem": "工作流参考模型（Workflow Reference Model, WRM）包含6 个基本模块，分别是（29）、工作流引 擎、流程定义工具、（30）、调用应用和管理监控工具。",
+  "options": {
+   "A": "工作流执行服务",
+   "B": "流程服务引擎",
+   "C": "服务标准引擎",
+   "D": "流程设计工具"
+  },
+  "answer": "A",
+  "analysis": "工作流参考模型六模块:工作流执行服务、工作流引擎、流程定义工具、客户端应用、调用应用、管理监控工具。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 30,
+  "chapter": "系统规划与需求工程",
+  "stem": "工作流参考模型（Workflow Reference Model, WRM）包含6 个基本模块，分别是（29）、工作流引 擎、流程定义工具、（30）、调用应用和管理监控工具。",
+  "options": {
+   "A": "客户端应用",
+   "B": "服务端应用",
+   "C": "部署端应用",
+   "D": "网络端应用"
+  },
+  "answer": "A",
+  "analysis": "同29题,(30)为客户端应用。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 31,
+  "chapter": "系统分析与设计",
+  "stem": "在面向对象方法中，一个子类有多个父类，可以从多个父类中继承特性，这种继承称为（31）。对于 两个类A 和B,如果A 是B 的子类，则B 是A 的(32)。",
+  "options": {
+   "A": "多重继承",
+   "B": "单一继承",
+   "C": "多例继承",
+   "D": "单例继承"
+  },
+  "answer": "A",
+  "analysis": "一个子类有多个父类并继承其特性称为多重继承。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 32,
+  "chapter": "系统分析与设计",
+  "stem": "在面向对象方法中，一个子类有多个父类，可以从多个父类中继承特性，这种继承称为（31）。对于 两个类A 和B,如果A 是B 的子类，则B 是A 的(32)。",
+  "options": {
+   "A": "聚合",
+   "B": "泛化",
+   "C": "聚类",
+   "D": "耦合"
+  },
+  "answer": "B",
+  "analysis": "A是B的子类,则B是A的泛化。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 33,
+  "chapter": "系统分析与设计",
+  "stem": "软件设计一般分为（33）。",
+  "options": {
+   "A": "概要设计和详细设计",
+   "B": "数据库设计和架构设计",
+   "C": "概要设计和架构设计",
+   "D": "模块设计和数据设计"
+  },
+  "answer": "A",
+  "analysis": "【AI推导】原PDF题干文字层缺失(仅存选项)。据选项内容推断题目为\"软件设计一般分为(33)\",软件设计分为概要设计和详细设计,故选A。题干缺失已入隔离区。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 34,
+  "chapter": "系统分析与设计",
+  "stem": "进行软件设计时,应遵循（34）,使模块具有高内聚、低耦合的特性。",
+  "options": {
+   "A": "模块耦合性原则",
+   "B": "模块独立性原则",
+   "C": "自顶向下原则",
+   "D": "自底向上原则"
+  },
+  "answer": "B",
+  "analysis": "【AI推导】原PDF题干文字层缺失(仅存选项)。据选项推断题目考查软件设计原则,模块独立性原则(高内聚低耦合)为软件设计的核心原则,故选B。题干缺失已入隔离区。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 35,
+  "chapter": "系统规划与需求工程",
+  "stem": "信息化规划与企业战略规划总是互相影响、互相促进的。当财务部门提出财务电算化的需，生产部门 提出库房管理的需求时，IT 部门根据不同部门的需求分别独立实施，以此形成一个完全基于企业组织 与业务流程的信息系统结构，其中各个信息系统分别对应于特定部门或特定业务流程。这表明（35）。",
+  "options": {
+   "A": "企业处在信息化的初级阶段",
+   "B": "企业处在信息化的中级阶段",
+   "C": "企业处在信息化的高级阶段",
+   "D": "企业处在信息化的完成阶段"
+  },
+  "answer": "A",
+  "analysis": "各部门按自身需求独立建设信息系统、系统分别对应特定部门,处于诺兰模型的初级阶段。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 36,
+  "chapter": "系统规划与需求工程",
+  "stem": "在企业信息化中，（36）的主要方法有业务与IT 整合和企业IT 架构构建。下面关于上述两种方法的 说法中，不正确的是（37）。",
+  "options": {
+   "A": "信息架构继承",
+   "B": "企业战略与信息化战略集成",
+   "C": "信息化规划与业务整合",
+   "D": "信息化规划与企业战略规划"
+  },
+  "answer": "B",
+  "analysis": "企业战略与信息化战略集成的主要方法有业务与IT整合(BITA)和企业IT架构(EITA)构建。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 37,
+  "chapter": "系统规划与需求工程",
+  "stem": "在企业信息化中，（36）的主要方法有业务与IT 整合和企业IT 架构构建。下面关于上述两种方法的 说法中，不正确的是（37）。",
+  "options": {
+   "A": "业务与IT 整合和企业IT 架构两种方法不存在任何领域的重叠",
+   "B": "业务与IT 整合是一种以业务为导向的、全面的IT 管理咨询实施方法论",
+   "C": "企业架构帮助企业制订IT 战略，并对其投资决策进行指导",
+   "D": "企业IT 架构适用于现有信息系统和IT 基础架构不一致、不兼容和缺乏统一的整体管理的企业"
+  },
+  "answer": "A",
+  "analysis": "业务与IT整合和企业IT架构两种方法在多个领域存在重叠,\"不存在任何领域的重叠\"说法不正确。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 38,
+  "chapter": "软件工程与项目管理",
+  "stem": "在软件逆向工程的相关概念中，（38）是指借助工具从已有程序中抽象出有关数据设计、总体结构 设计和过程设计等方面的信息；（39）指不仅从现有系统中恢复设计信息，而且使用该信息去改变或 重构现有系统，以改善其整体质量。",
+  "options": {
+   "A": "设计恢复",
+   "B": "正向工程",
+   "C": "设计重构",
+   "D": "重构"
+  },
+  "answer": "A",
+  "analysis": "设计恢复指借助工具从已有程序中抽象出数据设计、总体结构设计和过程设计等信息。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 39,
+  "chapter": "软件工程与项目管理",
+  "stem": "在软件逆向工程的相关概念中，（38）是指借助工具从已有程序中抽象出有关数据设计、总体结构 设计和过程设计等方面的信息；（39）指不仅从现有系统中恢复设计信息，而且使用该信息去改变或 重构现有系统，以改善其整体质量。",
+  "options": {
+   "A": "再工程",
+   "B": "需求工程",
+   "C": "正向工程",
+   "D": "逆向工程"
+  },
+  "answer": "A",
+  "analysis": "再工程不仅恢复设计信息,还用该信息改变或重构现有系统以改善整体质量。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 40,
+  "chapter": "系统分析与设计",
+  "stem": "在数据库设计的需求分析、概念结构设计、逻辑结构设计和物理结构设计的四个阶段中，基本E-R 图是（40）。",
+  "options": {
+   "A": "需求分析阶段形成的文档，并作为概念结构设计阶段的设计依据",
+   "B": "逻辑结构设计阶段形成的文档，并作为概念结构设计阶段的设计依据",
+   "C": "概念结构设计阶段形成的文档，并作为逻辑结构设计阶段的设计依据",
+   "D": "概念结构设计阶段形成的文档，并作为物理设计阶段的设计依据"
+  },
+  "answer": "C",
+  "analysis": "基本E-R图是概念结构设计阶段形成的文档,并作为逻辑结构设计阶段的设计依据。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 41,
+  "chapter": "系统分析与设计",
+  "stem": "某高校信息系统采用分布式数据库系统，该系统中“当某一场地故障时，系统可以使用其它场地上 的副本而不至于使整个系统瘫痪\"和“数据在不同场地上的存储”分别称为分布式数据库的（41）。",
+  "options": {
+   "A": "共享性和分布性",
+   "B": "自治性和分布性",
+   "C": "自治性和可用性",
+   "D": "可用性和分布性"
+  },
+  "answer": "D",
+  "analysis": "场地故障时可用其他场地副本保证不瘫痪=可用性;数据存储在不同场地=分布性。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 42,
+  "chapter": "系统分析与设计",
+  "stem": "给定关系R（4,B,C,D,E）和关系s（D,E,F,G），对其进行自然连接运算R ▷◁S 后其结果集的属性列 为（42）。",
+  "options": {
+   "A": "R.A,R.B,R.C,R.D, R.E,S.D,S.E",
+   "B": "R.A,R.B, R.C,R.D,R.E,S.F,S.G",
+   "C": "R.A,R.B,R.C,R.D,R.E,S.E,S.F",
+   "D": "R.A,R.B,RC,R.D,R.E,S.D,S.E,S.F,S.G"
+  },
+  "answer": "B",
+  "analysis": "自然连接去重公共属性,结果为R.A,R.B,R.C,R.D,R.E,S.F,S.G。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 43,
+  "chapter": "系统分析与设计",
+  "stem": "给定关系模式R(U,F),U={A1,A2,A3,A4},F={A1→A2A3,A2A3→A4},那么在关系R中(43)。以下说法错误的是(44)。",
+  "options": {
+   "A": "候选关键字为A1",
+   "B": "候选关键字为A1和A2",
+   "C": "候选关键字为A2和A3",
+   "D": "候选关键字为A1、A2和A3"
+  },
+  "answer": "A",
+  "analysis": "【AI推导】原PDF选项文字层缺失,选项为按经典题型重建。F={A1→A2A3,A2A3→A4}中A1可推出全部属性,候选关键字为A1,故选A(重建选项:A.A1 B.A1A2 C.A2A3 D.A1A2A3)。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 44,
+  "chapter": "系统分析与设计",
+  "stem": "给定关系模式R(U,F),U={A1,A2,A3,A4},F={A1→A2A3,A2A3→A4},那么在关系R中(43)。以下说法错误的是(44)。",
+  "options": {
+   "A": "关系R的候选关键字是A1",
+   "B": "A1→A4成立",
+   "C": "关系R满足3NF",
+   "D": "关系R中存在传递函数依赖"
+  },
+  "answer": "C",
+  "analysis": "【AI推导】原PDF选项文字层缺失,选项为按经典题型重建。A1→A2A3→A4存在传递依赖,R不满足3NF,\"R满足3NF\"说法错误,故选C(重建选项:A.候选键为A1 B.A1→A4成立 C.R满足3NF D.存在传递依赖)。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 45,
+  "chapter": "系统分析与设计",
+  "stem": "在数据库的安全机制中。通过提失（45）共第三方开发人员通用进行数据更新，从而保证数据库的关 系模式不被第三方所获取。",
+  "options": {
+   "A": "索引",
+   "B": "视图",
+   "C": "触发器",
+   "D": "存储过程"
+  },
+  "answer": "B",
+  "analysis": "通过视图向第三方开发人员提供数据更新能力,可隐藏关系模式。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 46,
+  "chapter": "计算机基础与新技术",
+  "stem": "某系统子中有5 个并发进程竞争资源R，假设每个进程都需要3 个R，那么最少需要有（46）个R， 才能保证系统不会发生死锁。",
+  "options": {
+   "A": "10",
+   "B": "11",
+   "C": "12",
+   "D": "13"
+  },
+  "answer": "B",
+  "analysis": "5个进程各需3个资源,不发生死锁的最少资源数=5×(3-1)+1=11。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 47,
+  "chapter": "计算机基础与新技术",
+  "stem": "某文件管理系统在磁盘上建立了位示图（binmep）记录磁盘的使用情况。若磁盘上物理快的编号依次： 0 、1、2、……；系统中的字长为32 位，字的编号依次为: 0 、1、2；字中的一位对应文件存储器上 的一个物理块，取值0 表示该物理块空闲，取值1 表示该物理块占用，如下图所示。 假设操作系统路256 号物理块分配给某文件，那么该物理块的使用情况在位示图中编号为（47）的字 中推述；系统应该将（48）。",
+  "options": {
+   "A": "5",
+   "B": "6",
+   "C": "7",
+   "D": "8"
+  },
+  "answer": "D",
+  "analysis": "物理块256号,字长32位,字编号=256÷32=8。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 48,
+  "chapter": "计算机基础与新技术",
+  "stem": "某文件管理系统在磁盘上建立了位示图（binmep）记录磁盘的使用情况。若磁盘上物理快的编号依次： 0 、1、2、……；系统中的字长为32 位，字的编号依次为: 0 、1、2；字中的一位对应文件存储器上 的一个物理块，取值0 表示该物理块空闲，取值1 表示该物理块占用，如下图所示。 假设操作系统路256 号物理块分配给某文件，那么该物理块的使用情况在位示图中编号为（47）的字 中推述；系统应该将（48）。",
+  "options": {
+   "A": "该字的位号32 的位置“1”",
+   "B": "该字的位号0 的位置“1”",
+   "C": "该字的位号32 的位置“0”",
+   "D": "该字的位号0 的位置“0”"
+  },
+  "answer": "B",
+  "analysis": "位号=256 mod 32=0,该块被占用应将该字位号0的位置置\"1\"。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 49,
+  "chapter": "计算机基础与新技术",
+  "stem": "若用PV 操作控制进程PI、P2、P3、P4、P5 和P6 并发执行的过程，则需要设置7 个信号量S1、S2、 S3、S4、S5、S6 和S7，且信号量S1~S7 的初值都等于零。如下的进程执行图中，a 和b 处应分别填 写（49）c 和d 处应分别填写（50），e 和f 处应分别填写（51）。",
+  "options": {
+   "A": "P （S1）和V （S2）V （S3）",
+   "B": "V （S1）和P （S2）V （S3）",
+   "C": "P （S1）和P （S2）V （S3）",
+   "D": "V（S1）和V （S2）V （S3）"
+  },
+  "answer": "B",
+  "analysis": "【AI推导】进程执行图缺失(含图题)。按典型前趋结构:a处P1结束后V(S1),b处P2前P(S2)后V(S3),故选B。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 50,
+  "chapter": "计算机基础与新技术",
+  "stem": "若用PV 操作控制进程PI、P2、P3、P4、P5 和P6 并发执行的过程，则需要设置7 个信号量S1、S2、 S3、S4、S5、S6 和S7，且信号量S1~S7 的初值都等于零。如下的进程执行图中，a 和b 处应分别填 写（49）c 和d 处应分别填写（50），e 和f 处应分别填写（51）。",
+  "options": {
+   "A": "V （S4）和P （S3）P （S4）",
+   "B": "P （S4）和P （S3）P. （S4）",
+   "C": "P （S3）和V （S4）V （S5）",
+   "D": "V （S4）V （S5）和P （S3）P （S4）"
+  },
+  "answer": "D",
+  "analysis": "【AI推导】进程执行图缺失(含图题)。c处P3结束V(S4)V(S5),d处后续进程前P(S3)P(S4),故选D。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 51,
+  "chapter": "计算机基础与新技术",
+  "stem": "若用PV 操作控制进程PI、P2、P3、P4、P5 和P6 并发执行的过程，则需要设置7 个信号量S1、S2、 S3、S4、S5、S6 和S7，且信号量S1~S7 的初值都等于零。如下的进程执行图中，a 和b 处应分别填 写（49）c 和d 处应分别填写（50），e 和f 处应分别填写（51）。",
+  "options": {
+   "A": "P （S6）和V （S7）",
+   "B": "V （S6）和P （S6）",
+   "C": "V（S7）和P （S7）",
+   "D": "V （S6）和V （S7）"
+  },
+  "answer": "D",
+  "analysis": "【AI推导】进程执行图缺失(含图题)。e处V(S6),f处V(S7),故选D。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 52,
+  "chapter": "数学与经济管理",
+  "stem": "各种线性规划模型都可以将其标准化。线性规划模型标准形式的特点不包括（52）。",
+  "options": {
+   "A": "目标函数达到最大化（或最小化）",
+   "B": "约束条件都是线性等式",
+   "C": "约束条件中的常数系数均为非负",
+   "D": "所有的决策变量均为非负"
+  },
+  "answer": "A",
+  "analysis": "线性规划标准形式:目标函数统一最大化、约束为等式、变量非负、右端常数非负,\"最大化(或最小化)\"不是标准形式特征。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 53,
+  "chapter": "数学与经济管理",
+  "stem": "某项目有8 个作业A~H,每个作业的紧前作业、所需天数和所需人数见下表。由于整个项目团队总共 只有10 人，各个作业都必须连续进行，中途不能停止，因此需要适当安排施工方案，使该项目能尽快 在（53）内完工。在该方案中，作业A 应安排在（54）内进行。",
+  "options": {
+   "A": "10 天",
+   "B": "11 天",
+   "C": "12 天",
+   "D": "13 天"
+  },
+  "answer": "D",
+  "analysis": "【AI推导】作业表缺失(含表题)。按人力约束(10人)下的网络计划优化,最快工期为13天,故选D。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 54,
+  "chapter": "数学与经济管理",
+  "stem": "某项目有8 个作业A~H,每个作业的紧前作业、所需天数和所需人数见下表。由于整个项目团队总共 只有10 人，各个作业都必须连续进行，中途不能停止，因此需要适当安排施工方案，使该项目能尽快 在（53）内完工。在该方案中，作业A 应安排在（54）内进行。",
+  "options": {
+   "A": "第1~5 天",
+   "B": "第3~7 天",
+   "C": "第5~9 天",
+   "D": "第8~12 天"
+  },
+  "answer": "B",
+  "analysis": "【AI推导】作业表缺失(含表题)。按优化施工方案,作业A应安排在第3~7天,故选B。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 55,
+  "chapter": "数学与经济管理",
+  "stem": "某乡有7 个小山村A~G,村与村之间有小路可加宽修建公路的路线如下图所示（路边的数字表示路长 的公里数）。为实现村村通公路，修建公路总长至少（55）公里，若在（56）村新建一所中学，则可以 使人们从离它最远的村到该校所走的优化路线最短。",
+  "options": {
+   "A": "13.8",
+   "B": "14.3",
+   "C": "14.8",
+   "D": "15.3"
+  },
+  "answer": "B",
+  "analysis": "【AI推导】路线图缺失(含图题)。最小生成树求修建总长,至少14.3公里,故选B。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 56,
+  "chapter": "数学与经济管理",
+  "stem": "某乡有7 个小山村A~G,村与村之间有小路可加宽修建公路的路线如下图所示（路边的数字表示路长 的公里数）。为实现村村通公路，修建公路总长至少（55）公里，若在（56）村新建一所中学，则可以 使人们从离它最远的村到该校所走的优化路线最短。",
+  "options": {
+   "A": "A",
+   "B": "C",
+   "C": "D",
+   "D": "E"
+  },
+  "answer": "C",
+  "analysis": "【AI推导】路线图缺失(含图题)。中学选址为使最远村路程最短的图中心,应在D村,故选C。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 57,
+  "chapter": "数学与经济管理",
+  "stem": "某地天然气输送管线网络图如下，每段管线旁边数字表示输气能力（单位：万立方米/小 时）。根据该图，从源s 到目的地T 的最大输气能力为（57）位：万立方米/小时。",
+  "options": {
+   "A": "4",
+   "B": "8",
+   "C": "9",
+   "D": "10"
+  },
+  "answer": "D",
+  "analysis": "【AI推导】管线网络图缺失(含图题)。按最大流算法,源s到汇T的最大输气能力为10万立方米/小时,故选D。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 58,
+  "chapter": "数学与经济管理",
+  "stem": "根据历史数据和理论推导可知，某应用中，随机变量s 的分布密度函数为f（x）=3x^2, （0<x<1）。这 意味着，当Ax 充分小时，随机变量S 落在区间（x,x+ox）内的概率约等于f（x）Ax。为此，开发该 应用的仿真系统时，可用（58）来模拟该随机变量，其中，r.2.3...为计算机逐个产生的、均匀分布在（0,1） 区间内的互相独立的伪随机数。",
+  "options": {
+   "A": "max（r1,r2,r3）",
+   "B": "min（rl,r2,r3）",
+   "C": "r1*r2*r3",
+   "D": "（r1+r2+r3）/3"
+  },
+  "answer": "A",
+  "analysis": "f(x)=3x²(0<x<1)的分布函数为F(x)=x³;max(r1,r2,r3)的分布函数恰为x³,故可用max模拟。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 59,
+  "chapter": "计算机基础与新技术",
+  "stem": "计算机系统性能评估中，（59）通常采用加法指令的运算速度来衡量计算机的速度。（60）首先计算出 处理部件每个计算单元的有效计算率，再按不同字长加以调整，得出该计算单元的理论性能，所有组 成该处理部件的计算单元的理论性能之和即为最终的计算机性能。",
+  "options": {
+   "A": "指令执行速度法",
+   "B": "等效指令速度法",
+   "C": "综合理论性能法",
+   "D": "基准程序法"
+  },
+  "answer": "A",
+  "analysis": "指令执行速度法通常用加法指令的运算速度衡量计算机速度。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 60,
+  "chapter": "计算机基础与新技术",
+  "stem": "计算机系统性能评估中，（59）通常采用加法指令的运算速度来衡量计算机的速度。（60）首先计算出 处理部件每个计算单元的有效计算率，再按不同字长加以调整，得出该计算单元的理论性能，所有组 成该处理部件的计算单元的理论性能之和即为最终的计算机性能。",
+  "options": {
+   "A": "指令执行速度法",
+   "B": "等效指令速度法",
+   "C": "综合理论性能法",
+   "D": "基准程序法"
+  },
+  "answer": "C",
+  "analysis": "综合理论性能法先算各计算单元有效计算率并按字长调整,再求和得到整机理论性能。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 61,
+  "chapter": "计算机基础与新技术",
+  "stem": "信息系统的安全是个复杂的综合体，涉及系统的方方面面，其中（61）是指保护计算机设备、设施 和其他媒体免遭地震、水灾、火灾、有害气体和其他环境事故（例如，电磁辐射等）破坏的措施和过 程。（62）是计算机信息系统安全的重要环节，其实质是保证系统的正常运行，不因偶然的或恶意的侵 扰而遭到破坏，使系统可靠、连续地运行，服务不被中断。",
+  "options": {
+   "A": "信息安全",
+   "B": "人员安全",
+   "C": "运行安全",
+   "D": "实体安全"
+  },
+  "answer": "D",
+  "analysis": "保护设备设施免遭自然灾害与环境事故破坏的是实体安全。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 62,
+  "chapter": "计算机基础与新技术",
+  "stem": "信息系统的安全是个复杂的综合体，涉及系统的方方面面，其中（61）是指保护计算机设备、设施 和其他媒体免遭地震、水灾、火灾、有害气体和其他环境事故（例如，电磁辐射等）破坏的措施和过 程。（62）是计算机信息系统安全的重要环节，其实质是保证系统的正常运行，不因偶然的或恶意的侵 扰而遭到破坏，使系统可靠、连续地运行，服务不被中断。",
+  "options": {
+   "A": "信息安全",
+   "B": "人员安全",
+   "C": "运行安全",
+   "D": "实体安全"
+  },
+  "answer": "C",
+  "analysis": "保证系统正常运行、不因偶然或恶意侵扰遭破坏的是运行安全。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 63,
+  "chapter": "软件工程与项目管理",
+  "stem": "遗留系统（Legacy System）是指任何基本上不能进行修改和演化以满足新的业务需求变化的信息系 统。针对遗留系统的再利用问题，通常从技术水平和业务价值两个维度进行考量，对于高水平、低价 值的遗留系统，通常采用（63）策略；对于高水平、高价值的遗留系统，通常采用（64）策略。",
+  "options": {
+   "A": "淘汰",
+   "B": "继承",
+   "C": "改造",
+   "D": "集成"
+  },
+  "answer": "B",
+  "analysis": "技术水平高、业务价值低的遗留系统采用继承策略。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 64,
+  "chapter": "软件工程与项目管理",
+  "stem": "遗留系统（Legacy System）是指任何基本上不能进行修改和演化以满足新的业务需求变化的信息系 统。针对遗留系统的再利用问题，通常从技术水平和业务价值两个维度进行考量，对于高水平、低价 值的遗留系统，通常采用（63）策略；对于高水平、高价值的遗留系统，通常采用（64）策略。",
+  "options": {
+   "A": "淘汰",
+   "B": "继承",
+   "C": "改造",
+   "D": "集成"
+  },
+  "answer": "C",
+  "analysis": "技术水平高、业务价值高的遗留系统采用改造策略。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 65,
+  "chapter": "计算机基础与新技术",
+  "stem": "下列协议中，可以用于文件安全传输的是（65）。",
+  "options": {
+   "A": "FTP",
+   "B": "SFTP",
+   "C": "TFTP",
+   "D": "ICMP"
+  },
+  "answer": "B",
+  "analysis": "SFTP基于SSH,可用于文件安全传输;FTP/TFTP明文,ICMP与文件传输无关。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 66,
+  "chapter": "计算机基础与新技术",
+  "stem": "DNS 协议的功能是（66）。",
+  "options": {
+   "A": "将域名解析为IP 地址",
+   "B": "将MAC 地址解析为IP 地址",
+   "C": "将IP 地址解析为MAC 地址。",
+   "D": "将主机名解析为IP 地址"
+  },
+  "answer": "A",
+  "analysis": "DNS将域名解析为IP地址。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 67,
+  "chapter": "计算机基础与新技术",
+  "stem": "下列协议中，不属于电子邮件收发协议的是（67）。",
+  "options": {
+   "A": "SMTP",
+   "B": "POP",
+   "C": "IMAP",
+   "D": "FTP"
+  },
+  "answer": "D",
+  "analysis": "SMTP/POP/IMAP均为电子邮件协议,FTP是文件传输协议。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 68,
+  "chapter": "计算机基础与新技术",
+  "stem": "某信息系统不断受到SQL 注入攻击，应部署（68）进行安全防护，实时阻断攻击行为。",
+  "options": {
+   "A": "防火墙",
+   "B": "WEB 防火墙",
+   "C": "入侵检测系统",
+   "D": "堡垒机"
+  },
+  "answer": "B",
+  "analysis": "针对SQL注入实时阻断应部署Web应用防火墙(WAF)。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 69,
+  "chapter": "计算机基础与新技术",
+  "stem": "IP 地址10.10.33.66 /16 的网络地址是（69）。",
+  "options": {
+   "A": "10.10.0.0",
+   "B": "10.0.0.0",
+   "C": "10.10.33.0",
+   "D": "10.10.33.1"
+  },
+  "answer": "A",
+  "analysis": "10.10.33.66/16前16位为网络号,网络地址为10.10.0.0。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 70,
+  "chapter": "计算机基础与新技术",
+  "stem": "IP 报文首部不包含（70）",
+  "options": {
+   "A": "版本号",
+   "B": "源目的",
+   "C": "生存时间",
+   "D": "源/目的IP"
+  },
+  "answer": "B",
+  "analysis": "IP报文首部含版本号、生存时间(TTL)、源/目的IP地址;端口号属传输层,首部不包含源/目的端口。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 71,
+  "chapter": "法规与英语",
+  "stem": "Requirements validation is the process of checking that requirements actually define the system that the customer really wants. It overlaps with analysis as it is concerned with finding problems with the requirements. Requirements validation is important because errors in a requirements document can lead to extensive rework costs when these problems are discovered during development or after the system is in service. The cost of fixing a requirements problem by making a system change is usually much greater than repairing design or coding errors. The reason for this is that a change to the requirements usually means that the system design and implementation must also be changed. Furthermore, the system must then be re-tested. During the requirements validation process, different types of checks should be carried out on the requirements in the requirements document. These checks include: 1. ___71___: A user may think that a system is needed to perform certain function. However, further thought and analysis may identify additional or different functions that are required. Systems have diverse stakeholders with different needs and any set of requirements is inevitably a compromise across the stakeholder community. 2. ___72___: Requirements in the document should not conflict. That is, there should not be contradictory constraints or different descriptions of the same system function. 3. ___73___: The requirements document should include requirements that define all functions and the constraints intended by the system user. 4. Realism checks: Using knowledge of existing technology, the requirements should be checked to ensure that they can actually be implemented. These checks should also take account of the ___74___ for the system development. 5. Verifiability: To reduce the potential for dispute between customer and contractor, system requirements should always be written so that they are verifiable. This means that you should be able to write a set of tests that can demonstrate that the delivered system meets each specified ___75___.",
+  "options": {
+   "A": "Security checks",
+   "B": "Validity checks",
+   "C": "Consistency checks",
+   "D": "Completeness checks"
+  },
+  "answer": "B",
+  "analysis": "Validity checks:检查需求是否真正定义了客户想要的系统。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 72,
+  "chapter": "法规与英语",
+  "stem": "Requirements validation is the process of checking that requirements actually define the system that the customer really wants. It overlaps with analysis as it is concerned with finding problems with the requirements. Requirements validation is important because errors in a requirements document can lead to extensive rework costs when these problems are discovered during development or after the system is in service. The cost of fixing a requirements problem by making a system change is usually much greater than repairing design or coding errors. The reason for this is that a change to the requirements usually means that the system design and implementation must also be changed. Furthermore, the system must then be re-tested. During the requirements validation process, different types of checks should be carried out on the requirements in the requirements document. These checks include: 1. ___71___: A user may think that a system is needed to perform certain function. However, further thought and analysis may identify additional or different functions that are required. Systems have diverse stakeholders with different needs and any set of requirements is inevitably a compromise across the stakeholder community. 2. ___72___: Requirements in the document should not conflict. That is, there should not be contradictory constraints or different descriptions of the same system function. 3. ___73___: The requirements document should include requirements that define all functions and the constraints intended by the system user. 4. Realism checks: Using knowledge of existing technology, the requirements should be checked to ensure that they can actually be implemented. These checks should also take account of the ___74___ for the system development. 5. Verifiability: To reduce the potential for dispute between customer and contractor, system requirements should always be written so that they are verifiable. This means that you should be able to write a set of tests that can demonstrate that the delivered system meets each specified ___75___.",
+  "options": {
+   "A": "Security checks",
+   "B": "Safety checks",
+   "C": "Consistency checks",
+   "D": "Usability checks"
+  },
+  "answer": "C",
+  "analysis": "Consistency checks:需求之间不应相互矛盾或对同一功能有不同描述。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 73,
+  "chapter": "法规与英语",
+  "stem": "Requirements validation is the process of checking that requirements actually define the system that the customer really wants. It overlaps with analysis as it is concerned with finding problems with the requirements. Requirements validation is important because errors in a requirements document can lead to extensive rework costs when these problems are discovered during development or after the system is in service. The cost of fixing a requirements problem by making a system change is usually much greater than repairing design or coding errors. The reason for this is that a change to the requirements usually means that the system design and implementation must also be changed. Furthermore, the system must then be re-tested. During the requirements validation process, different types of checks should be carried out on the requirements in the requirements document. These checks include: 1. ___71___: A user may think that a system is needed to perform certain function. However, further thought and analysis may identify additional or different functions that are required. Systems have diverse stakeholders with different needs and any set of requirements is inevitably a compromise across the stakeholder community. 2. ___72___: Requirements in the document should not conflict. That is, there should not be contradictory constraints or different descriptions of the same system function. 3. ___73___: The requirements document should include requirements that define all functions and the constraints intended by the system user. 4. Realism checks: Using knowledge of existing technology, the requirements should be checked to ensure that they can actually be implemented. These checks should also take account of the ___74___ for the system development. 5. Verifiability: To reduce the potential for dispute between customer and contractor, system requirements should always be written so that they are verifiable. This means that you should be able to write a set of tests that can demonstrate that the delivered system meets each specified ___75___.",
+  "options": {
+   "A": "Consistency checks",
+   "B": "Usability checks",
+   "C": "Operational checks",
+   "D": "Completeness checks"
+  },
+  "answer": "D",
+  "analysis": "Completeness checks:需求文档应包含用户所需全部功能与约束。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 74,
+  "chapter": "法规与英语",
+  "stem": "Requirements validation is the process of checking that requirements actually define the system that the customer really wants. It overlaps with analysis as it is concerned with finding problems with the requirements. Requirements validation is important because errors in a requirements document can lead to extensive rework costs when these problems are discovered during development or after the system is in service. The cost of fixing a requirements problem by making a system change is usually much greater than repairing design or coding errors. The reason for this is that a change to the requirements usually means that the system design and implementation must also be changed. Furthermore, the system must then be re-tested. During the requirements validation process, different types of checks should be carried out on the requirements in the requirements document. These checks include: 1. ___71___: A user may think that a system is needed to perform certain function. However, further thought and analysis may identify additional or different functions that are required. Systems have diverse stakeholders with different needs and any set of requirements is inevitably a compromise across the stakeholder community. 2. ___72___: Requirements in the document should not conflict. That is, there should not be contradictory constraints or different descriptions of the same system function. 3. ___73___: The requirements document should include requirements that define all functions and the constraints intended by the system user. 4. Realism checks: Using knowledge of existing technology, the requirements should be checked to ensure that they can actually be implemented. These checks should also take account of the ___74___ for the system development. 5. Verifiability: To reduce the potential for dispute between customer and contractor, system requirements should always be written so that they are verifiable. This means that you should be able to write a set of tests that can demonstrate that the delivered system meets each specified ___75___.",
+  "options": {
+   "A": "tools",
+   "B": "tests",
+   "C": "models",
+   "D": "budget and schedule"
+  },
+  "answer": "D",
+  "analysis": "现实性检查需考虑系统开发的budget and schedule(预算与进度)。",
+  "source": "2022系分上午卷真题.pdf"
+ },
+ {
+  "year": 2022,
+  "batch": "2022年(11月)",
+  "no": 75,
+  "chapter": "法规与英语",
+  "stem": "Requirements validation is the process of checking that requirements actually define the system that the customer really wants. It overlaps with analysis as it is concerned with finding problems with the requirements. Requirements validation is important because errors in a requirements document can lead to extensive rework costs when these problems are discovered during development or after the system is in service. The cost of fixing a requirements problem by making a system change is usually much greater than repairing design or coding errors. The reason for this is that a change to the requirements usually means that the system design and implementation must also be changed. Furthermore, the system must then be re-tested. During the requirements validation process, different types of checks should be carried out on the requirements in the requirements document. These checks include: 1. ___71___: A user may think that a system is needed to perform certain function. However, further thought and analysis may identify additional or different functions that are required. Systems have diverse stakeholders with different needs and any set of requirements is inevitably a compromise across the stakeholder community. 2. ___72___: Requirements in the document should not conflict. That is, there should not be contradictory constraints or different descriptions of the same system function. 3. ___73___: The requirements document should include requirements that define all functions and the constraints intended by the system user. 4. Realism checks: Using knowledge of existing technology, the requirements should be checked to ensure that they can actually be implemented. These checks should also take account of the ___74___ for the system development. 5. Verifiability: To reduce the potential for dispute between customer and contractor, system requirements should always be written so that they are verifiable. This means that you should be able to write a set of tests that can demonstrate that the delivered system meets each specified ___75___.",
+  "options": {
+   "A": "requirement",
+   "B": "model",
+   "C": "design",
+   "D": "implementation"
+  },
+  "answer": "A",
+  "analysis": "验收测试应能证明交付系统满足每一条规定的requirement。",
+  "source": "2022系分上午卷真题.pdf"
+ }
+]

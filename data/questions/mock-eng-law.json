@@ -1,0 +1,716 @@
+[
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 1,
+    "chapter": "软件工程与项目管理",
+    "stem": "某政务信息系统在前期已完成充分的需求调研，需求稳定且已冻结，各阶段必须经过严格评审、输出规范文档后才能进入下一阶段。最适合该项目的开发模型是（ ）。",
+    "options": {
+      "A": "瀑布模型",
+      "B": "原型模型",
+      "C": "螺旋模型",
+      "D": "喷泉模型"
+    },
+    "answer": "A",
+    "analysis": "考点：开发模型选择。需求明确稳定、强调阶段化与文档评审，是瀑布模型的典型适用场景。原型模型适用于需求难以完整定义、需用户反馈迭代的场景，B排除；螺旋模型以风险分析为驱动，适合大型高风险项目，题干未体现风险驱动，C排除；喷泉模型面向对象、强调迭代与无间隙过渡，不符合严格阶段评审的要求，D排除。原型：2023上#38。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 2,
+    "chapter": "软件工程与项目管理",
+    "stem": "螺旋模型将开发过程组织为多个螺旋周期，每一圈都包含计划、目标方案选择等环节，其中使螺旋模型区别于瀑布模型和原型模型的核心活动是（ ）。",
+    "options": {
+      "A": "需求评审",
+      "B": "风险分析",
+      "C": "代码走查",
+      "D": "用户培训"
+    },
+    "answer": "B",
+    "analysis": "考点：螺旋模型特征。螺旋模型在每个周期都进行风险分析，以风险驱动开发，这是其区别于其他模型的本质特征。需求评审和代码走查是各模型通用的质量活动，A、C排除；用户培训属于实施阶段工作，D排除。原型：2023上#38（模型辨析）。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 3,
+    "chapter": "软件工程与项目管理",
+    "stem": "关于增量模型的说法，错误的是（ ）。",
+    "options": {
+      "A": "第一个增量交付的通常是实现核心功能的产品",
+      "B": "每个增量都要经历需求、设计、编码、测试等活动",
+      "C": "增量模型要求在项目开始时就将全部需求精确定义",
+      "D": "用户可以较早地使用到软件的部分功能"
+    },
+    "answer": "C",
+    "analysis": "考点：增量模型。增量模型按增量分批交付，允许需求在开发过程中逐步细化和调整，不要求一开始精确定义全部需求，C说法错误。首个增量通常为核心产品，每个增量内部仍走完整开发流程，用户可分批获得功能，A、B、D均为正确描述。原型：2023上#38（开发模型）。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 4,
+    "chapter": "软件工程与项目管理",
+    "stem": "在 Scrum 框架中，负责维护产品待办列表（Product Backlog）、确定需求优先级并对产品价值负责的角色是（ ）。",
+    "options": {
+      "A": "Scrum Master",
+      "B": "产品负责人（Product Owner）",
+      "C": "开发团队",
+      "D": "项目经理"
+    },
+    "answer": "B",
+    "analysis": "考点：敏捷 Scrum 角色。产品负责人负责管理 Product Backlog、排定优先级、对产品价值负责。Scrum Master 负责清除障碍、保障过程，A排除；开发团队负责交付增量，C排除；Scrum 中不设传统项目经理角色，D排除。原型：2022#4（敏捷）、2026#14。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 5,
+    "chapter": "软件工程与项目管理",
+    "stem": "极限编程（XP）的诸多实践中，由两名程序员在同一台计算机上共同编写代码、一人编码一人审查的实践称为（ ）。",
+    "options": {
+      "A": "结对编程",
+      "B": "代码重构",
+      "C": "持续集成",
+      "D": "测试驱动开发"
+    },
+    "answer": "A",
+    "analysis": "考点：XP 实践。结对编程（Pair Programming）指两人共用一台机器协作编码。重构是改善代码结构而不改变外部行为，B排除；持续集成是频繁集成构建，C排除；测试驱动开发是先写测试再写实现，D排除。原型：2022#4、2026#60（敏捷实践）。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 6,
+    "chapter": "软件工程与项目管理",
+    "stem": "以下关于敏捷软件开发价值观的说法中，不符合敏捷宣言的是（ ）。",
+    "options": {
+      "A": "个体和交互胜过过程和工具",
+      "B": "可工作的软件胜过详尽的文档",
+      "C": "合同谈判胜过客户合作",
+      "D": "响应变化胜过遵循计划"
+    },
+    "answer": "C",
+    "analysis": "考点：敏捷宣言四价值观。敏捷宣言主张客户合作胜过合同谈判，C表述颠倒了该价值观，不符合敏捷思想。A、B、D均为敏捷宣言原文表述。原型：2026#14。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 7,
+    "chapter": "软件工程与项目管理",
+    "stem": "在 CMM 软件能力成熟度模型的五个等级中，标志“软件过程已文档化、标准化，并集成为组织的标准软件过程”的等级是（ ）。",
+    "options": {
+      "A": "初始级",
+      "B": "可重复级",
+      "C": "已定义级",
+      "D": "优化级"
+    },
+    "answer": "C",
+    "analysis": "考点：CMM 五个成熟度等级。已定义级的特征是将管理与工程过程文档化、标准化，形成组织级标准过程。初始级过程无序，A排除；可重复级仅建立基本项目管理控制，B排除；优化级强调量化反馈与持续改进，D排除。原型：2023上#39。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 8,
+    "chapter": "软件工程与项目管理",
+    "stem": "以下关于软件过程改进的说法中，错误的是（ ）。",
+    "options": {
+      "A": "CMM 的可重复级建立了基本的项目管理过程，可跟踪成本与进度",
+      "B": "优化级的核心是基于量化反馈进行持续的过程改进",
+      "C": "已管理级开始对软件过程和产品质量实施定量管理",
+      "D": "处于初始级的组织也能稳定地复制以往项目的成功"
+    },
+    "answer": "D",
+    "analysis": "考点：软件过程改进。初始级过程随意、依赖个人英雄主义，无法稳定复制成功，D说法错误。可重复级跟踪成本进度，优化级持续量化改进，已管理级定量管理过程与产品质量，A、B、C均为正确描述。原型：2023上#39。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 9,
+    "chapter": "软件工程与项目管理",
+    "stem": "某项目在检查点时的挣值数据为：计划价值 PV=100 万元，挣值 EV=80 万元，实际成本 AC=90 万元。该项目当前的状态是（ ）。",
+    "options": {
+      "A": "进度超前、成本节约",
+      "B": "进度落后、成本超支",
+      "C": "进度超前、成本超支",
+      "D": "进度落后、成本节约"
+    },
+    "answer": "B",
+    "analysis": "考点：挣值分析。SPI=EV/PV=80/100=0.8<1，进度落后；CPI=EV/AC=80/90≈0.89<1，成本超支。SPI<1 表示进度落后，CPI<1 表示成本超支，故选B。其余组合与计算结果不符。算式已经 python 复算。原型：2026#50（进度计划考点扩展）。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 10,
+    "chapter": "软件工程与项目管理",
+    "stem": "某项目计划工期 10 个月，第 6 个月末检查得 PV=60 万元，EV=50 万元，AC=70 万元。其成本偏差 CV 为 -20 万元，该数值表示（ ）。",
+    "options": {
+      "A": "成本节约 20 万元",
+      "B": "成本超支 20 万元",
+      "C": "进度落后折合 20 万元",
+      "D": "进度超前折合 20 万元"
+    },
+    "answer": "B",
+    "analysis": "考点：挣值偏差含义。CV=EV-AC=50-70=-20 万元，CV<0 表示成本超支 20 万元。CV 只反映成本，不反映进度，C、D排除；CV 为负是超支而非节约，A排除。算式已经 python 复算（SV=EV-PV=-10）。原型：2026#50 考点扩展。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 11,
+    "chapter": "软件工程与项目管理",
+    "stem": "某项目网络图中：活动 A 工期 3 天、活动 B 工期 4 天，二者并行开始；A、B 均完成后开始活动 C（5 天）；C 完成后开始活动 D（3 天）；B 完成后还可并行进行活动 E（6 天）；D、E 均完成后项目结束。该项目的关键路径工期为（ ）。",
+    "options": {
+      "A": "10 天",
+      "B": "11 天",
+      "C": "12 天",
+      "D": "13 天"
+    },
+    "answer": "C",
+    "analysis": "考点：关键路径计算。三条路径：A-C-D=3+5+3=11 天，B-C-D=4+5+3=12 天，B-E=4+6=10 天，最长路径 B-C-D=12 天为关键路径。A、B、D 均非最长路径工期。算式已经 python 复算。原型：2026#50 考点扩展。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 12,
+    "chapter": "软件工程与项目管理",
+    "stem": "以下活动中，不属于软件配置管理活动的是（ ）。",
+    "options": {
+      "A": "配置项标识",
+      "B": "版本控制",
+      "C": "变更控制",
+      "D": "需求获取"
+    },
+    "answer": "D",
+    "analysis": "考点：配置管理活动。配置管理包括配置标识、版本控制、变更控制、配置审计等活动。需求获取属于需求工程范畴，不是配置管理活动，故选D。A、B、C 均为配置管理的基本活动。原型：配置管理通用考点。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 13,
+    "chapter": "软件工程与项目管理",
+    "stem": "配置项基线建立之后，若因需求变化需要修改基线中的文档或代码，正确的做法是（ ）。",
+    "options": {
+      "A": "按变更控制流程提出申请，经审批后修改",
+      "B": "由开发人员直接修改后存档",
+      "C": "由测试人员代为修改",
+      "D": "待项目结束后统一修改"
+    },
+    "answer": "A",
+    "analysis": "考点：基线变更管理。基线是受控的配置项集合，修改必须走变更控制流程（申请、评估、审批、实施）。直接修改破坏配置受控性，B排除；修改应由授权人员而非测试人员执行，C排除；拖延修改会使基线与实际脱节，D排除。原型：配置管理通用考点。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 14,
+    "chapter": "软件工程与项目管理",
+    "stem": "关于软件测试的说法，正确的是（ ）。",
+    "options": {
+      "A": "测试的目的是证明程序中不存在错误",
+      "B": "只要测试数据足够多，任何系统都可以实现穷举测试",
+      "C": "测试应尽早开始，并在整个开发过程中持续进行",
+      "D": "测试必须由开发人员完全独立完成，以保证客观性"
+    },
+    "answer": "C",
+    "analysis": "考点：软件测试原则。测试应尽早并持续进行，尽早发现缺陷可降低成本。测试只能证明存在错误而不能证明无错误，A排除；穷举测试对绝大多数系统不可行，B排除；测试需要独立性与开发自测结合，D排除。原型：2023上#5。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 15,
+    "chapter": "软件工程与项目管理",
+    "stem": "由开发方组织用户在开发场所、受控环境下对软件进行的测试称为（ ）。",
+    "options": {
+      "A": "冒烟测试",
+      "B": "Alpha 测试",
+      "C": "Beta 测试",
+      "D": "验收测试"
+    },
+    "answer": "B",
+    "analysis": "考点：测试类型辨析。Alpha 测试是在开发环境下由用户参与的受控测试。Beta 测试是真实用户在实际使用环境中进行，C排除；冒烟测试是对每日构建的基本功能快速验证，A排除；验收测试以合同需求为依据判定是否接受，D排除。原型：2026#10。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 16,
+    "chapter": "软件工程与项目管理",
+    "stem": "以下工作中，属于软件质量保证（SQA）职责的是（ ）。",
+    "options": {
+      "A": "制定质量标准并监督开发过程按标准执行",
+      "B": "执行测试用例以发现软件缺陷",
+      "C": "修复测试发现的缺陷",
+      "D": "编写需求规格说明书"
+    },
+    "answer": "A",
+    "analysis": "考点：SQA 职责。SQA 负责制定质量计划与标准、评审和审计过程与产品，保证过程符合规范。执行测试用例是测试人员的工作，B排除；修复缺陷是开发人员职责，C排除；编写需求规格属于需求工程，D排除。原型：2022#2（质量保证类考点）。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 17,
+    "chapter": "软件工程与项目管理",
+    "stem": "项目风险管理中，通过购买保险或将高风险工作外包给第三方，从而把风险影响转嫁出去的应对策略属于（ ）。",
+    "options": {
+      "A": "风险规避",
+      "B": "风险减轻",
+      "C": "风险转移",
+      "D": "风险接受"
+    },
+    "answer": "C",
+    "analysis": "考点：风险应对策略。保险、外包、担保等手段将风险后果转给第三方，属于风险转移。规避是改变计划消除风险源，A排除；减轻是降低概率或影响，B排除；接受是不主动处理、预留储备，D排除。原型：2026#53（风险管理考点扩展）。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 18,
+    "chapter": "软件工程与项目管理",
+    "stem": "在矩阵型组织结构中，项目经理与职能经理权力基本相当、双方需要协商调配资源的类型是（ ）。",
+    "options": {
+      "A": "弱矩阵型",
+      "B": "平衡矩阵型",
+      "C": "强矩阵型",
+      "D": "项目型"
+    },
+    "answer": "B",
+    "analysis": "考点：组织结构类型。平衡矩阵型中项目经理与职能经理权力相当，资源由双方协商。弱矩阵中项目经理更像协调员、权力弱，A排除；强矩阵中项目经理权力更大，C排除；项目型中项目经理掌握几乎全部权力，D排除。原型：2026#65。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 19,
+    "chapter": "软件工程与项目管理",
+    "stem": "某项目组识别出“关键开发人员可能离职”这一风险，但无法估计其发生的概率和影响程度。按照风险分类，该风险属于（ ）。",
+    "options": {
+      "A": "已知-已知风险",
+      "B": "已知-未知风险",
+      "C": "未知-未知风险",
+      "D": "可忽略风险"
+    },
+    "answer": "B",
+    "analysis": "考点：风险分类。能识别但无法预估概率与影响的风险属于已知-未知风险。已知-已知风险可识别且可分析预防，A排除；未知-未知风险事先无法识别，C排除；关键人员离职不可忽略，D排除。原型：2026#53。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 20,
+    "chapter": "软件工程与项目管理",
+    "stem": "关于组织结构类型对项目的影响，下列说法错误的是（ ）。",
+    "options": {
+      "A": "职能型组织中项目经理的权力很小",
+      "B": "强矩阵型组织在权力结构上更接近项目型",
+      "C": "弱矩阵型中项目经理更像是协调员或联络员",
+      "D": "项目型组织中成员归属感强、职业发展路径清晰"
+    },
+    "answer": "D",
+    "analysis": "考点：组织类型特点。项目型组织中成员为项目临时聚集，项目结束后面临解散，归属感和职业连续性差，D说法错误。A、B、C 均为各类组织结构的正确描述。原型：2026#65。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 21,
+    "chapter": "软件工程与项目管理",
+    "stem": "某软件因所运行的操作系统版本升级而无法正常工作，为使软件适应新环境而进行的修改属于（ ）。",
+    "options": {
+      "A": "改正性维护",
+      "B": "适应性维护",
+      "C": "完善性维护",
+      "D": "预防性维护"
+    },
+    "answer": "B",
+    "analysis": "考点：维护类型。因运行环境（操作系统、硬件、法规等）变化而修改软件属于适应性维护。改正性维护是修复已发现的错误，A排除；完善性维护是增加或改进功能，C排除；预防性维护是为提高可维护性、防患于未然，D排除。原型：2026#30。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 22,
+    "chapter": "软件工程与项目管理",
+    "stem": "为改善软件的可维护性和可靠性、为将来可能的修改打好基础而主动对软件进行的维护属于（ ）。",
+    "options": {
+      "A": "改正性维护",
+      "B": "适应性维护",
+      "C": "完善性维护",
+      "D": "预防性维护"
+    },
+    "answer": "D",
+    "analysis": "考点：维护类型。预防性维护是为提高软件将来的可维护性、可靠性而主动进行的维护。修复错误是改正性，A排除；适应环境变化是适应性，B排除；增加或改进功能是完善性，C排除。原型：2026#30。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 23,
+    "chapter": "软件工程与项目管理",
+    "stem": "在软件逆向工程中，借助工具从已有的二进制程序中抽象出模块结构、数据流和处理逻辑等设计信息，该活动称为（ ）。",
+    "options": {
+      "A": "设计恢复",
+      "B": "正向工程",
+      "C": "再工程",
+      "D": "重构"
+    },
+    "answer": "A",
+    "analysis": "考点：逆向工程概念。设计恢复指借助工具从已有程序中抽象出数据设计、总体结构设计和过程设计等信息。正向工程是从设计到实现的常规开发，B排除；再工程是用恢复的信息改造系统以改善质量，C排除；重构是改进代码结构而不改变外部行为，D排除。原型：2022#38。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 24,
+    "chapter": "软件工程与项目管理",
+    "stem": "在 RUP 统一过程的四个阶段中，主要目标是建立系统架构基线、解决高风险技术问题并制定构建阶段计划的是（ ）。",
+    "options": {
+      "A": "初始阶段",
+      "B": "细化阶段",
+      "C": "构建阶段",
+      "D": "移交阶段"
+    },
+    "answer": "B",
+    "analysis": "考点：RUP 阶段职责。细化阶段确立架构基线、化解主要技术风险并规划构建阶段。初始阶段聚焦范围与业务用例，A排除；构建阶段完成全部功能开发与测试，C排除；移交阶段负责部署交付，D排除。原型：2026#58。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 25,
+    "chapter": "软件工程与项目管理",
+    "stem": "关于工作分解结构（WBS）的说法，错误的是（ ）。",
+    "options": {
+      "A": "WBS 是制定进度计划、资源计划和成本预算的基础",
+      "B": "WBS 最底层的工作包应可分配责任人、可估算工作量",
+      "C": "WBS 分解得越细越好，无需考虑由此增加的管理成本",
+      "D": "同一项目可以按交付物或生命周期等不同方式分解"
+    },
+    "answer": "C",
+    "analysis": "考点：WBS。WBS 分解要适度，过细会大幅增加管理与协调成本，应遵循适度分解原则，C说法错误。WBS 是项目计划的核心基础，工作包需可分配可估算，分解方式可多样，A、B、D 均正确。原型：2026#50。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 26,
+    "chapter": "法规与英语",
+    "stem": "根据我国著作权法，下列各项权利中，保护期不受时间限制的不包括（ ）。",
+    "options": {
+      "A": "署名权",
+      "B": "修改权",
+      "C": "保护作品完整权",
+      "D": "复制权"
+    },
+    "answer": "D",
+    "analysis": "考点：著作权保护期限。署名权、修改权、保护作品完整权的保护期不受限制；复制权属于财产权利，有法定的保护期限，故选D。A、B、C 均为不受期限限制的人身权利。原型：2023上#11、2026#41。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 27,
+    "chapter": "法规与英语",
+    "stem": "程序员甲在乙公司任职期间，为完成公司下达的财务软件项目任务而编写的程序代码，在无另行约定的情况下，其软件著作权归属于（ ）。",
+    "options": {
+      "A": "甲个人",
+      "B": "乙公司",
+      "C": "甲与乙公司共有",
+      "D": "先归甲所有，两年后归乙公司"
+    },
+    "answer": "B",
+    "analysis": "考点：职务软件作品归属。为完成本单位工作任务而开发的软件属于职务作品，无特别约定时著作权归单位。A、C、D 均不符合职务作品归属的一般规定。原型：2022#12。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 28,
+    "chapter": "法规与英语",
+    "stem": "某人以学习和研究某商业软件内含的设计思想和原理为目的，将软件安装、复制一份仅供自己研究使用，未对外传播。该行为（ ）。",
+    "options": {
+      "A": "构成对软件著作权的侵犯",
+      "B": "必须事先取得著作权人的许可",
+      "C": "属于合理使用，不构成侵权",
+      "D": "应当向著作权人支付报酬"
+    },
+    "answer": "C",
+    "analysis": "考点：软件合理使用。《计算机软件保护条例》规定，为学习和研究软件内含的设计思想和原理，通过安装、显示、传输或存储等方式使用软件的，可以不经许可、不付报酬。故选C；A、B、D 均与合理使用条款不符。原型：2022#11、2023上#12。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 29,
+    "chapter": "法规与英语",
+    "stem": "下列标志中，经审查可以获准作为商标注册的是（ ）。",
+    "options": {
+      "A": "“北京市”牌服装",
+      "B": "与我国国旗图案近似的标志",
+      "C": "臆造词“澜珀”牌化妆品",
+      "D": "仅直接表示商品质量的“特优”牌大米"
+    },
+    "answer": "C",
+    "analysis": "考点：商标注册禁用条款。臆造词具有显著性，可注册为商标。县级以上行政区划地名不得作为商标，A排除；与国家标志相同或近似的标志不得注册，B排除；仅直接表示商品质量等缺乏显著特征的标志不得注册，D排除。原型：2022#10。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 30,
+    "chapter": "法规与英语",
+    "stem": "关于商标权地域性的说法，正确的是（ ）。",
+    "options": {
+      "A": "商标一经注册，即在全球范围内受到保护",
+      "B": "驰名商标无需注册即可自动获得各国保护",
+      "C": "注册商标专用权仅在其核准注册的国家或地区范围内受法律保护",
+      "D": "未注册商标在任何情形下都无需承担侵权责任"
+    },
+    "answer": "C",
+    "analysis": "考点：商标权地域性。商标权具有严格地域性，只在注册国（地区）受保护。A、B 均否认地域性，错误；未注册商标使用人若与他人在先注册商标冲突仍可能构成侵权，D错误。原型：2022#13。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 31,
+    "chapter": "法规与英语",
+    "stem": "根据我国专利法，发明专利权的保护期限为（ ）。",
+    "options": {
+      "A": "10 年",
+      "B": "20 年",
+      "C": "30 年",
+      "D": "50 年"
+    },
+    "answer": "B",
+    "analysis": "考点：专利保护期限。发明专利权保护期为 20 年，自申请日起计算。实用新型为 10 年，A排除；C、D 为干扰项，无法律依据。原型：专利法通用考点。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 32,
+    "chapter": "法规与英语",
+    "stem": "关于我国专利制度的说法，错误的是（ ）。",
+    "options": {
+      "A": "发明专利权的保护期为 20 年，自申请日起计算",
+      "B": "授予专利权的发明应当具备新颖性、创造性和实用性",
+      "C": "专利权自授权公告之日起生效",
+      "D": "两个申请人就同样的发明创造分别提出申请的，专利权授予最先完成发明的人"
+    },
+    "answer": "D",
+    "analysis": "考点：专利授权原则。我国实行先申请原则，同样的发明创造由两个以上申请人分别申请的，专利权授予最先申请的人，而非最先完成发明的人，D错误。A、B、C 均为专利法的正确表述。原型：专利法通用考点。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 33,
+    "chapter": "法规与英语",
+    "stem": "根据反不正当竞争法，下列经营行为中属于不正当竞争行为的是（ ）。",
+    "options": {
+      "A": "甲公司降价销售鲜活商品",
+      "B": "乙公司擅自使用与他人注册商标相同的标识销售同类商品",
+      "C": "丙公司在换季时降价处理库存服装",
+      "D": "丁公司为清偿到期债务而低于成本价销售商品"
+    },
+    "answer": "B",
+    "analysis": "考点：不正当竞争行为认定。擅自使用与他人注册商标相同或近似的标识属于混淆行为，构成不正当竞争。销售鲜活商品、季节性降价、因清偿债务低于成本价销售均属于法律豁免的正当低价销售情形，A、C、D排除。原型：反不正当竞争法通用考点。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 34,
+    "chapter": "法规与英语",
+    "stem": "甲公司技术员离职后，将原单位采取了保密措施的产品配方披露给新雇主并投入使用。该行为侵犯的是原单位的（ ）。",
+    "options": {
+      "A": "商标权",
+      "B": "专利权",
+      "C": "商业秘密",
+      "D": "著作权"
+    },
+    "answer": "C",
+    "analysis": "考点：商业秘密保护。不为公众所知悉、具有商业价值并经权利人采取保密措施的技术信息属于商业秘密，离职员工披露并使用构成侵犯商业秘密。配方未申请专利则不受专利权保护，B排除；与商标标识、作品表达无关，A、D排除。原型：反不正当竞争法通用考点。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 35,
+    "chapter": "法规与英语",
+    "stem": "根据我国网络安全法，关键信息基础设施的运营者在中华人民共和国境内运营中收集和产生的个人信息和重要数据应当（ ）。",
+    "options": {
+      "A": "存储在境外服务器以便全球访问",
+      "B": "在境内存储",
+      "C": "向全社会公开共享",
+      "D": "不经评估自由跨境传输"
+    },
+    "answer": "B",
+    "analysis": "考点：网络安全法数据本地化要求。网络安全法规定，关键信息基础设施运营者在境内收集产生的个人信息和重要数据应当在境内存储，确需出境的须按规定进行安全评估。A、C、D 均违反该规定。原型：2026#9（法规考点扩展）。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 36,
+    "chapter": "法规与英语",
+    "stem": "下列标准代号中，表示我国推荐性国家标准的是（ ）。",
+    "options": {
+      "A": "GB/T",
+      "B": "GB",
+      "C": "GJB",
+      "D": "YD"
+    },
+    "answer": "A",
+    "analysis": "考点：标准化代号。GB/T 为推荐性国家标准，GB 为强制性国家标准，B排除；GJB 为国家军用标准，C排除；YD 为通信行业标准，D排除。原型：2026#9。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 37,
+    "chapter": "法规与英语",
+    "stem": "关于知识产权特点的说法，正确的是（ ）。",
+    "options": {
+      "A": "知识产权的保护没有时间限制，永久有效",
+      "B": "知识产权在所有国家和地区自动获得同等保护",
+      "C": "知识产权具有无形性、专有性、地域性和时间性",
+      "D": "知识产权与有形财产权在法律属性上完全相同"
+    },
+    "answer": "C",
+    "analysis": "考点：知识产权特点。知识产权具有无形性、专有性、地域性和时间性。知识产权有法定保护期限，A错误；具有地域性、须依各国法律分别取得，B错误；其无形性决定了与有形财产权存在本质差异，D错误。原型：2023上#10。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 38,
+    "chapter": "法规与英语",
+    "stem": "Software maintenance is the process of modifying a software system after it has been delivered. (38) maintenance is performed to correct faults that are discovered in the software during operation. (39) maintenance adapts the software to changes in its environment, such as a new operating system or hardware platform. (40) maintenance adds or improves features requested by users, while (41) maintenance improves the software so that future problems can be prevented. Studies show that maintenance usually consumes the largest share of the total software (42). blank (38):",
+    "options": {
+      "A": "corrective",
+      "B": "adaptive",
+      "C": "perfective",
+      "D": "preventive"
+    },
+    "answer": "A",
+    "analysis": "考点：维护类型英文术语。改正性维护（corrective maintenance）用于纠正运行中发现的故障，故选A。adaptive 为适应环境变化，B排除；perfective 为改进功能，C排除；preventive 为预防未来问题，D排除。原型：2022#71-75 英文阅读填空。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 39,
+    "chapter": "法规与英语",
+    "stem": "Software maintenance is the process of modifying a software system after it has been delivered. (38) maintenance is performed to correct faults that are discovered in the software during operation. (39) maintenance adapts the software to changes in its environment, such as a new operating system or hardware platform. (40) maintenance adds or improves features requested by users, while (41) maintenance improves the software so that future problems can be prevented. Studies show that maintenance usually consumes the largest share of the total software (42). blank (39):",
+    "options": {
+      "A": "corrective",
+      "B": "adaptive",
+      "C": "perfective",
+      "D": "preventive"
+    },
+    "answer": "B",
+    "analysis": "考点：维护类型英文术语。适应性维护（adaptive maintenance）使软件适应操作系统、硬件等环境变化，故选B。corrective 是纠错，A排除；perfective 是完善功能，C排除；preventive 是预防问题，D排除。原型：2022#71-75 英文阅读填空。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 40,
+    "chapter": "法规与英语",
+    "stem": "Software maintenance is the process of modifying a software system after it has been delivered. (38) maintenance is performed to correct faults that are discovered in the software during operation. (39) maintenance adapts the software to changes in its environment, such as a new operating system or hardware platform. (40) maintenance adds or improves features requested by users, while (41) maintenance improves the software so that future problems can be prevented. Studies show that maintenance usually consumes the largest share of the total software (42). blank (40):",
+    "options": {
+      "A": "corrective",
+      "B": "adaptive",
+      "C": "perfective",
+      "D": "preventive"
+    },
+    "answer": "C",
+    "analysis": "考点：维护类型英文术语。完善性维护（perfective maintenance）按用户要求增加或改进功能，故选C。corrective 纠错、adaptive 适应环境、preventive 预防问题，分别对应题干其他空，A、B、D排除。原型：2022#71-75 英文阅读填空。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 41,
+    "chapter": "法规与英语",
+    "stem": "Software maintenance is the process of modifying a software system after it has been delivered. (38) maintenance is performed to correct faults that are discovered in the software during operation. (39) maintenance adapts the software to changes in its environment, such as a new operating system or hardware platform. (40) maintenance adds or improves features requested by users, while (41) maintenance improves the software so that future problems can be prevented. Studies show that maintenance usually consumes the largest share of the total software (42). blank (41):",
+    "options": {
+      "A": "corrective",
+      "B": "adaptive",
+      "C": "perfective",
+      "D": "preventive"
+    },
+    "answer": "D",
+    "analysis": "考点：维护类型英文术语。预防性维护（preventive maintenance）通过改进软件为将来可能出现的问题防患未然，故选D。其余三个术语分别对应纠错、适应环境、完善功能，与“prevent future problems”语义不符，A、B、C排除。原型：2022#71-75 英文阅读填空。",
+    "source": "mock",
+    "derived": true
+  },
+  {
+    "year": "mock",
+    "batch": "仿写补题",
+    "no": 42,
+    "chapter": "法规与英语",
+    "stem": "Software maintenance is the process of modifying a software system after it has been delivered. (38) maintenance is performed to correct faults that are discovered in the software during operation. (39) maintenance adapts the software to changes in its environment, such as a new operating system or hardware platform. (40) maintenance adds or improves features requested by users, while (41) maintenance improves the software so that future problems can be prevented. Studies show that maintenance usually consumes the largest share of the total software (42). blank (42):",
+    "options": {
+      "A": "lifecycle",
+      "B": "requirement",
+      "C": "design",
+      "D": "documentation"
+    },
+    "answer": "A",
+    "analysis": "考点：软件工程英文词汇。维护成本通常占软件全生命周期（lifecycle）成本的最大比例，故选A。requirement（需求）、design（设计）、documentation（文档）均无法与“total share of cost”的语义搭配，B、C、D排除。原型：2022#71-75 英文阅读填空。",
+    "source": "mock",
+    "derived": true
+  }
+]

@@ -31,12 +31,47 @@ interface PlanWeek {
   tasks: PlanTask[]
 }
 
+interface ReviewModule {
+  chapter: string
+  total: number
+  correct: number
+  rate: number | null
+}
+
+interface ReviewStats {
+  dueToday: number
+  inQueue: number
+  graduated: number
+  byModule: ReviewModule[]
+  overallRate: number | null
+}
+
 const EXAM_DATE = new Date('2026-10-24T00:00:00+08:00')
 const DAY_MS = 24 * 60 * 60 * 1000
 
 const { data: stats, refresh: refreshStats } = await useFetch<{ data: Stats }>('/api/stats')
 const { data: plan } = await useFetch<{ data: PlanWeek[] }>('/api/plan')
 const { data: caseStats } = await useFetch<{ data: CaseStat[] }>('/api/cases/stats')
+const { data: reviewStats } = await useFetch<{ data: ReviewStats }>('/api/review/stats')
+
+const reviewOverall = computed(() => {
+  const rate = reviewStats.value?.data.overallRate
+  return rate == null ? '未开始' : `${Math.round(rate * 100)}%`
+})
+
+const reviewDueToday = computed(() => reviewStats.value?.data.dueToday ?? 0)
+
+function reviewBarColor(rate: number | null): string {
+  if (rate == null) return 'bg-muted'
+  if (rate < 0.45) return 'bg-error'
+  if (rate <= 0.75) return 'bg-warning'
+  return 'bg-success'
+}
+
+function reviewSummary(mod: ReviewModule): string {
+  if (mod.rate == null) return '未练'
+  return `${mod.correct}/${mod.total} · ${Math.round(mod.rate * 100)}%`
+}
 
 function caseBarColor(avg: number | null): string {
   if (avg == null) return 'bg-muted'
@@ -103,6 +138,7 @@ const quickLinks = [
   { label: '维护项目背景', to: '/essay/bg', icon: 'i-lucide-folder-cog' },
   { label: '看完整计划', to: '/plan', icon: 'i-lucide-calendar' },
   { label: '练案例', to: '/case', icon: 'i-lucide-book-open-check' },
+  { label: '刷题', to: '/quiz', icon: 'i-lucide-list-checks' },
 ]
 </script>
 
@@ -206,6 +242,55 @@ const quickLinks = [
           </div>
           <span class="w-28 shrink-0 text-right text-sm text-muted" data-case-summary>
             {{ caseSummary(stat) }}
+          </span>
+        </li>
+      </ul>
+    </UCard>
+
+    <UCard data-review-stats>
+      <template #header>
+        <div class="flex items-center justify-between">
+          <h2 class="font-semibold text-highlighted">
+            综合知识
+          </h2>
+          <div class="flex items-center gap-3">
+            <NuxtLink to="/quiz/review">
+              <UBadge
+                :color="reviewDueToday > 0 ? 'warning' : 'neutral'"
+                variant="subtle"
+                data-review-due
+              >
+                今日到期 {{ reviewDueToday }} 题
+              </UBadge>
+            </NuxtLink>
+            <UButton to="/quiz" size="sm" variant="link" color="primary" trailing-icon="i-lucide-arrow-right">
+              去刷题
+            </UButton>
+          </div>
+        </div>
+      </template>
+      <div class="mb-4 flex items-baseline gap-2">
+        <span class="text-sm text-muted">总正确率</span>
+        <span class="text-2xl font-bold text-highlighted" data-review-overall>{{ reviewOverall }}</span>
+      </div>
+      <ul class="space-y-3">
+        <li
+          v-for="mod in reviewStats?.data.byModule ?? []"
+          :key="mod.chapter"
+          class="flex items-center gap-3"
+          data-review-row
+        >
+          <span class="w-28 shrink-0 text-sm text-default" data-review-chapter>{{ mod.chapter }}</span>
+          <div class="h-2 min-w-0 flex-1 rounded-full bg-elevated">
+            <div
+              class="h-full rounded-full"
+              :class="reviewBarColor(mod.rate)"
+              :style="{ width: `${(mod.rate ?? 0) * 100}%` }"
+              data-review-bar
+            />
+          </div>
+          <span class="w-28 shrink-0 text-right text-sm text-muted" data-review-summary>
+            {{ reviewSummary(mod) }}
           </span>
         </li>
       </ul>

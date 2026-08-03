@@ -69,6 +69,7 @@ export const question = sqliteTable('question', {
   options: text('options'), // JSON
   answer: text('answer'),
   analysis: text('analysis'),
+  derived: integer('derived', { mode: 'boolean' }).default(false), // 仿写补题标记（真题=false）
 })
 
 export const questionAttempt = sqliteTable('question_attempt', {

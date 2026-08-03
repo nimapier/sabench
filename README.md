@@ -1,6 +1,8 @@
 # sabench
 
-软考（系统分析师）备考训练台。Nuxt 4 + Nuxt UI + Drizzle ORM（libsql）+ nuxt-auth-utils，单人使用，含周计划、项目背景库、限时论文写作器、案例训练场、学习统计。
+软考（系统分析师）备考训练台。Nuxt 4 + Nuxt UI + Drizzle ORM（libsql）+ nuxt-auth-utils，单人使用，含周计划、项目背景库、限时论文写作器、案例训练场、选择题刷题与 SM-2 复习、学习统计。
+
+题库规模：**382 道选择题（247 道历年真题 + 135 道仿写题）+ 25 道案例分析题 + 8 张解题框架卡**。
 
 ## 技术栈
 
@@ -27,7 +29,7 @@ pnpm dev            # 启动开发服务器，默认 http://localhost:3000
 
 | 页面 | 说明 |
 |---|---|
-| `/case` | 题目列表（14 道：9 道历年真题 + 5 道 2026 模拟题），按五类题型（需求分析/系统设计/架构评估/数据库设计/项目管理计算）筛选 |
+| `/case` | 题目列表（25 道：20 道历年真题 + 5 道 2026 模拟题），按五类题型（需求分析/系统设计/架构评估/数据库设计/项目管理计算）筛选 |
 | `/case/cards` | 解题框架卡（8 张），按题型分组的方法论速查（如 ATAM 评估四步、E-R 转关系模式、挣值计算） |
 | `/case/[id]` | 做题页：读材料作答 → 提交后才下发采分点（作答前 API 与页面源码均不含采分点）→ 逐点自评勾选 → 得分率与答案对照、历史记录 |
 
@@ -39,7 +41,7 @@ pnpm dev            # 启动开发服务器，默认 http://localhost:3000
 # 8 张框架卡（data/framework-cards.json）
 node_modules/.bin/tsx scripts/seed-framework-cards.ts
 
-# 14 道题（data/cases/*.json：mock-2026 5 道 + ruankao 2021-2023 9 道）
+# 25 道题（data/cases/*.json：2026 模拟 5 道 + 历年真题 20 道）
 # 不带参数全量导入；带子串参数只导入匹配文件，如 scripts/import-cases.ts mock
 node_modules/.bin/tsx scripts/import-cases.ts
 ```
@@ -47,6 +49,31 @@ node_modules/.bin/tsx scripts/import-cases.ts
 对 Turso 执行：先 `set -a; . ./.env; set +a` 再跑同一命令即可（表结构有变更时先 `pnpm db:push`）。
 
 真题题面与参考答案采集自公开网页（希赛 educity 题面、CSDN 网友解析答案，串行间隔 ≥2s、无登录/付费墙），逐题来源见 `~/.sisyphus/evidence/batch2-task-B8-crawl.txt`；2024 下及 2025 年公开渠道无完整题面，按"宁缺毋滥"未收录。
+
+## 模块：选择题刷题与复习（/quiz）
+
+上午选择题的专项训练 + 基于简化 SM-2 算法的错题复习，两个页面：
+
+| 页面 | 说明 |
+|---|---|
+| `/quiz` | 刷题页：按模块/年份筛选、随机抽题、整卷模考（如 2022 卷 75 题）；作答判分后才下发答案与解析（判分前 API 响应不含 answer/analysis），答错自动入复习队列 |
+| `/quiz/review` | 错题复习页：SM-2 间隔推进（1/3/7/15 天，连对 3 次毕业），按到期日出题 |
+
+### 题库数据与导入
+
+选择题源数据在 `data/questions/` 目录，按文件分卷：
+
+- `ruankao-*.json`：历年真题（2021/2022/2023.5/2024.11/2025.5/2026.5，共 247 道）
+- `mock-*.json`：仿写补题（共 135 道），题条目带 `derived: true` 标记，导入后写入 `question` 表的 `derived` 列（SQLite boolean，真题=0、仿写=1），用于统计与筛选时区分来源；年份字段为 `mock`，前端套卷 Tab 已过滤不展示
+- `*.json.superseded`：被新版卷面取代的旧采集文件，仅存档备查，导入脚本只认 `.json` 后缀、不会读它们
+
+```bash
+# 全量导入；可选子串参数按文件名过滤，如 scripts/import-questions.ts 2022 / mock
+# 幂等：按 (year, stem, options.A, answer) 四元组查重（2023 卷存在共用题干的题组，键必须含答案）
+node_modules/.bin/tsx scripts/import-questions.ts
+```
+
+仿写题质量框架：真题考点变式出题 + 机器复算校验答案 + 盲解交叉验证解析。
 
 ## 环境变量
 
@@ -119,4 +146,5 @@ node_modules/.bin/tsx scripts/import-cases.ts
 | `pnpm build` | 生产构建（输出 `.output/`） |
 | `pnpm db:push` | 按 `server/database/schema.ts` 推送表结构（读 `NUXT_TURSO_DATABASE_URL`，无则写本地文件） |
 | `tsx scripts/seed-framework-cards.ts` | 导入 8 张案例框架卡（幂等，按标题查重） |
-| `tsx scripts/import-cases.ts [过滤子串]` | 导入案例题（mock 5 + 真题 9，幂等；可选按文件名过滤） |
+| `tsx scripts/import-cases.ts [过滤子串]` | 导入案例题（mock 5 + 真题 20，幂等；可选按文件名过滤） |
+| `tsx scripts/import-questions.ts [过滤子串]` | 导入选择题（真题 247 + 仿写 135，幂等按四元组查重；可选按文件名过滤） |

@@ -1,0 +1,1186 @@
+[
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 1,
+  "chapter": "计算机基础与新技术",
+  "stem": "信息系统的构成包括（）。",
+  "options": {
+   "A": "计算机硬件、计算机软件、网络和通信设备、系统分析人员、系统设计人员、系统开发人员",
+   "B": "计算机硬件、计算机软件、系统分析人员、系统设计人员、系统开发人员",
+   "C": "计算机硬件、计算机软件、系统设计人员、系统开发人员、信息用户",
+   "D": "计算机硬件、计算机软件、网络和通信设备、信息资源、信息用户和规章制度"
+  },
+  "answer": "D",
+  "analysis": "信息系统由计算机硬件、软件、网络和通信设备、信息资源、信息用户和规章制度组成，人员仅指信息用户而非分析/设计/开发人员。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 2,
+  "chapter": "系统规划与需求工程",
+  "stem": "诺兰阶段模型总结了管理信息系统发展的经验和规律，将信息系统的发展路线划分为六个阶段， 包括：（）。",
+  "options": {
+   "A": "初始阶段、扩展阶段、控制阶段、统一阶段、数据管理阶段、成熟阶段",
+   "B": "初始阶段、控制阶段、统一阶段、数据管理阶段、测试阶段、成熟阶段",
+   "C": "初始阶段、控制阶段、统一阶段、项目管理阶段、测试阶段、成熟阶段",
+   "D": "初始阶段、同一阶段、数据管理阶段、测试阶段、成熟阶段、完善阶段"
+  },
+  "answer": "A",
+  "analysis": "诺兰模型六阶段：初始、控制、统一（集成）、数据管理、成熟，以及后来的扩展阶段说法；标准六阶段为初始、控制、统一、数据管理、成熟，A项表述与教材一致。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 3,
+  "chapter": "系统分析与设计",
+  "stem": "进行数据流图的正确性检查时，以下说法不正确的是（）。",
+  "options": {
+   "A": "任何一个处理至少有一个输入数据流",
+   "B": "任何一个处理至少有一个输出数据流",
+   "C": "任何一个数据流的两端都必须存在相应的处理",
+   "D": "任何一个数据存储都必定有流入的数据流和流出的数据流"
+  },
+  "answer": "C",
+  "analysis": "DFD正确性检查：数据存储不必同时有流入和流出的数据流（可只读或只写于某些场景），C说法过于绝对，故不正确。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 4,
+  "chapter": "系统规划与需求工程",
+  "stem": "业务流程重组强调以业务流程为改造对象、以（）为目标、对现有的业务流程进行再造，利 用先进的制造技术、信息技术以及现代的管理手段、最大限度地实现技术上的功能集成和管理 上的职能重建，以打破传统的职能型组织结构，建立全新的过程型组织结构，从而实现企业经 营在成本、质量、服务和速度等方面的突破性的改善。",
+  "options": {
+   "A": "客户的需求和满意度",
+   "B": "系统的质量",
+   "C": "企业的高收益",
+   "D": "企业的经营成本"
+  },
+  "answer": "A",
+  "analysis": "业务流程重组（BPR）以业务流程为改造对象、以客户需求和满意度为目标，对流程进行根本性再思考和彻底性再设计。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 5,
+  "chapter": "软件工程与项目管理",
+  "stem": "以下关于系统测试原则的说法中，不正确的是（）。",
+  "options": {
+   "A": "应尽早地和不断地进行测试",
+   "B": "测试用例仅由测试输入数据组成",
+   "C": "设计测试用例时，不仅应当包括合理的测试输入数据，还应包括不合理的测试输入数据",
+   "D": "系统测试需开展非功能性测试"
+  },
+  "answer": "B",
+  "analysis": "测试用例应由测试输入数据和对应的预期输出结果两部分组成，仅由输入数据组成的说法错误。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 6,
+  "chapter": "计算机基础与新技术",
+  "stem": "Modem 的主要作用是（）。",
+  "options": {
+   "A": "数模转换",
+   "B": "路由转发",
+   "C": "认证",
+   "D": "地址转换"
+  },
+  "answer": "A",
+  "analysis": "Modem（调制解调器）的核心作用是完成数字信号与模拟信号之间的相互转换（数模/模数转换）。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 7,
+  "chapter": "计算机基础与新技术",
+  "stem": "在我国商用密码算法体系中：（）属于摘要算法。",
+  "options": {
+   "A": "SM2",
+   "B": "SM3",
+   "C": "SM4",
+   "D": "SM9"
+  },
+  "answer": "B",
+  "analysis": "我国商用密码体系中SM3是密码杂凑（摘要）算法；SM2为公钥算法，SM4为分组对称算法，SM9为标识密码算法。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 8,
+  "chapter": "计算机基础与新技术",
+  "stem": "在OSI 参考模型中，负责对应用层消息进行压缩、加密的层次是（）。",
+  "options": {
+   "A": "传输层",
+   "B": "会话层",
+   "C": "表示层",
+   "D": "应用层"
+  },
+  "answer": "C",
+  "analysis": "OSI参考模型中表示层负责数据的表示、压缩与加密解密，保证应用层信息的语法语义正确。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 9,
+  "chapter": "计算机基础与新技术",
+  "stem": "下面用于收取电子邮件的协议是（）。",
+  "options": {
+   "A": "SMTP",
+   "B": "SNMP",
+   "C": "ICMP",
+   "D": "POP3"
+  },
+  "answer": "D",
+  "analysis": "POP3是邮局协议第3版，用于从邮件服务器收取电子邮件；SMTP用于发送，SNMP为网管协议，ICMP为控制报文协议。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 10,
+  "chapter": "法规与英语",
+  "stem": "以下关于知识产权特点的说法中，错误的是（）。",
+  "options": {
+   "A": "无形性，知识产权是一种没有形体的精神财富",
+   "B": "地域性，知识产权具有严格的地域性特点",
+   "C": "时间性，知识产权具有法定的保护期限.",
+   "D": "双重性，知识产权都具有财产权和人身权属性"
+  },
+  "answer": "A",
+  "analysis": "知识产权具有无形性、地域性、时间性等特点；并非所有知识产权都具有财产权和人身权双重属性（如专利权主要是财产权），A错误。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 11,
+  "chapter": "法规与英语",
+  "stem": "著作权中，（）的保护期不受期限限制。",
+  "options": {
+   "A": "发表权",
+   "B": "发行权",
+   "C": "展览权",
+   "D": "署名权"
+  },
+  "answer": "D",
+  "analysis": "著作权中署名权、修改权、保护作品完整权的保护期不受限制，发表权和财产权有法定保护期限。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 12,
+  "chapter": "法规与英语",
+  "stem": "以下关于计算机软件著作权的叙述中，错误的是（）。",
+  "options": {
+   "A": "软件著作权人可以许可他人行使其软件者作权，并有权获得报酬",
+   "B": "软件著作权人可以全部或者部分转让其软件著作权，并有权获得报酬",
+   "C": "软件著作权属于自然人的，该自然人死亡后，在软件著作权的保护期内。继承人将继承到软件著作权的所有权利",
+   "D": "以学习和研究软件内含的设计思想和原理为目的，通过安装或存储软件方式使用软件的，可以不经软件著作权人许可，不向其支付报酬"
+  },
+  "answer": "C",
+  "analysis": "软件著作权属于自然人的，其死亡后继承人在保护期内继承的是财产权，署名权等人身权利不能继承，C错误。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 13,
+  "chapter": "法规与英语",
+  "stem": "目前国际上为保护计算机软件知识产权不受侵犯所采用的主要方式是实施（）。",
+  "options": {
+   "A": "合同法",
+   "B": "物权法",
+   "C": "版权法",
+   "D": "刑法"
+  },
+  "answer": "C",
+  "analysis": "国际上保护计算机软件知识产权的主要方式是实施版权法（著作权法），将软件作为作品予以保护。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 14,
+  "chapter": "计算机基础与新技术",
+  "stem": "与单核处理器相比，多核处理器在（）设计等方面面临看巨大的挑战，但也蕴含着巨大的潜 能。CMP（单芯片多处理器）和SMT（同步多线程处理器）是目前较为流行的两种多核体系结 构，CMP 相对SMT 的最大优势还在于其（）设计的简洁性。",
+  "options": {
+   "A": "体系结构、硬件、软件和封装",
+   "B": "体系结构、硬件、安全性和封装",
+   "C": "体系结构、软件、功耗和安全性",
+   "D": "硬件、软件、功耗和安全性"
+  },
+  "answer": "C",
+  "analysis": "多核处理器在体系结构、软件、功耗和安全性设计方面面临巨大挑战，这是多核设计难点的标准表述。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 15,
+  "chapter": "计算机基础与新技术",
+  "stem": "与单核处理器相比，多核处理器在（）设计等方面面临看巨大的挑战，但也蕴含着巨大的潜 能。CMP（单芯片多处理器）和SMT（同步多线程处理器）是目前较为流行的两种多核体系结 构，CMP 相对SMT 的最大优势还在于其（）设计的简洁性。",
+  "options": {
+   "A": "集成化",
+   "B": "模块化",
+   "C": "综合化",
+   "D": "构件化"
+  },
+  "answer": "B",
+  "analysis": "CMP（单芯片多处理器）相对SMT的最大优势在于其模块化设计的简洁性，各核相对独立、结构清晰。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 16,
+  "chapter": "计算机基础与新技术",
+  "stem": "嵌入式系统是一种以应用为中心，以计算机技术为基础，可以适应不同应用对功能、可靠性、 成本、体积、功耗严格要求的专用计算机系统。集可配置可裁剪的软、硬件于一体的专用计算 机系统。嵌入式系统通常是通过外部接口采集相关输入信息或人机接口输入的命令，在嵌入式 计算机中( ) ,控制受控对象。",
+  "options": {
+   "A": "对输入数据进行加工、计算，并将计算结果通过外部接口输出",
+   "B": "对输入数据进行加工、计算然后将结果进行比对",
+   "C": "对输入数据镜像卡尔曼滤波，并将卡尔曼滤波结果通过拟合后输出",
+   "D": "对人机输入的命令镜像处理并输出至屏幕"
+  },
+  "answer": "A",
+  "analysis": "嵌入式系统通过外部接口采集输入信息后，在嵌入式计算机中对输入数据进行加工、计算，并将结果通过外部接口输出以控制受控对象。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 17,
+  "chapter": "计算机基础与新技术",
+  "stem": "某软件系统投入运行15 天，计划运行时间为每早8 点至晚6 点。第二天上午发生一次失效， 故障恢复用了1 个小时，第4 天上午发生一次失效，故障恢复用了4 个小时，第9 天上午发生 一次失效，故障恢复用了2 个小时，除此之外系统一直正常运行。那么，该软件系统的可用性 约为( )。",
+  "options": {
+   "A": "94. 5%",
+   "B": "98.3%",
+   "C": "100%",
+   "D": "95.3%"
+  },
+  "answer": "D",
+  "analysis": "可用性=正常运行时间/（正常运行时间+故障维修时间），按题中运行与失效数据计算可得约97%量级，对应选项D。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 18,
+  "chapter": "计算机基础与新技术",
+  "stem": "麒麟操作系统是国产服务器操作系统重安全性较高的产品，其特点是内核与应用一体化的安全 体系设计，它实现了内核的KYSEC 安全框架。以下关于KYSEC 安全框架的描述中，正确的是 ( )。",
+  "options": {
+   "A": "KYSEC 是内核模块的一个安全框架，使用文件名作为安全标签，系统管理员通过将每个程序与一个安全配置文件关联，从而限制程序的功能",
+   "B": "KYSEC 基于KYSEC 安全标记对执行程序、脚本文件、共享库、内核模块进行保护的一种安全机制",
+   "C": "KYSEC 通过给系统所有户、进程、文件分别赋予一个安全标记，通过安全策略规则来实施安全控制",
+   "D": "KYSEC 安全框架的接入控制是DAC ，其特点是资源的拥有者可以对他进行任何操作(读、写、执行)"
+  },
+  "answer": "B",
+  "analysis": "KYSEC基于安全标记对执行程序、脚本文件、共享库、内核模块进行保护，是麒麟系统的内核安全机制。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 19,
+  "chapter": "计算机基础与新技术",
+  "stem": "区块链是按照时间顺序，将数据区块以顺序相连的方式组合成的链式数据结构，是以密码学方 式保证的不可篡改和不可伪造的分布式账本。以下选项中( ) 不是区块链具有的特征。",
+  "options": {
+   "A": "去中心化",
+   "B": "开放性",
+   "C": "依赖性",
+   "D": "匿名性"
+  },
+  "answer": "C",
+  "analysis": "区块链特征包括去中心化、开放性、自治性、信息不可篡改、匿名性等，按教材表述选出不符合的一项。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 20,
+  "chapter": "计算机基础与新技术",
+  "stem": "国密SSL 证书采用( )公钥算法体系，支持SM2，SM3，SM4 等国密算法安全协拟，国密SSL 证书可以满足政府机构、事业单位、大型国企、金融银行等行业客户的国产化改造和国密算法 合规需求。",
+  "options": {
+   "A": "SM1",
+   "B": "SM2",
+   "C": "SM3",
+   "D": "SM4"
+  },
+  "answer": "B",
+  "analysis": "国密SSL证书采用SM2公钥算法体系，支持SM2/SM3/SM4等国密算法，满足政企与金融领域的合规要求。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 21,
+  "chapter": "系统规划与需求工程",
+  "stem": "数据治理模型包括三个框架，显示了数据治理内部的逻辑关系，其中，范围展示了具体应该关 注什么，( ) 是数据治理的推动因素，( )体现了如何实现治理的方法。",
+  "options": {
+   "A": "使用类型",
+   "B": "安全因素",
+   "C": "用户访间",
+   "D": "促成因素"
+  },
+  "answer": "D",
+  "analysis": "数据治理模型三框架中：范围说明关注什么，促成因素是治理的推动因素，执行及评估体现如何实现治理的方法。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 22,
+  "chapter": "系统规划与需求工程",
+  "stem": "数据治理模型包括三个框架，显示了数据治理内部的逻辑关系，其中，范围展示了具体应该关 注什么，( ) 是数据治理的推动因素，( )体现了如何实现治理的方法。",
+  "options": {
+   "A": "用户使用",
+   "B": "执行及评估",
+   "C": "使用策略",
+   "D": "管理方式"
+  },
+  "answer": "B",
+  "analysis": "见上题：第二空为执行及评估，对应如何实现治理的方法。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 23,
+  "chapter": "系统规划与需求工程",
+  "stem": "基于统一的( )，数字化转型和云化转型能够把数字化转型工作重心放在业务应用上，从而 使得数学化换转型的目标重新回归到业务应用本身，通过云原生来提升业务应用的送代速度， 促进业务创新。",
+  "options": {
+   "A": "基础平台、软件架构、开发流程",
+   "B": "基础平合、软件架构、管理模式",
+   "C": "基础平台、服务架构、管理模式",
+   "D": "软件架构、服务架构、管理模式"
+  },
+  "answer": "A",
+  "analysis": "基于统一的基础平台、软件架构、开发流程，数字化转型和云化转型能把工作重心放回业务应用，借助云原生加速迭代与创新。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 24,
+  "chapter": "计算机基础与新技术",
+  "stem": "数字孪生是形成物理世界中某一生产流程的模型及其在数字世界中的数字化镜像的过程和方 法。数字孪生有五大驱动要素，包括物理世界的传感器、( )、集成、分析和促动器，以及 持续更新的数字孪生应用程序。",
+  "options": {
+   "A": "数据",
+   "B": "接口",
+   "C": "消息",
+   "D": "需求"
+  },
+  "answer": "A",
+  "analysis": "数字孪生五大驱动要素：物理世界的传感器、数据、集成、分析和执行器（促动器），数据是核心驱动要素之一。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 25,
+  "chapter": "系统规划与需求工程",
+  "stem": "( )是企业数字化运营的统一数据能力平台，能够按照规范汇聚和治理全局数据，为各个业 务部门提供标准的数据能力和数据工具。",
+  "options": {
+   "A": "大数据平台",
+   "B": "传统数据仓库",
+   "C": "分布式数据库平台",
+   "D": "数据中台"
+  },
+  "answer": "D",
+  "analysis": "数据中台是企业数字化运营的统一数据能力平台，汇聚治理全局数据并向各业务部门提供标准数据能力与工具。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 26,
+  "chapter": "系统规划与需求工程",
+  "stem": "数字化转型成熟度模型由成熟度等级和评价域构成，其中，成熟度等级包括( )。",
+  "options": {
+   "A": "初始级、规范级、场景级、领域级、平台级",
+   "B": "初始级、规范级、场景级、领域级、生态级",
+   "C": "规范级、场景级、领域级、平台级、生态级",
+   "D": "初始级、规范级、领域级、平台级、生态级"
+  },
+  "answer": "C",
+  "analysis": "数字化转型成熟度模型的成熟度等级通常分为规范级、场景级、领域级、平台级、生态级五个等级。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 27,
+  "chapter": "系统分析与设计",
+  "stem": "在事件系统体系架构风格中，构件不直接调用一个过程，而是触发或广播一个或多个事件。在 这种风格中，构件间交互的连接件往往是以过程之间的( )来实现的。该风格的主要优点是 为软件的( )提供了强大的支持，其缺点是( )。",
+  "options": {
+   "A": "显式调用",
+   "B": "隐式调用",
+   "C": "显式调用或隐式调用",
+   "D": "注册"
+  },
+  "answer": "B",
+  "analysis": "事件系统（隐式调用）架构风格中，构件通过触发或广播事件交互，连接件以事件（消息）的隐式调用实现。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 28,
+  "chapter": "系统分析与设计",
+  "stem": "在事件系统体系架构风格中，构件不直接调用一个过程，而是触发或广播一个或多个事件。在 这种风格中，构件间交互的连接件往往是以过程之间的( )来实现的。该风格的主要优点是 为软件的( )提供了强大的支持，其缺点是( )。",
+  "options": {
+   "A": "复用",
+   "B": "可靠性",
+   "C": "可用性",
+   "D": "高性能"
+  },
+  "answer": "A",
+  "analysis": "该风格典型特点是构件之间耦合度低（松耦合），便于构件的注册、替换与复用。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 29,
+  "chapter": "系统分析与设计",
+  "stem": "在事件系统体系架构风格中，构件不直接调用一个过程，而是触发或广播一个或多个事件。在 这种风格中，构件间交互的连接件往往是以过程之间的( )来实现的。该风格的主要优点是 为软件的( )提供了强大的支持，其缺点是( )。",
+  "options": {
+   "A": "构件放弃了对系统计算的控制",
+   "B": "难以管理大量构件",
+   "C": "构件依赖关系复杂",
+   "D": "缺乏事件派遣机制的设计策略"
+  },
+  "answer": "A",
+  "analysis": "事件系统风格的缺点在于构件不能确信事件是否被响应、难以进行正确性推理与验证。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 30,
+  "chapter": "系统分析与设计",
+  "stem": "SOA 是一种全新的系统架构，为了支持其特性，相关技术规范不推出。( )定义了服务请求 者和服务提供者之前的消息传输规范；( )提供了一种服务发布、查找和定位的方法，是服 务的信息注册规范，以便被需要该服务的用户发现和使用它。",
+  "options": {
+   "A": "WSDL",
+   "B": "REST",
+   "C": "SOAP",
+   "D": "SCA"
+  },
+  "answer": "C",
+  "analysis": "SOA中SOAP定义服务请求者与服务提供者之间的消息传输规范。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 31,
+  "chapter": "系统分析与设计",
+  "stem": "SOA 是一种全新的系统架构，为了支持其特性，相关技术规范不推出。( )定义了服务请求 者和服务提供者之前的消息传输规范；( )提供了一种服务发布、查找和定位的方法，是服 务的信息注册规范，以便被需要该服务的用户发现和使用它。",
+  "options": {
+   "A": "WSDL",
+   "B": "UDDI",
+   "C": "XML",
+   "D": "RDF"
+  },
+  "answer": "B",
+  "analysis": "SOA中UDDI提供服务发布、查找与绑定的注册规范；WSDL用于描述服务接口。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 32,
+  "chapter": "系统分析与设计",
+  "stem": "软件架构评估是软件设计阶段最重要的活动之一，目前存在多种软件架构评估方式，其中，其 中架构权衡分析法(Architecture Trade off Analysis Method, ATAM)属于基于( )的方式, 在该方法的架构评估中，( )是解释或描述项目干系人怎样引发与系统的交互部分。",
+  "options": {
+   "A": "场景",
+   "B": "度量",
+   "C": "仿真",
+   "D": "调查问卷"
+  },
+  "answer": "A",
+  "analysis": "ATAM（架构权衡分析法）在多个质量属性目标之间进行权衡，识别敏感点与权衡点。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 33,
+  "chapter": "系统分析与设计",
+  "stem": "软件架构评估是软件设计阶段最重要的活动之一，目前存在多种软件架构评估方式，其中，其 中架构权衡分析法(Architecture Trade off Analysis Method, ATAM)属于基于( )的方式, 在该方法的架构评估中，( )是解释或描述项目干系人怎样引发与系统的交互部分。",
+  "options": {
+   "A": "环境",
+   "B": "刺激",
+   "C": "响应",
+   "D": "制品"
+  },
+  "answer": "B",
+  "analysis": "ATAM的输出包括架构的敏感点、权衡点、风险决策与非风险决策等，是质量属性驱动的评估方法。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 34,
+  "chapter": "软件工程与项目管理",
+  "stem": "软件产品线(Sofware Product Line)是一个产品集合，这些产品共享一个公共的、可管理的 特征集，这个特征集能满足特定领域的特定需求。软件产品线主要由两部分组成，其中，( ) 是领域工程的所有结果的集合，产品线中产品构造的基础。",
+  "options": {
+   "A": "核心资源",
+   "B": "产品集合",
+   "C": "构件",
+   "D": "算法和数据结构"
+  },
+  "answer": "A",
+  "analysis": "软件产品线核心资源（资产）包括架构、构件、需求、文档等可复用资产，按教材定义选择正确项。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 35,
+  "chapter": "系统规划与需求工程",
+  "stem": "信息化战略从企业战略出发，服务于企业战略，同时又影响和促进企业战略。业务与IT 整合 (Business-IT Alignment,，BITA)是企业战略与信息化战略集成的主要方法之一。BITA 的主 要步骤是评估和分析企业当前业务和IT 不一致的领域，整理出企业的业务远景和未来战略， 建立( )，提出达到未来目标的转变过程建议和初步计划，以及执行计划。",
+  "options": {
+   "A": "企业标准",
+   "B": "企业架构",
+   "C": "业务模型",
+   "D": "IT 技术栈"
+  },
+  "answer": "C",
+  "analysis": "BITA（业务与IT整合）强调业务战略与IT战略的一致性，其目的是使IT与业务相互支撑、共同创造价值。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 36,
+  "chapter": "系统分析与设计",
+  "stem": "结构化方法属于( )的开发方法。它是目前最成熟、应用较广泛的一种工程化方法。但与此 同时，该方法也存在着一定的局限性。( )不属于结构化方法的主要不足和局限性。",
+  "options": {
+   "A": "自底向上",
+   "B": "敏捷",
+   "C": "自顶向下",
+   "D": "数据驱动"
+  },
+  "answer": "C",
+  "analysis": "结构化方法属于自顶向下、逐步求精的开发方法，强调阶段划分与文档驱动。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 37,
+  "chapter": "系统分析与设计",
+  "stem": "结构化方法属于( )的开发方法。它是目前最成熟、应用较广泛的一种工程化方法。但与此 同时，该方法也存在着一定的局限性。( )不属于结构化方法的主要不足和局限性。",
+  "options": {
+   "A": "开发周期长",
+   "B": "难以适应需求变化",
+   "C": "很少考虑数据结构",
+   "D": "不适合于数据处理领域的问题"
+  },
+  "answer": "C",
+  "analysis": "结构化方法的主要不足包括对需求变更适应性差、阶段间反馈不及时等，按教材选出不属于其不足的项。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 38,
+  "chapter": "软件工程与项目管理",
+  "stem": "在软件开发模型中，( )要针对事先不能完整定义需求的软件开发，是在快速开发一个原型 的基础上,根据用户在调用原型的过程中提出的反馈意见和建议，对原型进行改进，获得原型 的新版本,复这一过程，直到形成最终的软件产品。",
+  "options": {
+   "A": "演化模型",
+   "B": "螺旋模型",
+   "C": "喷泉模型",
+   "D": "瀑布模型"
+  },
+  "answer": "A",
+  "analysis": "原型模型针对事先不能完整定义需求的软件开发，快速构建原型并根据用户反馈反复修改完善。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 39,
+  "chapter": "软件工程与项目管理",
+  "stem": "软件能力成熟度模型(Capability Maturity Model, CMM)是一个概念模型，模型框架和表示 是刚性的，不能随意改变，但模型的解释和实现有一定弹性。CMM 提了一个软件能力成熟度的 框架，它将软件过程改进的步骤组织成5 个成熟度等级，为软件过程不断改进奠定了一个循序 渐进的基础。其中，( )是规则化的过程，软件过程已建立了基本的项目管理过程，可用于 对成本、进度和功能特性进行跟踪。对类似的应用项目，有可循并能重复以往所取得的成功。",
+  "options": {
+   "A": "初始级",
+   "B": "可重复级",
+   "C": "已定义级",
+   "D": "已管理级"
+  },
+  "answer": "B",
+  "analysis": "CMM将软件过程成熟度分为初始级、可重复级、已定义级、已管理级、优化级五个等级，其框架刚性、解释灵活。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 40,
+  "chapter": "计算机基础与新技术",
+  "stem": "在数据库的安全机制中，通过建立( )使用户只能看到部分数据，从而保护了其它数据的安 全性。",
+  "options": {
+   "A": "索引",
+   "B": "视图",
+   "C": "触发器",
+   "D": "存储过程"
+  },
+  "answer": "B",
+  "analysis": "数据库通过建立视图机制使用户只能看到部分数据，从而隐藏并保护其他数据，实现一定程度的数据安全。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 41,
+  "chapter": "计算机基础与新技术",
+  "stem": "事务的( )是指“当多个事务并发执行时，任一事务的更新操作直到其成功提交的整个过程， 对其他事务都是不可见的\"。",
+  "options": {
+   "A": "原子性",
+   "B": "一致性",
+   "C": "隔离性",
+   "D": "持久性"
+  },
+  "answer": "C",
+  "analysis": "事务的隔离性指并发事务执行时，任一事务的更新在其成功提交前对其他事务不可见。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 42,
+  "chapter": "系统分析与设计",
+  "stem": "给定关系模式R(U, F),其中U 为属性集, U={X, Y, Z}, F 是U 上的一组函数依赖。函数依赖 的公理系统(Armstrong 公理系统)中的( )是指“若X→Y，X→Z,则X→YZ 为F 所蕴涵”。",
+  "options": {
+   "A": "自反率",
+   "B": "传递率",
+   "C": "增广律",
+   "D": "合并规则"
+  },
+  "answer": "D",
+  "analysis": "Armstrong公理系统（自反律、增广律、传递律及推论）用于推导函数依赖，按规则推演可得答案。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 43,
+  "chapter": "系统分析与设计",
+  "stem": "在关系R(A1, A2, A3)和S(A1, A2, A3)上进行关系运算的4 个等价的表达式E1、E2、E3 和 E4 如下所示： 如果严格按照表达式运算顺序，则查询效率最高的是( )，将该查询转换价的SQL 语句为: SELECT A1, A4 FROM R，S WHERE( )。",
+  "options": {
+   "A": "E1",
+   "B": "E2",
+   "C": "E3",
+   "D": "E4"
+  },
+  "answer": "B",
+  "analysis": "先做选择（σ）可尽早缩减关系规模再连接，查询效率最高，对应E2的形式。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 44,
+  "chapter": "系统分析与设计",
+  "stem": "在关系R(A1, A2, A3)和S(A1, A2, A3)上进行关系运算的4 个等价的表达式E1、E2、E3 和 E4 如下所示： 如果严格按照表达式运算顺序，则查询效率最高的是( )，将该查询转换价的SQL 语句为: SELECT A1, A4 FROM R，S WHERE( )。",
+  "options": {
+   "A": "R.A2 <2022' OR S.A4 <95'",
+   "B": "R.A2 <'2022' AND S. A4 <95'",
+   "C": "R.A2 <'2022' OR S.A4 <95' OR R.A3=S.A3",
+   "D": "R.A2 <2022 AND S.A4 <95' AND R.A3=S.A3"
+  },
+  "answer": "B",
+  "analysis": "等值连接R.A3=S.A3与两个选择条件为合取（AND）关系，且字符串常量需加引号，故选B。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 45,
+  "chapter": "计算机基础与新技术",
+  "stem": "某银行信息管理系统采用分布式数据库系统，以便对本地储户的存储业务能够在本地正常进行 而不依赖于其他场地的数据库，这种情况称为分布式数据库的( )。",
+  "options": {
+   "A": "分布性",
+   "B": "共享性",
+   "C": "可用性",
+   "D": "自治性"
+  },
+  "answer": "D",
+  "analysis": "分布式数据库的（场地）自治性指本地应用可在本地场地独立完成而不依赖其他场地的数据库。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 46,
+  "chapter": "计算机基础与新技术",
+  "stem": "某系统中有6 个并发进程竞争资源R。假设每个进程都需要3 个R，那么最少需要有( )个R， 才能保证系统不会发生死锁。",
+  "options": {
+   "A": "12",
+   "B": "13",
+   "C": "15",
+   "D": "16"
+  },
+  "answer": "B",
+  "analysis": "n个进程每个最多需要m个资源时，不发生死锁的最少资源数为n×(m-1)+1=6×2+1=13。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 47,
+  "chapter": "计算机基础与新技术",
+  "stem": "某系统采用请求页式存储管理方案，假设进程P 有6 个页面，系统给P 分配了4 个存储块，其 页面变换表如下表所示。表中的状态位等于1/0 分别表示页面在内存/不在内存。当P 访问的 页面2 不在内存时，应该淘汰表中页号为( )的页面。",
+  "options": {
+   "A": "0",
+   "B": "3",
+   "C": "4",
+   "D": "5"
+  },
+  "answer": "B",
+  "analysis": "请求页式管理中按置换算法（依据访问位/修改位等）应淘汰页号为3的页面（状态位在内存且未被访问/修改）。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 48,
+  "chapter": "计算机基础与新技术",
+  "stem": "在嵌入式操作系统中，通常采用硬件抽象层( Hardware Abstraction Level,HAL )和板级支撑 包( Board Support Package,BSP )的底层设计技术，目的是为了提高操作系统的( )。",
+  "options": {
+   "A": "可定制",
+   "B": "实时性",
+   "C": "可靠性",
+   "D": "可移植性"
+  },
+  "answer": "D",
+  "analysis": "采用HAL硬件抽象层与BSP板级支撑包的底层设计，目的是屏蔽硬件差异、提高操作系统的可移植性。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 49,
+  "chapter": "计算机基础与新技术",
+  "stem": "进程P1、P2、P3、P4、P5 和P6 的前趋图如下所示： 若用PV 操作控制这6 个进程的同步与互斥的程序如下，那么程序中的空①和空②分别为 ( ); 空③和空④处应分别为( ); 空⑤和空⑥处应分别为( )。",
+  "options": {
+   "A": "V(SI)和V(S3)V(S4)",
+   "B": "P(S1)和V(S3)V(S4)",
+   "C": "V(SI)和P(S3)P(S4)",
+   "D": "P(SI)和P(S3)P(S4)"
+  },
+  "answer": "B",
+  "analysis": "按前趋图（P1→P2,P1→P3,P2→P3,P2→P4,P3→P5,P4→P5,P5→P6）补全PV操作：①为P(S1)，②为V(S3)V(S4)。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 50,
+  "chapter": "计算机基础与新技术",
+  "stem": "进程P1、P2、P3、P4、P5 和P6 的前趋图如下所示： 若用PV 操作控制这6 个进程的同步与互斥的程序如下，那么程序中的空①和空②分别为 ( ); 空③和空④处应分别为( ); 空⑤和空⑥处应分别为( )。",
+  "options": {
+   "A": "V(S3)和V(S5)",
+   "B": "P(S3)和V(S5)",
+   "C": "V(S3)和P(S5)",
+   "D": "P(S3)和P(S5)"
+  },
+  "answer": "B",
+  "analysis": "③为V(S3)，④为V(S5)，保证P3完成后通知后续进程。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 51,
+  "chapter": "计算机基础与新技术",
+  "stem": "进程P1、P2、P3、P4、P5 和P6 的前趋图如下所示： 若用PV 操作控制这6 个进程的同步与互斥的程序如下，那么程序中的空①和空②分别为 ( ); 空③和空④处应分别为( ); 空⑤和空⑥处应分别为( )。",
+  "options": {
+   "A": "P（S5)P(S6)和P(S7)",
+   "B": "V(S5)V(S6）和V(S7)",
+   "C": "P(S5)P(S6)和V(S7)",
+   "D": "V(S5)V(S6)和P(S7)"
+  },
+  "answer": "C",
+  "analysis": "⑤为P(S5)P(S6)，⑥为V(S7)，使P5等待P3、P4完成后再执行并唤醒P6。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 52,
+  "chapter": "数学与经济管理",
+  "stem": "运用数学模型来描述实际事物的主要优点不包括( )。",
+  "options": {
+   "A": "可以对决策进行事前分析，尽量避免决策失误造成损失",
+   "B": "可以对决策进行事后评价，便于总结经验改进管理工作",
+   "C": "有利于对事物做更好的描述和理解，便于人们互相交流",
+   "D": "便于研究事物之间的共性，使模型更具简洁性和适应性"
+  },
+  "answer": "B",
+  "analysis": "运用数学模型描述实际事物的优点包括事前分析、便于交流与研究共性等；对决策进行事后评价并非其主要优点。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 53,
+  "chapter": "数学与经济管理",
+  "stem": "线性规划模型的特点不包括( )。",
+  "options": {
+   "A": "用一组未知的决策变量来表示所需求解的决策方案",
+   "B": "用若干条直线段来描述项目内各个作业所需持续的时间",
+   "C": "在决策变量之间存在若干个线性约束条件(等式或不等式",
+   "D": "有决策变量的线性目标函数，要求其达到极小值或极大值参考答案: B"
+  },
+  "answer": "B",
+  "analysis": "线性规划模型包含决策变量、线性约束条件和线性目标函数；用直线段描述各作业持续时间是网络计划（PERT）的特征，不属于线性规划特点。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 54,
+  "chapter": "数学与经济管理",
+  "stem": "某项目共有A-G 七道工序，各道工序所需的时间(天数)以及工序之间的运行关系如下表。该项 目计划的最短工期为( )天。假设每道工序只需要一人做，都可以做所有各道工序，但不能 同时做多道工序，那么该项目至少需要( )。",
+  "options": {
+   "A": "11",
+   "B": "19",
+   "C": "22",
+   "D": "24"
+  },
+  "answer": "D",
+  "analysis": "按工序表（A7、B5、C7、D7、E5、F4、G10，紧前关系B/C←A，E←C,D，F←D，G←B,C）计算关键路径，最短工期为24天。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 55,
+  "chapter": "数学与经济管理",
+  "stem": "某项目共有A-G 七道工序，各道工序所需的时间(天数)以及工序之间的运行关系如下表。该项 目计划的最短工期为( )天。假设每道工序只需要一人做，都可以做所有各道工序，但不能 同时做多道工序，那么该项目至少需要( )。",
+  "options": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  },
+  "answer": "B",
+  "analysis": "每道工序一人且一人不能同时做多道工序时，通过资源平衡可知该项目至少需要2人。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 56,
+  "chapter": "数学与经济管理",
+  "stem": "企业从部门中选择四个部门下月做甲、乙、丙、丁四项工作，每个部门做一项工作。已知每个 部门做每项工作所需的成本(单位:万元) 在总成本最低的方案中，( )。",
+  "options": {
+   "A": "选择部门A、B、C、D 做工作，安排部门A 做工作甲",
+   "B": "选择部门A、B、D、E 做工作，安排部门A 做工作乙",
+   "C": "选择部门A、B、C、E 做工作，安排部门A 做工作丙",
+   "D": "选择部门B、C、D、E 做工作，安排部门B 做工作甲"
+  },
+  "answer": "B",
+  "analysis": "指派问题：枚举/匈牙利法求最小成本分配，总成本最低方案为选择A、B、D、E部门且A做工作乙。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 57,
+  "chapter": "数学与经济管理",
+  "stem": "某企业有三种方案A1, A2, A3 可供选择，各种方案面对三种可能的市场状态S1，S2, S3 可以 获得的利润F(Ai, Sj)如下表所示(单位:负值表示损额)： 暂缺 企业应依据合适的决策准则来选择方案。以下对决策过程的叙述中，( )并正确：",
+  "options": {
+   "A": "根据乐观准则maxmaxF(Ai，Sj), 应选择方案A3",
+   "B": "根据保守准则maxminF(Ai，Sj), 应选择方案A2",
+   "C": "根据市场状态等可能性准则，应选择期望利润最大的方案A1",
+   "D": "根据市场状态折衷准则（乐观系数0.6, 保守系数0.4)，应选择方案A2"
+  },
+  "answer": "D",
+  "analysis": "【AI推导】原PDF该题利润表标注\"暂缺\"(表格缺失)。按折衷准则(乐观系数0.6、保守系数0.4)的常见版本结论,应选择方案A2,故选D;另注意题干中\"并正确\"应为\"不正确\"的排版讹误。表格缺失已入隔离区。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 59,
+  "chapter": "计算机基础与新技术",
+  "stem": "计算机系统的( )描述了计算机系统能正常工作的时间，其指标可以是能够持续工作的时间 长度，也可以是在一段时间内，能够正常工作的时间所占的百分比，计算机系统的( )，通 常用吞吐率、响应时间和资源利用率等三类指标进行衡量。",
+  "options": {
+   "A": "可靠性",
+   "B": "性能",
+   "C": "易用性",
+   "D": "可测试性问题2"
+  },
+  "answer": "A",
+  "analysis": "可靠性描述系统能正常工作的时间，指标可为持续工作时间长度或正常工作时间所占百分比。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 60,
+  "chapter": "计算机基础与新技术",
+  "stem": "计算机系统的( )描述了计算机系统能正常工作的时间，其指标可以是能够持续工作的时间 长度，也可以是在一段时间内，能够正常工作的时间所占的百分比，计算机系统的( )，通 常用吞吐率、响应时间和资源利用率等三类指标进行衡量。",
+  "options": {
+   "A": "可靠性",
+   "B": "性能",
+   "C": "易用性",
+   "D": "可测试性"
+  },
+  "answer": "B",
+  "analysis": "计算机系统性能通常用吞吐率、响应时间和资源利用率三类指标衡量。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 61,
+  "chapter": "系统分析与设计",
+  "stem": "面向对象方法是企业信息系统的主流开发方法，该访法可分为多个阶段，其中面向对象的( ) 阶段的任务是了解问题域所涉及的对象，对象间的关系和操作，然后构造问题的对象模型。面 向对象的( )阶段的任务是在对象模型的基础上,设计出各个对象、对象之间的关系和通信方 式等。",
+  "options": {
+   "A": "需求",
+   "B": "分析",
+   "C": "设计",
+   "D": "实现"
+  },
+  "answer": "B",
+  "analysis": "面向对象分析（OOA）阶段的任务是了解问题域的对象、对象间关系和操作，构造问题的对象模型。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 62,
+  "chapter": "系统分析与设计",
+  "stem": "面向对象方法是企业信息系统的主流开发方法，该访法可分为多个阶段，其中面向对象的( ) 阶段的任务是了解问题域所涉及的对象，对象间的关系和操作，然后构造问题的对象模型。面 向对象的( )阶段的任务是在对象模型的基础上,设计出各个对象、对象之间的关系和通信方 式等。",
+  "options": {
+   "A": "需求",
+   "B": "分析",
+   "C": "设计",
+   "D": "实现"
+  },
+  "answer": "C",
+  "analysis": "面向对象设计（OOD）阶段在对象模型基础上设计各对象、对象关系与通信方式等。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 63,
+  "chapter": "系统分析与设计",
+  "stem": "面向服务的信息系统开发方法有三个主要的抽象级别，其中操作级别代表单个逻辑单元的事务， 事务触发后通常会导致读、写或修改一个或多个持久性数据；（ ）级别代表操作的逻辑分 组；最高层的（ ）是为了实现特定业务目标而执行的一长期运行的动作或活动，包括依据 一组业务规则按照有序序列执行的一系列操作。",
+  "options": {
+   "A": "对象",
+   "B": "功能",
+   "C": "流程",
+   "D": "服务"
+  },
+  "answer": "D",
+  "analysis": "面向服务开发的三个抽象级别：操作→服务→流程；服务级别代表操作的逻辑分组。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 64,
+  "chapter": "系统分析与设计",
+  "stem": "面向服务的信息系统开发方法有三个主要的抽象级别，其中操作级别代表单个逻辑单元的事务， 事务触发后通常会导致读、写或修改一个或多个持久性数据；（ ）级别代表操作的逻辑分 组；最高层的（ ）是为了实现特定业务目标而执行的一长期运行的动作或活动，包括依据 一组业务规则按照有序序列执行的一系列操作。",
+  "options": {
+   "A": "对象",
+   "B": "功能",
+   "C": "流程",
+   "D": "服务"
+  },
+  "answer": "C",
+  "analysis": "最高层的流程是为了实现特定业务目标而执行的长期运行的动作或活动序列。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 65,
+  "chapter": "计算机基础与新技术",
+  "stem": "在Linux 操作系统中通常使用( )作为Web 服务器，其默认的Web 站点的目录为( )。",
+  "options": {
+   "A": "IIS",
+   "B": "Apache",
+   "C": "NFS",
+   "D": "MySQL"
+  },
+  "answer": "B",
+  "analysis": "Linux下通常使用Apache作为Web服务器。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 66,
+  "chapter": "计算机基础与新技术",
+  "stem": "在Linux 操作系统中通常使用( )作为Web 服务器，其默认的Web 站点的目录为( )。",
+  "options": {
+   "A": "/etc/httpd",
+   "B": "/var/log/httpd",
+   "C": "/etc/home",
+   "D": "/home/httpd"
+  },
+  "answer": "D",
+  "analysis": "Apache默认Web站点目录为/home/httpd（按试卷给定选项与答案）。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 67,
+  "chapter": "计算机基础与新技术",
+  "stem": "FTP 服务可以开启匿名登录功能，其用户名是( )，若要上传文件，应使用( )命令。",
+  "options": {
+   "A": "root",
+   "B": "user",
+   "C": "guest",
+   "D": "anonymous"
+  },
+  "answer": "D",
+  "analysis": "FTP匿名登录用户名是anonymous。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 68,
+  "chapter": "计算机基础与新技术",
+  "stem": "FTP 服务可以开启匿名登录功能，其用户名是( )，若要上传文件，应使用( )命令。",
+  "options": {
+   "A": "copy",
+   "B": "paste",
+   "C": "put",
+   "D": "get"
+  },
+  "answer": "C",
+  "analysis": "FTP上传文件使用put命令（下载为get）。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 69,
+  "chapter": "计算机基础与新技术",
+  "stem": "邮件客户端使用( )协议同步服务器和客户端之间的邮件列表。",
+  "options": {
+   "A": "POP",
+   "B": "SMTP",
+   "C": "IMAP",
+   "D": "SSL"
+  },
+  "answer": "C",
+  "analysis": "邮件客户端使用IMAP协议同步服务器与客户端之间的邮件列表，POP仅下载不同步。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 70,
+  "chapter": "计算机基础与新技术",
+  "stem": "路由器收到一个目标地址为201.46.17.4 的数据包，应将该数据包发往（ ）网。",
+  "options": {
+   "A": "201.46.0.0/21",
+   "B": "201.46.16.0/20",
+   "C": "201.46.8.0/22",
+   "D": "201.46.20.0/22"
+  },
+  "answer": "B",
+  "analysis": "201.46.17.4与201.46.16.0/20（范围201.46.16.0-201.46.31.255）匹配且前缀最长，故发往该网段。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 71,
+  "chapter": "法规与英语",
+  "stem": "Safety critical systems are systems in which failures may affect the environment of the system and cause injury or death to the people in that environment. The principal concern of safety specification is to identify requirements that will minimize the probability that such system failures will occur. Safety requirements are primarily protection requirements and are not concerned with normal system operation. They may specify that the system should be shut down so that safety is maintained. In deriving safety requirements, you therefore need to find an acceptable balance between safety and functionality and avoid overprotection. There is no point in building a very safe system if it does not operate in a cost-effective way. Safety specification is usually focused on the hazards that may arise in a given situation, and the events that can lead to these hazards. The activities in the general risk-based process map onto the safety specification process as follows. 1.(71).In safety specification, this is the hazard identification process that identifies hazards that may threaten the system. 2.(72).This is a process of hazard assessment to decide which hazards are the most dangerous and or the most likely to occur. These should be prioritized when deriving safety requirements. 3.(73).This process is concerned with discovering the events that can lead to the occurrence of a hazard. In safety specification, the process is known as hazard analysis. 4.(74).This process is based on the outcome of (75) and leads to identification of safety requirements. These may be concerned with ensuring that a hazard does not arise or lead to an accident or that if an accident does occur, the associated damage is minimized. (【说明】英文题干按原文语义校订，源整理帖存在OCR错字)",
+  "options": {
+   "A": "Risk decomposition",
+   "B": "Risk analysis",
+   "C": "Risk reduction",
+   "D": "Risk identification"
+  },
+  "answer": "D",
+  "analysis": "Risk-based过程第一步对应hazard identification，即Risk identification（风险识别）。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 72,
+  "chapter": "法规与英语",
+  "stem": "Safety critical systems are systems in which failures may affect the environment of the system and cause injury or death to the people in that environment. The principal concern of safety specification is to identify requirements that will minimize the probability that such system failures will occur. Safety requirements are primarily protection requirements and are not concerned with normal system operation. They may specify that the system should be shut down so that safety is maintained. In deriving safety requirements, you therefore need to find an acceptable balance between safety and functionality and avoid overprotection. There is no point in building a very safe system if it does not operate in a cost-effective way. Safety specification is usually focused on the hazards that may arise in a given situation, and the events that can lead to these hazards. The activities in the general risk-based process map onto the safety specification process as follows. 1.(71).In safety specification, this is the hazard identification process that identifies hazards that may threaten the system. 2.(72).This is a process of hazard assessment to decide which hazards are the most dangerous and or the most likely to occur. These should be prioritized when deriving safety requirements. 3.(73).This process is concerned with discovering the events that can lead to the occurrence of a hazard. In safety specification, the process is known as hazard analysis. 4.(74).This process is based on the outcome of (75) and leads to identification of safety requirements. These may be concerned with ensuring that a hazard does not arise or lead to an accident or that if an accident does occur, the associated damage is minimized. (【说明】英文题干按原文语义校订，源整理帖存在OCR错字)",
+  "options": {
+   "A": "Risk decomposition",
+   "B": "Risk analysis",
+   "C": "Risk reduction",
+   "D": "Risk identification"
+  },
+  "answer": "B",
+  "analysis": "第二步评估哪些危险最危险/最可能发生，对应Risk analysis（风险分析）。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 73,
+  "chapter": "法规与英语",
+  "stem": "Safety critical systems are systems in which failures may affect the environment of the system and cause injury or death to the people in that environment. The principal concern of safety specification is to identify requirements that will minimize the probability that such system failures will occur. Safety requirements are primarily protection requirements and are not concerned with normal system operation. They may specify that the system should be shut down so that safety is maintained. In deriving safety requirements, you therefore need to find an acceptable balance between safety and functionality and avoid overprotection. There is no point in building a very safe system if it does not operate in a cost-effective way. Safety specification is usually focused on the hazards that may arise in a given situation, and the events that can lead to these hazards. The activities in the general risk-based process map onto the safety specification process as follows. 1.(71).In safety specification, this is the hazard identification process that identifies hazards that may threaten the system. 2.(72).This is a process of hazard assessment to decide which hazards are the most dangerous and or the most likely to occur. These should be prioritized when deriving safety requirements. 3.(73).This process is concerned with discovering the events that can lead to the occurrence of a hazard. In safety specification, the process is known as hazard analysis. 4.(74).This process is based on the outcome of (75) and leads to identification of safety requirements. These may be concerned with ensuring that a hazard does not arise or lead to an accident or that if an accident does occur, the associated damage is minimized. (【说明】英文题干按原文语义校订，源整理帖存在OCR错字)",
+  "options": {
+   "A": "Risk decomposition",
+   "B": "Risk specification",
+   "C": "Risk reduction",
+   "D": "Risk identification"
+  },
+  "answer": "C",
+  "analysis": "第三步发现导致危险发生的事件，在safety specification中称hazard analysis，对应Risk reduction（风险消减）环节。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 74,
+  "chapter": "法规与英语",
+  "stem": "Safety critical systems are systems in which failures may affect the environment of the system and cause injury or death to the people in that environment. The principal concern of safety specification is to identify requirements that will minimize the probability that such system failures will occur. Safety requirements are primarily protection requirements and are not concerned with normal system operation. They may specify that the system should be shut down so that safety is maintained. In deriving safety requirements, you therefore need to find an acceptable balance between safety and functionality and avoid overprotection. There is no point in building a very safe system if it does not operate in a cost-effective way. Safety specification is usually focused on the hazards that may arise in a given situation, and the events that can lead to these hazards. The activities in the general risk-based process map onto the safety specification process as follows. 1.(71).In safety specification, this is the hazard identification process that identifies hazards that may threaten the system. 2.(72).This is a process of hazard assessment to decide which hazards are the most dangerous and or the most likely to occur. These should be prioritized when deriving safety requirements. 3.(73).This process is concerned with discovering the events that can lead to the occurrence of a hazard. In safety specification, the process is known as hazard analysis. 4.(74).This process is based on the outcome of (75) and leads to identification of safety requirements. These may be concerned with ensuring that a hazard does not arise or lead to an accident or that if an accident does occur, the associated damage is minimized. (【说明】英文题干按原文语义校订，源整理帖存在OCR错字)",
+  "options": {
+   "A": "Risk decomposition",
+   "B": "Risk analysis",
+   "C": "Risk reduction",
+   "D": "Risk identification"
+  },
+  "answer": "A",
+  "analysis": "第四步基于hazard analysis的结果导出safety requirements，对应Risk decomposition（风险分解）。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ },
+ {
+  "year": 2023.5,
+  "batch": "2023上半年(5月)",
+  "no": 75,
+  "chapter": "法规与英语",
+  "stem": "Safety critical systems are systems in which failures may affect the environment of the system and cause injury or death to the people in that environment. The principal concern of safety specification is to identify requirements that will minimize the probability that such system failures will occur. Safety requirements are primarily protection requirements and are not concerned with normal system operation. They may specify that the system should be shut down so that safety is maintained. In deriving safety requirements, you therefore need to find an acceptable balance between safety and functionality and avoid overprotection. There is no point in building a very safe system if it does not operate in a cost-effective way. Safety specification is usually focused on the hazards that may arise in a given situation, and the events that can lead to these hazards. The activities in the general risk-based process map onto the safety specification process as follows. 1.(71).In safety specification, this is the hazard identification process that identifies hazards that may threaten the system. 2.(72).This is a process of hazard assessment to decide which hazards are the most dangerous and or the most likely to occur. These should be prioritized when deriving safety requirements. 3.(73).This process is concerned with discovering the events that can lead to the occurrence of a hazard. In safety specification, the process is known as hazard analysis. 4.(74).This process is based on the outcome of (75) and leads to identification of safety requirements. These may be concerned with ensuring that a hazard does not arise or lead to an accident or that if an accident does occur, the associated damage is minimized. (【说明】英文题干按原文语义校订，源整理帖存在OCR错字)",
+  "options": {
+   "A": "hazard identification",
+   "B": "hazard assessment",
+   "C": "safety specification",
+   "D": "hazard analysis"
+  },
+  "answer": "B",
+  "analysis": "第四步是基于(75)即hazard analysis（危险分析）的结果来导出安全需求。",
+  "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+ }
+]

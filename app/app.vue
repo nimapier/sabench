@@ -5,6 +5,7 @@ const route = useRoute()
 const links = [
   { label: '仪表盘', to: '/' },
   { label: '计划', to: '/plan' },
+  { label: '刷题', to: '/quiz' },
   { label: '论文', to: '/essay' },
   { label: '背景库', to: '/essay/bg' },
   { label: '案例', to: '/case' },
