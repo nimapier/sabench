@@ -2,7 +2,7 @@
 
 软考（系统分析师）备考训练台。Nuxt 4 + Nuxt UI + Drizzle ORM（libsql）+ nuxt-auth-utils，单人使用，含周计划、项目背景库、限时论文写作器、案例训练场、选择题刷题与 SM-2 复习、学习统计。
 
-题库规模：**382 道选择题（247 道历年真题 + 135 道仿写题）+ 25 道案例分析题 + 8 张解题框架卡**。
+题库规模：**517 道选择题（247 道历年真题 + 270 道仿写题）+ 25 道案例分析题 + 8 张解题框架卡**。
 
 ## 技术栈
 
@@ -64,7 +64,7 @@ node_modules/.bin/tsx scripts/import-cases.ts
 选择题源数据在 `data/questions/` 目录，按文件分卷：
 
 - `ruankao-*.json`：历年真题（2021/2022/2023.5/2024.11/2025.5/2026.5，共 247 道）
-- `mock-*.json`：仿写补题（共 135 道），题条目带 `derived: true` 标记，导入后写入 `question` 表的 `derived` 列（SQLite boolean，真题=0、仿写=1），用于统计与筛选时区分来源；年份字段为 `mock`，前端套卷 Tab 已过滤不展示
+- `mock-*.json`：仿写补题（共 270 道），题条目带 `derived: true` 标记，导入后写入 `question` 表的 `derived` 列（SQLite boolean，真题=0、仿写=1），用于统计与筛选时区分来源；年份字段为 `mock`，前端套卷 Tab 已过滤不展示
 - `*.json.superseded`：被新版卷面取代的旧采集文件，仅存档备查，导入脚本只认 `.json` 后缀、不会读它们
 
 ```bash
@@ -147,4 +147,4 @@ node_modules/.bin/tsx scripts/import-questions.ts
 | `pnpm db:push` | 按 `server/database/schema.ts` 推送表结构（读 `NUXT_TURSO_DATABASE_URL`，无则写本地文件） |
 | `tsx scripts/seed-framework-cards.ts` | 导入 8 张案例框架卡（幂等，按标题查重） |
 | `tsx scripts/import-cases.ts [过滤子串]` | 导入案例题（mock 5 + 真题 20，幂等；可选按文件名过滤） |
-| `tsx scripts/import-questions.ts [过滤子串]` | 导入选择题（真题 247 + 仿写 135，幂等按四元组查重；可选按文件名过滤） |
+| `tsx scripts/import-questions.ts [过滤子串]` | 导入选择题（真题 247 + 仿写 270，幂等按四元组查重；可选按文件名过滤） |
