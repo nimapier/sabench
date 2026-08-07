@@ -16,6 +16,7 @@ export default defineEventHandler(async () => {
   const db = useDb()
   const today = todayStr()
   const monday = mondayStr(today)
+  const currentWeek = calcCurrentWeek(today)
 
   const [projects] = await db.select({ count: sql<number>`count(*)` }).from(projectBg)
   const [essaysTotal] = await db.select({ count: sql<number>`count(*)` }).from(essay)
@@ -24,8 +25,8 @@ export default defineEventHandler(async () => {
   const [minutesRow] = await db.select({ sum: sql<number>`coalesce(sum(${studyLog.minutes}), 0)` })
     .from(studyLog)
     .where(and(gte(studyLog.date, monday), lte(studyLog.date, today)))
-  const [tasksTotal] = await db.select({ count: sql<number>`count(*)` }).from(weekTask)
-  const [tasksDone] = await db.select({ count: sql<number>`count(*)` }).from(weekTask).where(eq(weekTask.done, true))
+  const [tasksTotal] = await db.select({ count: sql<number>`count(*)` }).from(weekTask).where(eq(weekTask.week, currentWeek))
+  const [tasksDone] = await db.select({ count: sql<number>`count(*)` }).from(weekTask).where(and(eq(weekTask.week, currentWeek), eq(weekTask.done, true)))
 
   return {
     data: {
@@ -36,7 +37,7 @@ export default defineEventHandler(async () => {
       minutesWeek: minutesRow.sum,
       tasksDone: tasksDone.count,
       tasksTotal: tasksTotal.count,
-      currentWeek: calcCurrentWeek(today),
+      currentWeek,
     },
   }
 })
