@@ -120,7 +120,7 @@ async function choose(item: ReviewItem, key: string) {
   try {
     const gradeRes = await $fetch<{ data: GradeData }>('/api/questions/answer', {
       method: 'POST',
-      body: { questionId: item.questionId, choice: key },
+      body: { questionId: item.questionId, choice: key, record: false },
     })
     st.grade = gradeRes.data
     if (gradeRes.data.correct) {

@@ -8,9 +8,11 @@ function nextDay(): string {
 }
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody<{ questionId?: unknown, choice?: unknown }>(event)
+  const body = await readBody<{ questionId?: unknown, choice?: unknown, record?: unknown }>(event)
   const questionId = Number(body?.questionId)
   const choice = typeof body?.choice === 'string' ? body.choice.trim().toUpperCase() : ''
+  // record 缺省 true 保持原行为；复习流程传 false 跳过此处 insert，避免与 /result 双写
+  const record = body?.record !== false
   if (!Number.isInteger(questionId) || !choice) {
     throw createError({ statusCode: 400, message: 'questionId and choice are required' })
   }
@@ -23,7 +25,9 @@ export default defineEventHandler(async (event) => {
 
   const correct = row.answer?.trim().toUpperCase() === choice
 
-  await db.insert(questionAttempt).values({ questionId, correct })
+  if (record) {
+    await db.insert(questionAttempt).values({ questionId, correct })
+  }
 
   if (!correct) {
     const dueDate = nextDay()
