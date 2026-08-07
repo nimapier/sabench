@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "nuxt dev",
+    "dev:local": "NUXT_TURSO_DATABASE_URL=\"\" nuxt dev",
     "build": "nuxt build",
     "db:push": "drizzle-kit push",
     "postinstall": "nuxt prepare"
