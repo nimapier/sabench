@@ -93,6 +93,7 @@ async function submitForm() {
 }
 
 // ---------- 删除 ----------
+const toast = useToast()
 const deleteOpen = ref(false)
 const deleting = ref<ProjectBg | null>(null)
 const deletingLoading = ref(false)
@@ -110,6 +111,8 @@ async function doDelete() {
     deleteOpen.value = false
     deleting.value = null
     await refresh()
+  } catch {
+    toast.add({ title: '删除失败，请重试', color: 'error' })
   } finally {
     deletingLoading.value = false
   }

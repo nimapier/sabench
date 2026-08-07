@@ -72,6 +72,7 @@ async function submitCreate() {
 }
 
 // 删除（二次确认）
+const toast = useToast()
 const deleteOpen = ref(false)
 const deleting = ref(false)
 const pendingDelete = ref<EssayItem | null>(null)
@@ -89,6 +90,9 @@ async function confirmDelete() {
     deleteOpen.value = false
     pendingDelete.value = null
     await refresh()
+  }
+  catch {
+    toast.add({ title: '删除失败，请重试', color: 'error' })
   }
   finally {
     deleting.value = false

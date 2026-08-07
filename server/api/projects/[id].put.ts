@@ -8,6 +8,11 @@ export default defineEventHandler(async (event) => {
   }
 
   const body = await readBody(event)
+
+  if (body?.name !== undefined && (typeof body.name !== 'string' || !body.name.trim())) {
+    throw createError({ statusCode: 400, message: '项目名称不能为空' })
+  }
+
   const db = useDb()
 
   const [existing] = await db.select().from(projectBg).where(eq(projectBg.id, id))
