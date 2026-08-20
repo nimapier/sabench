@@ -65,8 +65,8 @@ function weekRange(week: number): string {
 }
 
 function stage(week: number): { label: string, color: 'primary' | 'warning' | 'error' } {
-  if (week <= 6) return { label: '基础夯实', color: 'primary' }
-  if (week <= 9) return { label: '真题专项', color: 'warning' }
+  if (week <= 4) return { label: '基础夯实', color: 'primary' }
+  if (week <= 7) return { label: '真题专项', color: 'warning' }
   return { label: '全真冲刺', color: 'error' }
 }
 
