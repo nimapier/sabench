@@ -14,11 +14,19 @@ const toast = useToast()
 
 const ERROR_REASONS = ['概念不清', '审题失误', '计算错误'] as const
 
+interface PracticeRecord {
+  choice: string
+  correct: boolean
+  answer: string
+  analysis: string | null
+}
+
 interface PracticeSession {
   ids: number[]
   idx: number
   correct: number
   ts: number
+  records?: Record<number, PracticeRecord>
 }
 
 const storageKey = computed(() => `quiz-practice:${props.title}`)
@@ -32,6 +40,10 @@ function loadSession(): PracticeSession | null {
     const ids = props.questions.map(q => q.id)
     if (!Array.isArray(s.ids) || s.ids.length !== ids.length || s.ids.some((id, i) => id !== ids[i])) return null
     if (typeof s.idx !== 'number' || s.idx <= 0 || s.idx >= ids.length) return null
+    // records 校验保持宽松：缺失/损坏时降级为仅恢复 idx/correct
+    if (!s.records || typeof s.records !== 'object' || Array.isArray(s.records)) {
+      s.records = undefined
+    }
     return s
   }
   catch {
@@ -46,6 +58,7 @@ function saveSession() {
     idx: idx.value,
     correct: correctCount.value,
     ts: Date.now(),
+    records: records.value,
   }
   localStorage.setItem(storageKey.value, JSON.stringify(s))
 }
@@ -60,6 +73,7 @@ const selected = ref<string | null>(null)
 const grading = ref(false)
 const result = ref<QuizGradeResult | null>(null)
 const correctCount = ref(0)
+const records = ref<Record<number, PracticeRecord>>({})
 const reasons = ref<Record<number, string>>({})
 const reasonOpen = ref(false)
 const finished = ref(false)
@@ -74,6 +88,7 @@ function resumeSession() {
   if (!resumeOffer.value) return
   idx.value = resumeOffer.value.idx
   correctCount.value = resumeOffer.value.correct
+  records.value = resumeOffer.value.records ?? {}
   resumeOffer.value = null
 }
 
@@ -82,6 +97,9 @@ function restartSession() {
   clearSession()
   idx.value = 0
   correctCount.value = 0
+  records.value = {}
+  selected.value = null
+  result.value = null
 }
 
 const current = computed(() => props.questions[idx.value])
@@ -105,6 +123,15 @@ async function choose(letter: string) {
       body: { questionId: current.value.id, choice: letter },
     })
     result.value = res.data
+    records.value = {
+      ...records.value,
+      [current.value.id]: {
+        choice: letter,
+        correct: res.data.correct,
+        answer: res.data.answer,
+        analysis: res.data.analysis,
+      },
+    }
     if (res.data.correct) {
       correctCount.value += 1
     }
@@ -129,16 +156,44 @@ function setReason(reason: string | null) {
   reasonOpen.value = false
 }
 
+function applyState(i: number) {
+  idx.value = i
+  const q = props.questions[i]
+  const rec = q ? records.value[q.id] : undefined
+  if (rec) {
+    selected.value = rec.choice
+    result.value = { correct: rec.correct, answer: rec.answer, analysis: rec.analysis }
+  }
+  else {
+    selected.value = null
+    result.value = null
+  }
+}
+
+function jump(i: number) {
+  if (i < 0 || i >= total.value) return
+  applyState(i)
+  saveSession()
+}
+
 function next() {
   if (isLast.value) {
     finished.value = true
     clearSession()
     return
   }
-  idx.value += 1
-  selected.value = null
-  result.value = null
-  saveSession()
+  jump(idx.value + 1)
+}
+
+function cellClass(q: QuizQuestion, i: number) {
+  const base = 'flex h-8 w-full items-center justify-center rounded text-xs font-medium transition-colors'
+  const parts = [base]
+  const rec = records.value[q.id]
+  if (rec?.correct) parts.push('bg-success text-white')
+  else if (rec) parts.push('bg-error text-white')
+  else parts.push('bg-elevated text-muted hover:bg-accented')
+  if (i === idx.value) parts.push('outline outline-2 outline-offset-1 outline-highlighted')
+  return parts.join(' ')
 }
 </script>
 
@@ -207,44 +262,83 @@ function next() {
         </div>
       </UCard>
 
-      <UCard>
-        <p class="leading-7 text-default whitespace-pre-wrap" data-stem>
-          {{ current.stem }}
-        </p>
-      </UCard>
-
-      <QuizOptionList
-        :options="current.options"
-        :selected="selected"
-        :reveal="reveal"
-        :disabled="grading"
-        @select="choose"
-      />
-
-      <!-- 判分反馈 -->
-      <UCard v-if="result" data-grade-feedback>
-        <div class="space-y-3">
-          <div class="flex items-center gap-2">
-            <UBadge :color="result.correct ? 'success' : 'error'" data-grade-badge>
-              {{ result.correct ? '回答正确' : '回答错误' }}
-            </UBadge>
-            <span v-if="!result.correct" class="text-sm text-default" data-correct-answer>
-              正确答案：<b>{{ result.answer }}</b>
-            </span>
-          </div>
-          <div v-if="result.analysis" class="rounded-lg bg-elevated p-3 text-sm leading-6 text-default" data-analysis>
-            <p class="mb-1 text-xs font-semibold text-muted">
-              解析
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-[1fr_260px]">
+        <div class="space-y-4">
+          <UCard>
+            <p class="leading-7 text-default whitespace-pre-wrap" data-stem>
+              {{ idx + 1 }}. {{ current.stem }}
             </p>
-            <p class="whitespace-pre-wrap">{{ result.analysis }}</p>
-          </div>
-          <div class="flex justify-end">
-            <UButton color="primary" icon="i-lucide-arrow-right" trailing data-next @click="next">
-              {{ isLast ? '查看总结' : '下一题' }}
+          </UCard>
+
+          <QuizOptionList
+            :options="current.options"
+            :selected="selected"
+            :reveal="reveal"
+            :disabled="grading || !!result"
+            @select="choose"
+          />
+
+          <!-- 判分反馈 -->
+          <UCard v-if="result" data-grade-feedback>
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <UBadge :color="result.correct ? 'success' : 'error'" data-grade-badge>
+                  {{ result.correct ? '回答正确' : '回答错误' }}
+                </UBadge>
+                <span v-if="!result.correct" class="text-sm text-default" data-correct-answer>
+                  正确答案：<b>{{ result.answer }}</b>
+                </span>
+              </div>
+              <div v-if="result.analysis" class="rounded-lg bg-elevated p-3 text-sm leading-6 text-default" data-analysis>
+                <p class="mb-1 text-xs font-semibold text-muted">
+                  解析
+                </p>
+                <p class="whitespace-pre-wrap">{{ result.analysis }}</p>
+              </div>
+              <div class="flex justify-end">
+                <UButton color="primary" icon="i-lucide-arrow-right" trailing data-next @click="next">
+                  {{ isLast ? '查看总结' : '下一题' }}
+                </UButton>
+              </div>
+            </div>
+          </UCard>
+
+          <div class="flex justify-between">
+            <UButton color="neutral" variant="outline" icon="i-lucide-arrow-left" :disabled="idx === 0" @click="jump(idx - 1)">
+              上一题
+            </UButton>
+            <UButton color="neutral" variant="outline" trailing-icon="i-lucide-arrow-right" :disabled="idx >= total - 1" @click="jump(idx + 1)">
+              下一题
             </UButton>
           </div>
         </div>
-      </UCard>
+
+        <!-- 题号网格 -->
+        <UCard class="self-start lg:sticky lg:top-20">
+          <template #header>
+            <div class="flex items-center justify-between text-xs text-muted">
+              <span>题号</span>
+              <span class="flex items-center gap-2">
+                <span class="flex items-center gap-1"><i class="inline-block size-2.5 rounded-sm bg-success" />已答对</span>
+                <span class="flex items-center gap-1"><i class="inline-block size-2.5 rounded-sm bg-error" />已答错</span>
+                <span class="flex items-center gap-1"><i class="inline-block size-2.5 rounded-sm bg-elevated ring-1 ring-default" />未答</span>
+              </span>
+            </div>
+          </template>
+          <div class="grid grid-cols-5 gap-1.5" data-question-grid>
+            <button
+              v-for="(q, i) in questions"
+              :key="q.id"
+              type="button"
+              :class="cellClass(q, i)"
+              :data-cell="i + 1"
+              @click="jump(i)"
+            >
+              {{ i + 1 }}
+            </button>
+          </div>
+        </UCard>
+      </div>
     </template>
 
     <!-- 错因弹窗（可跳过；answer API 不接收错因，仅本地记录用于本次会话回顾） -->
