@@ -8,6 +8,9 @@ type Phase =
 
 const phase = ref<Phase>({ kind: 'select' })
 
+const { data: reviewStats } = await useFetch<{ data: { dueToday: number, inQueue: number, graduated: number } }>('/api/review/stats')
+const reviewDueToday = computed(() => reviewStats.value?.data.dueToday ?? 0)
+
 function startPractice(payload: { title: string, questions: QuizQuestion[] }) {
   phase.value = { kind: 'practice', ...payload }
 }
@@ -29,6 +32,12 @@ function backToSelect() {
       </h1>
       <UBadge v-if="phase.kind !== 'select'" color="neutral" variant="subtle">
         {{ phase.kind === 'paper' ? '年度套卷' : '即时判分' }}
+      </UBadge>
+      <UButton to="/quiz/review" icon="i-lucide-repeat" color="neutral" variant="outline" class="ml-auto">
+        错题复习
+      </UButton>
+      <UBadge v-if="reviewDueToday > 0" color="warning">
+        今日到期 {{ reviewDueToday }}
       </UBadge>
     </div>
 
