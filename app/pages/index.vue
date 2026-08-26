@@ -149,7 +149,7 @@ const quickLinks = [
       variant="subtle"
       icon="i-lucide-calendar-clock"
       :title="`距 2026-10-24 考试还剩 ${daysLeft} 天`"
-      :description="`当前第 ${currentWeek} 周 / 共 12 周，保持节奏。`"
+      :description="`当前第 ${currentWeek} 周 / 共 9 周，保持节奏。`"
     />
 
     <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">

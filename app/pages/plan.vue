@@ -66,7 +66,7 @@ function weekRange(week: number): string {
 
 function stage(week: number): { label: string, color: 'primary' | 'warning' | 'error' } {
   if (week <= 4) return { label: '基础夯实', color: 'primary' }
-  if (week <= 7) return { label: '真题专项', color: 'warning' }
+  if (week <= 6) return { label: '真题专项', color: 'warning' }
   return { label: '全真冲刺', color: 'error' }
 }
 
@@ -105,7 +105,7 @@ async function toggle(task: WeekTaskRow, done: boolean) {
 <template>
   <div class="p-8 max-w-3xl mx-auto space-y-4">
     <h1 class="text-2xl font-bold">
-      12 周备考计划
+      9 周备考计划
     </h1>
 
     <div v-if="status === 'pending'" class="text-sm text-muted">
