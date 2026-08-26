@@ -4,6 +4,7 @@
   "batch": "2023上半年(5月)",
   "no": 1,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "1",
   "stem": "信息系统的构成包括（）。",
   "options": {
    "A": "计算机硬件、计算机软件、网络和通信设备、系统分析人员、系统设计人员、系统开发人员",
@@ -20,6 +21,7 @@
   "batch": "2023上半年(5月)",
   "no": 2,
   "chapter": "系统规划与需求工程",
+  "textbook_chapter": "1",
   "stem": "诺兰阶段模型总结了管理信息系统发展的经验和规律，将信息系统的发展路线划分为六个阶段， 包括：（）。",
   "options": {
    "A": "初始阶段、扩展阶段、控制阶段、统一阶段、数据管理阶段、成熟阶段",
@@ -36,6 +38,7 @@
   "batch": "2023上半年(5月)",
   "no": 3,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "11",
   "stem": "进行数据流图的正确性检查时，以下说法不正确的是（）。",
   "options": {
    "A": "任何一个处理至少有一个输入数据流",
@@ -52,6 +55,7 @@
   "batch": "2023上半年(5月)",
   "no": 4,
   "chapter": "系统规划与需求工程",
+  "textbook_chapter": "6",
   "stem": "业务流程重组强调以业务流程为改造对象、以（）为目标、对现有的业务流程进行再造，利 用先进的制造技术、信息技术以及现代的管理手段、最大限度地实现技术上的功能集成和管理 上的职能重建，以打破传统的职能型组织结构，建立全新的过程型组织结构，从而实现企业经 营在成本、质量、服务和速度等方面的突破性的改善。",
   "options": {
    "A": "客户的需求和满意度",
@@ -68,6 +72,7 @@
   "batch": "2023上半年(5月)",
   "no": 5,
   "chapter": "软件工程与项目管理",
+  "textbook_chapter": "14",
   "stem": "以下关于系统测试原则的说法中，不正确的是（）。",
   "options": {
    "A": "应尽早地和不断地进行测试",
@@ -84,6 +89,7 @@
   "batch": "2023上半年(5月)",
   "no": 6,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "4",
   "stem": "Modem 的主要作用是（）。",
   "options": {
    "A": "数模转换",
@@ -100,6 +106,7 @@
   "batch": "2023上半年(5月)",
   "no": 7,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "9",
   "stem": "在我国商用密码算法体系中：（）属于摘要算法。",
   "options": {
    "A": "SM2",
@@ -116,6 +123,7 @@
   "batch": "2023上半年(5月)",
   "no": 8,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "4",
   "stem": "在OSI 参考模型中，负责对应用层消息进行压缩、加密的层次是（）。",
   "options": {
    "A": "传输层",
@@ -132,6 +140,7 @@
   "batch": "2023上半年(5月)",
   "no": 9,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "4",
   "stem": "下面用于收取电子邮件的协议是（）。",
   "options": {
    "A": "SMTP",
@@ -148,6 +157,7 @@
   "batch": "2023上半年(5月)",
   "no": 10,
   "chapter": "法规与英语",
+  "textbook_chapter": "X",
   "stem": "以下关于知识产权特点的说法中，错误的是（）。",
   "options": {
    "A": "无形性，知识产权是一种没有形体的精神财富",
@@ -164,6 +174,7 @@
   "batch": "2023上半年(5月)",
   "no": 11,
   "chapter": "法规与英语",
+  "textbook_chapter": "X",
   "stem": "著作权中，（）的保护期不受期限限制。",
   "options": {
    "A": "发表权",
@@ -180,6 +191,7 @@
   "batch": "2023上半年(5月)",
   "no": 12,
   "chapter": "法规与英语",
+  "textbook_chapter": "X",
   "stem": "以下关于计算机软件著作权的叙述中，错误的是（）。",
   "options": {
    "A": "软件著作权人可以许可他人行使其软件者作权，并有权获得报酬",
@@ -196,6 +208,7 @@
   "batch": "2023上半年(5月)",
   "no": 13,
   "chapter": "法规与英语",
+  "textbook_chapter": "X",
   "stem": "目前国际上为保护计算机软件知识产权不受侵犯所采用的主要方式是实施（）。",
   "options": {
    "A": "合同法",
@@ -212,6 +225,7 @@
   "batch": "2023上半年(5月)",
   "no": 14,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "3",
   "stem": "与单核处理器相比，多核处理器在（）设计等方面面临看巨大的挑战，但也蕴含着巨大的潜 能。CMP（单芯片多处理器）和SMT（同步多线程处理器）是目前较为流行的两种多核体系结 构，CMP 相对SMT 的最大优势还在于其（）设计的简洁性。",
   "options": {
    "A": "体系结构、硬件、软件和封装",
@@ -228,6 +242,7 @@
   "batch": "2023上半年(5月)",
   "no": 15,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "3",
   "stem": "与单核处理器相比，多核处理器在（）设计等方面面临看巨大的挑战，但也蕴含着巨大的潜 能。CMP（单芯片多处理器）和SMT（同步多线程处理器）是目前较为流行的两种多核体系结 构，CMP 相对SMT 的最大优势还在于其（）设计的简洁性。",
   "options": {
    "A": "集成化",
@@ -244,6 +259,7 @@
   "batch": "2023上半年(5月)",
   "no": 16,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "16",
   "stem": "嵌入式系统是一种以应用为中心，以计算机技术为基础，可以适应不同应用对功能、可靠性、 成本、体积、功耗严格要求的专用计算机系统。集可配置可裁剪的软、硬件于一体的专用计算 机系统。嵌入式系统通常是通过外部接口采集相关输入信息或人机接口输入的命令，在嵌入式 计算机中( ) ,控制受控对象。",
   "options": {
    "A": "对输入数据进行加工、计算，并将计算结果通过外部接口输出",
@@ -260,6 +276,7 @@
   "batch": "2023上半年(5月)",
   "no": 17,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "3",
   "stem": "某软件系统投入运行15 天，计划运行时间为每早8 点至晚6 点。第二天上午发生一次失效， 故障恢复用了1 个小时，第4 天上午发生一次失效，故障恢复用了4 个小时，第9 天上午发生 一次失效，故障恢复用了2 个小时，除此之外系统一直正常运行。那么，该软件系统的可用性 约为( )。",
   "options": {
    "A": "94. 5%",
@@ -276,6 +293,7 @@
   "batch": "2023上半年(5月)",
   "no": 18,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "9",
   "stem": "麒麟操作系统是国产服务器操作系统重安全性较高的产品，其特点是内核与应用一体化的安全 体系设计，它实现了内核的KYSEC 安全框架。以下关于KYSEC 安全框架的描述中，正确的是 ( )。",
   "options": {
    "A": "KYSEC 是内核模块的一个安全框架，使用文件名作为安全标签，系统管理员通过将每个程序与一个安全配置文件关联，从而限制程序的功能",
@@ -292,6 +310,7 @@
   "batch": "2023上半年(5月)",
   "no": 19,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "16",
   "stem": "区块链是按照时间顺序，将数据区块以顺序相连的方式组合成的链式数据结构，是以密码学方 式保证的不可篡改和不可伪造的分布式账本。以下选项中( ) 不是区块链具有的特征。",
   "options": {
    "A": "去中心化",
@@ -308,6 +327,7 @@
   "batch": "2023上半年(5月)",
   "no": 20,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "9",
   "stem": "国密SSL 证书采用( )公钥算法体系，支持SM2，SM3，SM4 等国密算法安全协拟，国密SSL 证书可以满足政府机构、事业单位、大型国企、金融银行等行业客户的国产化改造和国密算法 合规需求。",
   "options": {
    "A": "SM1",
@@ -324,6 +344,7 @@
   "batch": "2023上半年(5月)",
   "no": 21,
   "chapter": "系统规划与需求工程",
+  "textbook_chapter": "6",
   "stem": "数据治理模型包括三个框架，显示了数据治理内部的逻辑关系，其中，范围展示了具体应该关 注什么，( ) 是数据治理的推动因素，( )体现了如何实现治理的方法。",
   "options": {
    "A": "使用类型",
@@ -340,6 +361,7 @@
   "batch": "2023上半年(5月)",
   "no": 22,
   "chapter": "系统规划与需求工程",
+  "textbook_chapter": "6",
   "stem": "数据治理模型包括三个框架，显示了数据治理内部的逻辑关系，其中，范围展示了具体应该关 注什么，( ) 是数据治理的推动因素，( )体现了如何实现治理的方法。",
   "options": {
    "A": "用户使用",
@@ -356,6 +378,7 @@
   "batch": "2023上半年(5月)",
   "no": 23,
   "chapter": "系统规划与需求工程",
+  "textbook_chapter": "6",
   "stem": "基于统一的( )，数字化转型和云化转型能够把数字化转型工作重心放在业务应用上，从而 使得数学化换转型的目标重新回归到业务应用本身，通过云原生来提升业务应用的送代速度， 促进业务创新。",
   "options": {
    "A": "基础平台、软件架构、开发流程",
@@ -372,6 +395,7 @@
   "batch": "2023上半年(5月)",
   "no": 24,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "16",
   "stem": "数字孪生是形成物理世界中某一生产流程的模型及其在数字世界中的数字化镜像的过程和方 法。数字孪生有五大驱动要素，包括物理世界的传感器、( )、集成、分析和促动器，以及 持续更新的数字孪生应用程序。",
   "options": {
    "A": "数据",
@@ -388,6 +412,7 @@
   "batch": "2023上半年(5月)",
   "no": 25,
   "chapter": "系统规划与需求工程",
+  "textbook_chapter": "6",
   "stem": "( )是企业数字化运营的统一数据能力平台，能够按照规范汇聚和治理全局数据，为各个业 务部门提供标准的数据能力和数据工具。",
   "options": {
    "A": "大数据平台",
@@ -404,6 +429,7 @@
   "batch": "2023上半年(5月)",
   "no": 26,
   "chapter": "系统规划与需求工程",
+  "textbook_chapter": "6",
   "stem": "数字化转型成熟度模型由成熟度等级和评价域构成，其中，成熟度等级包括( )。",
   "options": {
    "A": "初始级、规范级、场景级、领域级、平台级",
@@ -420,6 +446,7 @@
   "batch": "2023上半年(5月)",
   "no": 27,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "12",
   "stem": "在事件系统体系架构风格中，构件不直接调用一个过程，而是触发或广播一个或多个事件。在 这种风格中，构件间交互的连接件往往是以过程之间的( )来实现的。该风格的主要优点是 为软件的( )提供了强大的支持，其缺点是( )。",
   "options": {
    "A": "显式调用",
@@ -436,6 +463,7 @@
   "batch": "2023上半年(5月)",
   "no": 28,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "12",
   "stem": "在事件系统体系架构风格中，构件不直接调用一个过程，而是触发或广播一个或多个事件。在 这种风格中，构件间交互的连接件往往是以过程之间的( )来实现的。该风格的主要优点是 为软件的( )提供了强大的支持，其缺点是( )。",
   "options": {
    "A": "复用",
@@ -452,6 +480,7 @@
   "batch": "2023上半年(5月)",
   "no": 29,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "12",
   "stem": "在事件系统体系架构风格中，构件不直接调用一个过程，而是触发或广播一个或多个事件。在 这种风格中，构件间交互的连接件往往是以过程之间的( )来实现的。该风格的主要优点是 为软件的( )提供了强大的支持，其缺点是( )。",
   "options": {
    "A": "构件放弃了对系统计算的控制",
@@ -468,6 +497,7 @@
   "batch": "2023上半年(5月)",
   "no": 30,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "12",
   "stem": "SOA 是一种全新的系统架构，为了支持其特性，相关技术规范不推出。( )定义了服务请求 者和服务提供者之前的消息传输规范；( )提供了一种服务发布、查找和定位的方法，是服 务的信息注册规范，以便被需要该服务的用户发现和使用它。",
   "options": {
    "A": "WSDL",
@@ -484,6 +514,7 @@
   "batch": "2023上半年(5月)",
   "no": 31,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "12",
   "stem": "SOA 是一种全新的系统架构，为了支持其特性，相关技术规范不推出。( )定义了服务请求 者和服务提供者之前的消息传输规范；( )提供了一种服务发布、查找和定位的方法，是服 务的信息注册规范，以便被需要该服务的用户发现和使用它。",
   "options": {
    "A": "WSDL",
@@ -500,6 +531,7 @@
   "batch": "2023上半年(5月)",
   "no": 32,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "12",
   "stem": "软件架构评估是软件设计阶段最重要的活动之一，目前存在多种软件架构评估方式，其中，其 中架构权衡分析法(Architecture Trade off Analysis Method, ATAM)属于基于( )的方式, 在该方法的架构评估中，( )是解释或描述项目干系人怎样引发与系统的交互部分。",
   "options": {
    "A": "场景",
@@ -516,6 +548,7 @@
   "batch": "2023上半年(5月)",
   "no": 33,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "12",
   "stem": "软件架构评估是软件设计阶段最重要的活动之一，目前存在多种软件架构评估方式，其中，其 中架构权衡分析法(Architecture Trade off Analysis Method, ATAM)属于基于( )的方式, 在该方法的架构评估中，( )是解释或描述项目干系人怎样引发与系统的交互部分。",
   "options": {
    "A": "环境",
@@ -532,6 +565,7 @@
   "batch": "2023上半年(5月)",
   "no": 34,
   "chapter": "软件工程与项目管理",
+  "textbook_chapter": "7",
   "stem": "软件产品线(Sofware Product Line)是一个产品集合，这些产品共享一个公共的、可管理的 特征集，这个特征集能满足特定领域的特定需求。软件产品线主要由两部分组成，其中，( ) 是领域工程的所有结果的集合，产品线中产品构造的基础。",
   "options": {
    "A": "核心资源",
@@ -548,6 +582,7 @@
   "batch": "2023上半年(5月)",
   "no": 35,
   "chapter": "系统规划与需求工程",
+  "textbook_chapter": "6",
   "stem": "信息化战略从企业战略出发，服务于企业战略，同时又影响和促进企业战略。业务与IT 整合 (Business-IT Alignment,，BITA)是企业战略与信息化战略集成的主要方法之一。BITA 的主 要步骤是评估和分析企业当前业务和IT 不一致的领域，整理出企业的业务远景和未来战略， 建立( )，提出达到未来目标的转变过程建议和初步计划，以及执行计划。",
   "options": {
    "A": "企业标准",
@@ -564,6 +599,7 @@
   "batch": "2023上半年(5月)",
   "no": 36,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "7",
   "stem": "结构化方法属于( )的开发方法。它是目前最成熟、应用较广泛的一种工程化方法。但与此 同时，该方法也存在着一定的局限性。( )不属于结构化方法的主要不足和局限性。",
   "options": {
    "A": "自底向上",
@@ -580,6 +616,7 @@
   "batch": "2023上半年(5月)",
   "no": 37,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "7",
   "stem": "结构化方法属于( )的开发方法。它是目前最成熟、应用较广泛的一种工程化方法。但与此 同时，该方法也存在着一定的局限性。( )不属于结构化方法的主要不足和局限性。",
   "options": {
    "A": "开发周期长",
@@ -596,6 +633,7 @@
   "batch": "2023上半年(5月)",
   "no": 38,
   "chapter": "软件工程与项目管理",
+  "textbook_chapter": "7",
   "stem": "在软件开发模型中，( )要针对事先不能完整定义需求的软件开发，是在快速开发一个原型 的基础上,根据用户在调用原型的过程中提出的反馈意见和建议，对原型进行改进，获得原型 的新版本,复这一过程，直到形成最终的软件产品。",
   "options": {
    "A": "演化模型",
@@ -612,6 +650,7 @@
   "batch": "2023上半年(5月)",
   "no": 39,
   "chapter": "软件工程与项目管理",
+  "textbook_chapter": "7",
   "stem": "软件能力成熟度模型(Capability Maturity Model, CMM)是一个概念模型，模型框架和表示 是刚性的，不能随意改变，但模型的解释和实现有一定弹性。CMM 提了一个软件能力成熟度的 框架，它将软件过程改进的步骤组织成5 个成熟度等级，为软件过程不断改进奠定了一个循序 渐进的基础。其中，( )是规则化的过程，软件过程已建立了基本的项目管理过程，可用于 对成本、进度和功能特性进行跟踪。对类似的应用项目，有可循并能重复以往所取得的成功。",
   "options": {
    "A": "初始级",
@@ -628,6 +667,7 @@
   "batch": "2023上半年(5月)",
   "no": 40,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "5",
   "stem": "在数据库的安全机制中，通过建立( )使用户只能看到部分数据，从而保护了其它数据的安 全性。",
   "options": {
    "A": "索引",
@@ -644,6 +684,7 @@
   "batch": "2023上半年(5月)",
   "no": 41,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "5",
   "stem": "事务的( )是指“当多个事务并发执行时，任一事务的更新操作直到其成功提交的整个过程， 对其他事务都是不可见的\"。",
   "options": {
    "A": "原子性",
@@ -660,6 +701,7 @@
   "batch": "2023上半年(5月)",
   "no": 42,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "5",
   "stem": "给定关系模式R(U, F),其中U 为属性集, U={X, Y, Z}, F 是U 上的一组函数依赖。函数依赖 的公理系统(Armstrong 公理系统)中的( )是指“若X→Y，X→Z,则X→YZ 为F 所蕴涵”。",
   "options": {
    "A": "自反率",
@@ -676,6 +718,7 @@
   "batch": "2023上半年(5月)",
   "no": 43,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "5",
   "stem": "在关系R(A1, A2, A3)和S(A1, A2, A3)上进行关系运算的4 个等价的表达式E1、E2、E3 和 E4 如下所示： 如果严格按照表达式运算顺序，则查询效率最高的是( )，将该查询转换价的SQL 语句为: SELECT A1, A4 FROM R，S WHERE( )。",
   "options": {
    "A": "E1",
@@ -692,6 +735,7 @@
   "batch": "2023上半年(5月)",
   "no": 44,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "5",
   "stem": "在关系R(A1, A2, A3)和S(A1, A2, A3)上进行关系运算的4 个等价的表达式E1、E2、E3 和 E4 如下所示： 如果严格按照表达式运算顺序，则查询效率最高的是( )，将该查询转换价的SQL 语句为: SELECT A1, A4 FROM R，S WHERE( )。",
   "options": {
    "A": "R.A2 <2022' OR S.A4 <95'",
@@ -708,6 +752,7 @@
   "batch": "2023上半年(5月)",
   "no": 45,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "5",
   "stem": "某银行信息管理系统采用分布式数据库系统，以便对本地储户的存储业务能够在本地正常进行 而不依赖于其他场地的数据库，这种情况称为分布式数据库的( )。",
   "options": {
    "A": "分布性",
@@ -724,6 +769,7 @@
   "batch": "2023上半年(5月)",
   "no": 46,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "3",
   "stem": "某系统中有6 个并发进程竞争资源R。假设每个进程都需要3 个R，那么最少需要有( )个R， 才能保证系统不会发生死锁。",
   "options": {
    "A": "12",
@@ -740,6 +786,7 @@
   "batch": "2023上半年(5月)",
   "no": 47,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "3",
   "stem": "某系统采用请求页式存储管理方案，假设进程P 有6 个页面，系统给P 分配了4 个存储块，其 页面变换表如下表所示。表中的状态位等于1/0 分别表示页面在内存/不在内存。当P 访问的 页面2 不在内存时，应该淘汰表中页号为( )的页面。",
   "options": {
    "A": "0",
@@ -756,6 +803,7 @@
   "batch": "2023上半年(5月)",
   "no": 48,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "16",
   "stem": "在嵌入式操作系统中，通常采用硬件抽象层( Hardware Abstraction Level,HAL )和板级支撑 包( Board Support Package,BSP )的底层设计技术，目的是为了提高操作系统的( )。",
   "options": {
    "A": "可定制",
@@ -772,6 +820,7 @@
   "batch": "2023上半年(5月)",
   "no": 49,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "3",
   "stem": "进程P1、P2、P3、P4、P5 和P6 的前趋图如下所示： 若用PV 操作控制这6 个进程的同步与互斥的程序如下，那么程序中的空①和空②分别为 ( ); 空③和空④处应分别为( ); 空⑤和空⑥处应分别为( )。",
   "options": {
    "A": "V(SI)和V(S3)V(S4)",
@@ -788,6 +837,7 @@
   "batch": "2023上半年(5月)",
   "no": 50,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "3",
   "stem": "进程P1、P2、P3、P4、P5 和P6 的前趋图如下所示： 若用PV 操作控制这6 个进程的同步与互斥的程序如下，那么程序中的空①和空②分别为 ( ); 空③和空④处应分别为( ); 空⑤和空⑥处应分别为( )。",
   "options": {
    "A": "V(S3)和V(S5)",
@@ -804,6 +854,7 @@
   "batch": "2023上半年(5月)",
   "no": 51,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "3",
   "stem": "进程P1、P2、P3、P4、P5 和P6 的前趋图如下所示： 若用PV 操作控制这6 个进程的同步与互斥的程序如下，那么程序中的空①和空②分别为 ( ); 空③和空④处应分别为( ); 空⑤和空⑥处应分别为( )。",
   "options": {
    "A": "P（S5)P(S6)和P(S7)",
@@ -820,6 +871,7 @@
   "batch": "2023上半年(5月)",
   "no": 52,
   "chapter": "数学与经济管理",
+  "textbook_chapter": "2",
   "stem": "运用数学模型来描述实际事物的主要优点不包括( )。",
   "options": {
    "A": "可以对决策进行事前分析，尽量避免决策失误造成损失",
@@ -836,6 +888,7 @@
   "batch": "2023上半年(5月)",
   "no": 53,
   "chapter": "数学与经济管理",
+  "textbook_chapter": "2",
   "stem": "线性规划模型的特点不包括( )。",
   "options": {
    "A": "用一组未知的决策变量来表示所需求解的决策方案",
@@ -852,6 +905,7 @@
   "batch": "2023上半年(5月)",
   "no": 54,
   "chapter": "数学与经济管理",
+  "textbook_chapter": "8",
   "stem": "某项目共有A-G 七道工序，各道工序所需的时间(天数)以及工序之间的运行关系如下表。该项 目计划的最短工期为( )天。假设每道工序只需要一人做，都可以做所有各道工序，但不能 同时做多道工序，那么该项目至少需要( )。",
   "options": {
    "A": "11",
@@ -868,6 +922,7 @@
   "batch": "2023上半年(5月)",
   "no": 55,
   "chapter": "数学与经济管理",
+  "textbook_chapter": "8",
   "stem": "某项目共有A-G 七道工序，各道工序所需的时间(天数)以及工序之间的运行关系如下表。该项 目计划的最短工期为( )天。假设每道工序只需要一人做，都可以做所有各道工序，但不能 同时做多道工序，那么该项目至少需要( )。",
   "options": {
    "A": "1",
@@ -884,6 +939,7 @@
   "batch": "2023上半年(5月)",
   "no": 56,
   "chapter": "数学与经济管理",
+  "textbook_chapter": "2",
   "stem": "企业从部门中选择四个部门下月做甲、乙、丙、丁四项工作，每个部门做一项工作。已知每个 部门做每项工作所需的成本(单位:万元) 在总成本最低的方案中，( )。",
   "options": {
    "A": "选择部门A、B、C、D 做工作，安排部门A 做工作甲",
@@ -900,6 +956,7 @@
   "batch": "2023上半年(5月)",
   "no": 57,
   "chapter": "数学与经济管理",
+  "textbook_chapter": "2",
   "stem": "某企业有三种方案A1, A2, A3 可供选择，各种方案面对三种可能的市场状态S1，S2, S3 可以 获得的利润F(Ai, Sj)如下表所示(单位:负值表示损额)： 暂缺 企业应依据合适的决策准则来选择方案。以下对决策过程的叙述中，( )并正确：",
   "options": {
    "A": "根据乐观准则maxmaxF(Ai，Sj), 应选择方案A3",
@@ -916,6 +973,7 @@
   "batch": "2023上半年(5月)",
   "no": 59,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "3",
   "stem": "计算机系统的( )描述了计算机系统能正常工作的时间，其指标可以是能够持续工作的时间 长度，也可以是在一段时间内，能够正常工作的时间所占的百分比，计算机系统的( )，通 常用吞吐率、响应时间和资源利用率等三类指标进行衡量。",
   "options": {
    "A": "可靠性",
@@ -932,6 +990,7 @@
   "batch": "2023上半年(5月)",
   "no": 60,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "3",
   "stem": "计算机系统的( )描述了计算机系统能正常工作的时间，其指标可以是能够持续工作的时间 长度，也可以是在一段时间内，能够正常工作的时间所占的百分比，计算机系统的( )，通 常用吞吐率、响应时间和资源利用率等三类指标进行衡量。",
   "options": {
    "A": "可靠性",
@@ -948,6 +1007,7 @@
   "batch": "2023上半年(5月)",
   "no": 61,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "7",
   "stem": "面向对象方法是企业信息系统的主流开发方法，该访法可分为多个阶段，其中面向对象的( ) 阶段的任务是了解问题域所涉及的对象，对象间的关系和操作，然后构造问题的对象模型。面 向对象的( )阶段的任务是在对象模型的基础上,设计出各个对象、对象之间的关系和通信方 式等。",
   "options": {
    "A": "需求",
@@ -964,6 +1024,7 @@
   "batch": "2023上半年(5月)",
   "no": 62,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "7",
   "stem": "面向对象方法是企业信息系统的主流开发方法，该访法可分为多个阶段，其中面向对象的( ) 阶段的任务是了解问题域所涉及的对象，对象间的关系和操作，然后构造问题的对象模型。面 向对象的( )阶段的任务是在对象模型的基础上,设计出各个对象、对象之间的关系和通信方 式等。",
   "options": {
    "A": "需求",
@@ -980,6 +1041,7 @@
   "batch": "2023上半年(5月)",
   "no": 63,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "7",
   "stem": "面向服务的信息系统开发方法有三个主要的抽象级别，其中操作级别代表单个逻辑单元的事务， 事务触发后通常会导致读、写或修改一个或多个持久性数据；（ ）级别代表操作的逻辑分 组；最高层的（ ）是为了实现特定业务目标而执行的一长期运行的动作或活动，包括依据 一组业务规则按照有序序列执行的一系列操作。",
   "options": {
    "A": "对象",
@@ -996,6 +1058,7 @@
   "batch": "2023上半年(5月)",
   "no": 64,
   "chapter": "系统分析与设计",
+  "textbook_chapter": "7",
   "stem": "面向服务的信息系统开发方法有三个主要的抽象级别，其中操作级别代表单个逻辑单元的事务， 事务触发后通常会导致读、写或修改一个或多个持久性数据；（ ）级别代表操作的逻辑分 组；最高层的（ ）是为了实现特定业务目标而执行的一长期运行的动作或活动，包括依据 一组业务规则按照有序序列执行的一系列操作。",
   "options": {
    "A": "对象",
@@ -1012,6 +1075,7 @@
   "batch": "2023上半年(5月)",
   "no": 65,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "16",
   "stem": "在Linux 操作系统中通常使用( )作为Web 服务器，其默认的Web 站点的目录为( )。",
   "options": {
    "A": "IIS",
@@ -1028,6 +1092,7 @@
   "batch": "2023上半年(5月)",
   "no": 66,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "16",
   "stem": "在Linux 操作系统中通常使用( )作为Web 服务器，其默认的Web 站点的目录为( )。",
   "options": {
    "A": "/etc/httpd",
@@ -1044,6 +1109,7 @@
   "batch": "2023上半年(5月)",
   "no": 67,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "4",
   "stem": "FTP 服务可以开启匿名登录功能，其用户名是( )，若要上传文件，应使用( )命令。",
   "options": {
    "A": "root",
@@ -1060,6 +1126,7 @@
   "batch": "2023上半年(5月)",
   "no": 68,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "4",
   "stem": "FTP 服务可以开启匿名登录功能，其用户名是( )，若要上传文件，应使用( )命令。",
   "options": {
    "A": "copy",
@@ -1076,6 +1143,7 @@
   "batch": "2023上半年(5月)",
   "no": 69,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "4",
   "stem": "邮件客户端使用( )协议同步服务器和客户端之间的邮件列表。",
   "options": {
    "A": "POP",
@@ -1092,6 +1160,7 @@
   "batch": "2023上半年(5月)",
   "no": 70,
   "chapter": "计算机基础与新技术",
+  "textbook_chapter": "4",
   "stem": "路由器收到一个目标地址为201.46.17.4 的数据包，应将该数据包发往（ ）网。",
   "options": {
    "A": "201.46.0.0/21",
@@ -1108,6 +1177,7 @@
   "batch": "2023上半年(5月)",
   "no": 71,
   "chapter": "法规与英语",
+  "textbook_chapter": "X",
   "stem": "Safety critical systems are systems in which failures may affect the environment of the system and cause injury or death to the people in that environment. The principal concern of safety specification is to identify requirements that will minimize the probability that such system failures will occur. Safety requirements are primarily protection requirements and are not concerned with normal system operation. They may specify that the system should be shut down so that safety is maintained. In deriving safety requirements, you therefore need to find an acceptable balance between safety and functionality and avoid overprotection. There is no point in building a very safe system if it does not operate in a cost-effective way. Safety specification is usually focused on the hazards that may arise in a given situation, and the events that can lead to these hazards. The activities in the general risk-based process map onto the safety specification process as follows. 1.(71).In safety specification, this is the hazard identification process that identifies hazards that may threaten the system. 2.(72).This is a process of hazard assessment to decide which hazards are the most dangerous and or the most likely to occur. These should be prioritized when deriving safety requirements. 3.(73).This process is concerned with discovering the events that can lead to the occurrence of a hazard. In safety specification, the process is known as hazard analysis. 4.(74).This process is based on the outcome of (75) and leads to identification of safety requirements. These may be concerned with ensuring that a hazard does not arise or lead to an accident or that if an accident does occur, the associated damage is minimized. (【说明】英文题干按原文语义校订，源整理帖存在OCR错字)",
   "options": {
    "A": "Risk decomposition",
@@ -1124,6 +1194,7 @@
   "batch": "2023上半年(5月)",
   "no": 72,
   "chapter": "法规与英语",
+  "textbook_chapter": "X",
   "stem": "Safety critical systems are systems in which failures may affect the environment of the system and cause injury or death to the people in that environment. The principal concern of safety specification is to identify requirements that will minimize the probability that such system failures will occur. Safety requirements are primarily protection requirements and are not concerned with normal system operation. They may specify that the system should be shut down so that safety is maintained. In deriving safety requirements, you therefore need to find an acceptable balance between safety and functionality and avoid overprotection. There is no point in building a very safe system if it does not operate in a cost-effective way. Safety specification is usually focused on the hazards that may arise in a given situation, and the events that can lead to these hazards. The activities in the general risk-based process map onto the safety specification process as follows. 1.(71).In safety specification, this is the hazard identification process that identifies hazards that may threaten the system. 2.(72).This is a process of hazard assessment to decide which hazards are the most dangerous and or the most likely to occur. These should be prioritized when deriving safety requirements. 3.(73).This process is concerned with discovering the events that can lead to the occurrence of a hazard. In safety specification, the process is known as hazard analysis. 4.(74).This process is based on the outcome of (75) and leads to identification of safety requirements. These may be concerned with ensuring that a hazard does not arise or lead to an accident or that if an accident does occur, the associated damage is minimized. (【说明】英文题干按原文语义校订，源整理帖存在OCR错字)",
   "options": {
    "A": "Risk decomposition",
@@ -1140,6 +1211,7 @@
   "batch": "2023上半年(5月)",
   "no": 73,
   "chapter": "法规与英语",
+  "textbook_chapter": "X",
   "stem": "Safety critical systems are systems in which failures may affect the environment of the system and cause injury or death to the people in that environment. The principal concern of safety specification is to identify requirements that will minimize the probability that such system failures will occur. Safety requirements are primarily protection requirements and are not concerned with normal system operation. They may specify that the system should be shut down so that safety is maintained. In deriving safety requirements, you therefore need to find an acceptable balance between safety and functionality and avoid overprotection. There is no point in building a very safe system if it does not operate in a cost-effective way. Safety specification is usually focused on the hazards that may arise in a given situation, and the events that can lead to these hazards. The activities in the general risk-based process map onto the safety specification process as follows. 1.(71).In safety specification, this is the hazard identification process that identifies hazards that may threaten the system. 2.(72).This is a process of hazard assessment to decide which hazards are the most dangerous and or the most likely to occur. These should be prioritized when deriving safety requirements. 3.(73).This process is concerned with discovering the events that can lead to the occurrence of a hazard. In safety specification, the process is known as hazard analysis. 4.(74).This process is based on the outcome of (75) and leads to identification of safety requirements. These may be concerned with ensuring that a hazard does not arise or lead to an accident or that if an accident does occur, the associated damage is minimized. (【说明】英文题干按原文语义校订，源整理帖存在OCR错字)",
   "options": {
    "A": "Risk decomposition",
@@ -1156,6 +1228,7 @@
   "batch": "2023上半年(5月)",
   "no": 74,
   "chapter": "法规与英语",
+  "textbook_chapter": "X",
   "stem": "Safety critical systems are systems in which failures may affect the environment of the system and cause injury or death to the people in that environment. The principal concern of safety specification is to identify requirements that will minimize the probability that such system failures will occur. Safety requirements are primarily protection requirements and are not concerned with normal system operation. They may specify that the system should be shut down so that safety is maintained. In deriving safety requirements, you therefore need to find an acceptable balance between safety and functionality and avoid overprotection. There is no point in building a very safe system if it does not operate in a cost-effective way. Safety specification is usually focused on the hazards that may arise in a given situation, and the events that can lead to these hazards. The activities in the general risk-based process map onto the safety specification process as follows. 1.(71).In safety specification, this is the hazard identification process that identifies hazards that may threaten the system. 2.(72).This is a process of hazard assessment to decide which hazards are the most dangerous and or the most likely to occur. These should be prioritized when deriving safety requirements. 3.(73).This process is concerned with discovering the events that can lead to the occurrence of a hazard. In safety specification, the process is known as hazard analysis. 4.(74).This process is based on the outcome of (75) and leads to identification of safety requirements. These may be concerned with ensuring that a hazard does not arise or lead to an accident or that if an accident does occur, the associated damage is minimized. (【说明】英文题干按原文语义校订，源整理帖存在OCR错字)",
   "options": {
    "A": "Risk decomposition",
@@ -1172,6 +1245,7 @@
   "batch": "2023上半年(5月)",
   "no": 75,
   "chapter": "法规与英语",
+  "textbook_chapter": "X",
   "stem": "Safety critical systems are systems in which failures may affect the environment of the system and cause injury or death to the people in that environment. The principal concern of safety specification is to identify requirements that will minimize the probability that such system failures will occur. Safety requirements are primarily protection requirements and are not concerned with normal system operation. They may specify that the system should be shut down so that safety is maintained. In deriving safety requirements, you therefore need to find an acceptable balance between safety and functionality and avoid overprotection. There is no point in building a very safe system if it does not operate in a cost-effective way. Safety specification is usually focused on the hazards that may arise in a given situation, and the events that can lead to these hazards. The activities in the general risk-based process map onto the safety specification process as follows. 1.(71).In safety specification, this is the hazard identification process that identifies hazards that may threaten the system. 2.(72).This is a process of hazard assessment to decide which hazards are the most dangerous and or the most likely to occur. These should be prioritized when deriving safety requirements. 3.(73).This process is concerned with discovering the events that can lead to the occurrence of a hazard. In safety specification, the process is known as hazard analysis. 4.(74).This process is based on the outcome of (75) and leads to identification of safety requirements. These may be concerned with ensuring that a hazard does not arise or lead to an accident or that if an accident does occur, the associated damage is minimized. (【说明】英文题干按原文语义校订，源整理帖存在OCR错字)",
   "options": {
    "A": "hazard identification",

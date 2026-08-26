@@ -14,7 +14,8 @@
     "answer": "A",
     "analysis": "考点：开发模型选择。需求明确稳定、强调阶段化与文档评审，是瀑布模型的典型适用场景。原型模型适用于需求难以完整定义、需用户反馈迭代的场景，B排除；螺旋模型以风险分析为驱动，适合大型高风险项目，题干未体现风险驱动，C排除；喷泉模型面向对象、强调迭代与无间隙过渡，不符合严格阶段评审的要求，D排除。原型：2023上#38。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "7"
   },
   {
     "year": "mock",
@@ -31,7 +32,8 @@
     "answer": "B",
     "analysis": "考点：螺旋模型特征。螺旋模型在每个周期都进行风险分析，以风险驱动开发，这是其区别于其他模型的本质特征。需求评审和代码走查是各模型通用的质量活动，A、C排除；用户培训属于实施阶段工作，D排除。原型：2023上#38（模型辨析）。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "7"
   },
   {
     "year": "mock",
@@ -48,7 +50,8 @@
     "answer": "C",
     "analysis": "考点：增量模型。增量模型按增量分批交付，允许需求在开发过程中逐步细化和调整，不要求一开始精确定义全部需求，C说法错误。首个增量通常为核心产品，每个增量内部仍走完整开发流程，用户可分批获得功能，A、B、D均为正确描述。原型：2023上#38（开发模型）。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "7"
   },
   {
     "year": "mock",
@@ -65,7 +68,8 @@
     "answer": "B",
     "analysis": "考点：敏捷 Scrum 角色。产品负责人负责管理 Product Backlog、排定优先级、对产品价值负责。Scrum Master 负责清除障碍、保障过程，A排除；开发团队负责交付增量，C排除；Scrum 中不设传统项目经理角色，D排除。原型：2022#4（敏捷）、2026#14。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "7"
   },
   {
     "year": "mock",
@@ -82,7 +86,8 @@
     "answer": "A",
     "analysis": "考点：XP 实践。结对编程（Pair Programming）指两人共用一台机器协作编码。重构是改善代码结构而不改变外部行为，B排除；持续集成是频繁集成构建，C排除；测试驱动开发是先写测试再写实现，D排除。原型：2022#4、2026#60（敏捷实践）。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "7"
   },
   {
     "year": "mock",
@@ -99,7 +104,8 @@
     "answer": "C",
     "analysis": "考点：敏捷宣言四价值观。敏捷宣言主张客户合作胜过合同谈判，C表述颠倒了该价值观，不符合敏捷思想。A、B、D均为敏捷宣言原文表述。原型：2026#14。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "7"
   },
   {
     "year": "mock",
@@ -116,7 +122,8 @@
     "answer": "C",
     "analysis": "考点：CMM 五个成熟度等级。已定义级的特征是将管理与工程过程文档化、标准化，形成组织级标准过程。初始级过程无序，A排除；可重复级仅建立基本项目管理控制，B排除；优化级强调量化反馈与持续改进，D排除。原型：2023上#39。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "7"
   },
   {
     "year": "mock",
@@ -133,7 +140,8 @@
     "answer": "D",
     "analysis": "考点：软件过程改进。初始级过程随意、依赖个人英雄主义，无法稳定复制成功，D说法错误。可重复级跟踪成本进度，优化级持续量化改进，已管理级定量管理过程与产品质量，A、B、C均为正确描述。原型：2023上#39。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "7"
   },
   {
     "year": "mock",
@@ -150,7 +158,8 @@
     "answer": "B",
     "analysis": "考点：挣值分析。SPI=EV/PV=80/100=0.8<1，进度落后；CPI=EV/AC=80/90≈0.89<1，成本超支。SPI<1 表示进度落后，CPI<1 表示成本超支，故选B。其余组合与计算结果不符。算式已经 python 复算。原型：2026#50（进度计划考点扩展）。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -167,7 +176,8 @@
     "answer": "B",
     "analysis": "考点：挣值偏差含义。CV=EV-AC=50-70=-20 万元，CV<0 表示成本超支 20 万元。CV 只反映成本，不反映进度，C、D排除；CV 为负是超支而非节约，A排除。算式已经 python 复算（SV=EV-PV=-10）。原型：2026#50 考点扩展。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -184,7 +194,8 @@
     "answer": "C",
     "analysis": "考点：关键路径计算。三条路径：A-C-D=3+5+3=11 天，B-C-D=4+5+3=12 天，B-E=4+6=10 天，最长路径 B-C-D=12 天为关键路径。A、B、D 均非最长路径工期。算式已经 python 复算。原型：2026#50 考点扩展。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -201,7 +212,8 @@
     "answer": "D",
     "analysis": "考点：配置管理活动。配置管理包括配置标识、版本控制、变更控制、配置审计等活动。需求获取属于需求工程范畴，不是配置管理活动，故选D。A、B、C 均为配置管理的基本活动。原型：配置管理通用考点。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -218,7 +230,8 @@
     "answer": "A",
     "analysis": "考点：基线变更管理。基线是受控的配置项集合，修改必须走变更控制流程（申请、评估、审批、实施）。直接修改破坏配置受控性，B排除；修改应由授权人员而非测试人员执行，C排除；拖延修改会使基线与实际脱节，D排除。原型：配置管理通用考点。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -235,7 +248,8 @@
     "answer": "C",
     "analysis": "考点：软件测试原则。测试应尽早并持续进行，尽早发现缺陷可降低成本。测试只能证明存在错误而不能证明无错误，A排除；穷举测试对绝大多数系统不可行，B排除；测试需要独立性与开发自测结合，D排除。原型：2023上#5。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "14"
   },
   {
     "year": "mock",
@@ -252,7 +266,8 @@
     "answer": "B",
     "analysis": "考点：测试类型辨析。Alpha 测试是在开发环境下由用户参与的受控测试。Beta 测试是真实用户在实际使用环境中进行，C排除；冒烟测试是对每日构建的基本功能快速验证，A排除；验收测试以合同需求为依据判定是否接受，D排除。原型：2026#10。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "14"
   },
   {
     "year": "mock",
@@ -269,7 +284,8 @@
     "answer": "A",
     "analysis": "考点：SQA 职责。SQA 负责制定质量计划与标准、评审和审计过程与产品，保证过程符合规范。执行测试用例是测试人员的工作，B排除；修复缺陷是开发人员职责，C排除；编写需求规格属于需求工程，D排除。原型：2022#2（质量保证类考点）。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -286,7 +302,8 @@
     "answer": "C",
     "analysis": "考点：风险应对策略。保险、外包、担保等手段将风险后果转给第三方，属于风险转移。规避是改变计划消除风险源，A排除；减轻是降低概率或影响，B排除；接受是不主动处理、预留储备，D排除。原型：2026#53（风险管理考点扩展）。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -303,7 +320,8 @@
     "answer": "B",
     "analysis": "考点：组织结构类型。平衡矩阵型中项目经理与职能经理权力相当，资源由双方协商。弱矩阵中项目经理更像协调员、权力弱，A排除；强矩阵中项目经理权力更大，C排除；项目型中项目经理掌握几乎全部权力，D排除。原型：2026#65。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -320,7 +338,8 @@
     "answer": "B",
     "analysis": "考点：风险分类。能识别但无法预估概率与影响的风险属于已知-未知风险。已知-已知风险可识别且可分析预防，A排除；未知-未知风险事先无法识别，C排除；关键人员离职不可忽略，D排除。原型：2026#53。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -337,7 +356,8 @@
     "answer": "D",
     "analysis": "考点：组织类型特点。项目型组织中成员为项目临时聚集，项目结束后面临解散，归属感和职业连续性差，D说法错误。A、B、C 均为各类组织结构的正确描述。原型：2026#65。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -354,7 +374,8 @@
     "answer": "B",
     "analysis": "考点：维护类型。因运行环境（操作系统、硬件、法规等）变化而修改软件属于适应性维护。改正性维护是修复已发现的错误，A排除；完善性维护是增加或改进功能，C排除；预防性维护是为提高可维护性、防患于未然，D排除。原型：2026#30。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "15"
   },
   {
     "year": "mock",
@@ -371,7 +392,8 @@
     "answer": "D",
     "analysis": "考点：维护类型。预防性维护是为提高软件将来的可维护性、可靠性而主动进行的维护。修复错误是改正性，A排除；适应环境变化是适应性，B排除；增加或改进功能是完善性，C排除。原型：2026#30。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "15"
   },
   {
     "year": "mock",
@@ -388,7 +410,8 @@
     "answer": "A",
     "analysis": "考点：逆向工程概念。设计恢复指借助工具从已有程序中抽象出数据设计、总体结构设计和过程设计等信息。正向工程是从设计到实现的常规开发，B排除；再工程是用恢复的信息改造系统以改善质量，C排除；重构是改进代码结构而不改变外部行为，D排除。原型：2022#38。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "7"
   },
   {
     "year": "mock",
@@ -405,7 +428,8 @@
     "answer": "B",
     "analysis": "考点：RUP 阶段职责。细化阶段确立架构基线、化解主要技术风险并规划构建阶段。初始阶段聚焦范围与业务用例，A排除；构建阶段完成全部功能开发与测试，C排除；移交阶段负责部署交付，D排除。原型：2026#58。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "7"
   },
   {
     "year": "mock",
@@ -422,7 +446,8 @@
     "answer": "C",
     "analysis": "考点：WBS。WBS 分解要适度，过细会大幅增加管理与协调成本，应遵循适度分解原则，C说法错误。WBS 是项目计划的核心基础，工作包需可分配可估算，分解方式可多样，A、B、D 均正确。原型：2026#50。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "8"
   },
   {
     "year": "mock",
@@ -439,7 +464,8 @@
     "answer": "D",
     "analysis": "考点：著作权保护期限。署名权、修改权、保护作品完整权的保护期不受限制；复制权属于财产权利，有法定的保护期限，故选D。A、B、C 均为不受期限限制的人身权利。原型：2023上#11、2026#41。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -456,7 +482,8 @@
     "answer": "B",
     "analysis": "考点：职务软件作品归属。为完成本单位工作任务而开发的软件属于职务作品，无特别约定时著作权归单位。A、C、D 均不符合职务作品归属的一般规定。原型：2022#12。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -473,7 +500,8 @@
     "answer": "C",
     "analysis": "考点：软件合理使用。《计算机软件保护条例》规定，为学习和研究软件内含的设计思想和原理，通过安装、显示、传输或存储等方式使用软件的，可以不经许可、不付报酬。故选C；A、B、D 均与合理使用条款不符。原型：2022#11、2023上#12。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -490,7 +518,8 @@
     "answer": "C",
     "analysis": "考点：商标注册禁用条款。臆造词具有显著性，可注册为商标。县级以上行政区划地名不得作为商标，A排除；与国家标志相同或近似的标志不得注册，B排除；仅直接表示商品质量等缺乏显著特征的标志不得注册，D排除。原型：2022#10。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -507,7 +536,8 @@
     "answer": "C",
     "analysis": "考点：商标权地域性。商标权具有严格地域性，只在注册国（地区）受保护。A、B 均否认地域性，错误；未注册商标使用人若与他人在先注册商标冲突仍可能构成侵权，D错误。原型：2022#13。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -524,7 +554,8 @@
     "answer": "B",
     "analysis": "考点：专利保护期限。发明专利权保护期为 20 年，自申请日起计算。实用新型为 10 年，A排除；C、D 为干扰项，无法律依据。原型：专利法通用考点。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -541,7 +572,8 @@
     "answer": "D",
     "analysis": "考点：专利授权原则。我国实行先申请原则，同样的发明创造由两个以上申请人分别申请的，专利权授予最先申请的人，而非最先完成发明的人，D错误。A、B、C 均为专利法的正确表述。原型：专利法通用考点。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -558,7 +590,8 @@
     "answer": "B",
     "analysis": "考点：不正当竞争行为认定。擅自使用与他人注册商标相同或近似的标识属于混淆行为，构成不正当竞争。销售鲜活商品、季节性降价、因清偿债务低于成本价销售均属于法律豁免的正当低价销售情形，A、C、D排除。原型：反不正当竞争法通用考点。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -575,7 +608,8 @@
     "answer": "C",
     "analysis": "考点：商业秘密保护。不为公众所知悉、具有商业价值并经权利人采取保密措施的技术信息属于商业秘密，离职员工披露并使用构成侵犯商业秘密。配方未申请专利则不受专利权保护，B排除；与商标标识、作品表达无关，A、D排除。原型：反不正当竞争法通用考点。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -592,7 +626,8 @@
     "answer": "B",
     "analysis": "考点：网络安全法数据本地化要求。网络安全法规定，关键信息基础设施运营者在境内收集产生的个人信息和重要数据应当在境内存储，确需出境的须按规定进行安全评估。A、C、D 均违反该规定。原型：2026#9（法规考点扩展）。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -609,7 +644,8 @@
     "answer": "A",
     "analysis": "考点：标准化代号。GB/T 为推荐性国家标准，GB 为强制性国家标准，B排除；GJB 为国家军用标准，C排除；YD 为通信行业标准，D排除。原型：2026#9。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -626,7 +662,8 @@
     "answer": "C",
     "analysis": "考点：知识产权特点。知识产权具有无形性、专有性、地域性和时间性。知识产权有法定保护期限，A错误；具有地域性、须依各国法律分别取得，B错误；其无形性决定了与有形财产权存在本质差异，D错误。原型：2023上#10。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -643,7 +680,8 @@
     "answer": "A",
     "analysis": "考点：维护类型英文术语。改正性维护（corrective maintenance）用于纠正运行中发现的故障，故选A。adaptive 为适应环境变化，B排除；perfective 为改进功能，C排除；preventive 为预防未来问题，D排除。原型：2022#71-75 英文阅读填空。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -660,7 +698,8 @@
     "answer": "B",
     "analysis": "考点：维护类型英文术语。适应性维护（adaptive maintenance）使软件适应操作系统、硬件等环境变化，故选B。corrective 是纠错，A排除；perfective 是完善功能，C排除；preventive 是预防问题，D排除。原型：2022#71-75 英文阅读填空。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -677,7 +716,8 @@
     "answer": "C",
     "analysis": "考点：维护类型英文术语。完善性维护（perfective maintenance）按用户要求增加或改进功能，故选C。corrective 纠错、adaptive 适应环境、preventive 预防问题，分别对应题干其他空，A、B、D排除。原型：2022#71-75 英文阅读填空。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -694,7 +734,8 @@
     "answer": "D",
     "analysis": "考点：维护类型英文术语。预防性维护（preventive maintenance）通过改进软件为将来可能出现的问题防患未然，故选D。其余三个术语分别对应纠错、适应环境、完善功能，与“prevent future problems”语义不符，A、B、C排除。原型：2022#71-75 英文阅读填空。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   },
   {
     "year": "mock",
@@ -711,6 +752,7 @@
     "answer": "A",
     "analysis": "考点：软件工程英文词汇。维护成本通常占软件全生命周期（lifecycle）成本的最大比例，故选A。requirement（需求）、design（设计）、documentation（文档）均无法与“total share of cost”的语义搭配，B、C、D排除。原型：2022#71-75 英文阅读填空。",
     "source": "mock",
-    "derived": true
+    "derived": true,
+    "textbook_chapter": "X"
   }
 ]
