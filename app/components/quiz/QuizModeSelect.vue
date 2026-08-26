@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { QuizQuestion } from '#shared/quiz'
+import { TEXTBOOK_CHAPTERS, textbookChapterLabel } from '#shared/textbook-chapter'
 
 const emit = defineEmits<{
   startPractice: [payload: { title: string, questions: QuizQuestion[] }]
@@ -12,9 +13,30 @@ interface ModuleRow { chapter: string, count: number }
 interface YearRow { year: string, count: number }
 
 const { data: modulesData, status: modulesStatus } = await useFetch<{ data: ModuleRow[] }>('/api/questions/modules')
+const { data: textbookData, status: textbookStatus } = await useFetch<{ data: ModuleRow[] }>('/api/questions/modules', {
+  query: { by: 'textbook' },
+})
 const { data: yearsData, status: yearsStatus } = await useFetch<{ data: YearRow[] }>('/api/questions/years')
 
-const modules = computed(() => modulesData.value?.data ?? [])
+const groupBy = ref<'module' | 'textbook'>('textbook')
+
+const groupByOptions = [
+  { key: 'textbook' as const, label: '按教材章节' },
+  { key: 'module' as const, label: '按考纲模块' },
+]
+
+const chapters = computed(() => {
+  const rows = (groupBy.value === 'textbook' ? textbookData.value?.data : modulesData.value?.data) ?? []
+  if (groupBy.value === 'module') return rows.map(r => ({ key: r.chapter, label: r.chapter, count: r.count }))
+  const known = new Set(TEXTBOOK_CHAPTERS.map(c => c.key))
+  return rows.map(r => ({
+    key: r.chapter,
+    label: known.has(r.chapter) ? textbookChapterLabel(r.chapter) : r.chapter,
+    count: r.count,
+  }))
+})
+const chaptersStatus = computed(() => groupBy.value === 'textbook' ? textbookStatus.value : modulesStatus.value)
+
 const years = computed(() => (yearsData.value?.data ?? []).filter(y => y.year !== 'mock'))
 
 const tabs = [
@@ -26,18 +48,21 @@ const activeTab = ref('chapter')
 
 const starting = ref<string | null>(null)
 
-async function startChapter(chapter: string) {
+async function startChapter(key: string, label: string) {
   if (starting.value) return
-  starting.value = chapter
+  starting.value = key
   try {
+    const query = groupBy.value === 'textbook'
+      ? { tchapter: key, size: 100 }
+      : { module: key, size: 100 }
     const res = await $fetch<{ data: { list: QuizQuestion[], total: number } }>('/api/questions', {
-      query: { module: chapter, size: 100 },
+      query,
     })
     if (!res.data.list.length) {
-      toast.add({ title: '该模块暂无题目', color: 'warning' })
+      toast.add({ title: '该分类暂无题目', color: 'warning' })
       return
     }
-    emit('startPractice', { title: chapter, questions: res.data.list })
+    emit('startPractice', { title: label, questions: res.data.list })
   }
   catch {
     toast.add({ title: '题目加载失败，请重试', color: 'error' })
@@ -85,26 +110,39 @@ async function startRandom() {
       </UButton>
     </div>
 
-    <!-- 章节练习：模块卡 -->
+    <!-- 章节练习：分类卡 -->
     <div v-if="activeTab === 'chapter'" data-panel="chapter">
-      <div v-if="modulesStatus === 'pending'" class="py-10 text-center text-sm text-muted">
-        模块加载中…
+      <div class="mb-4 flex items-center gap-2" data-groupby-toggle>
+        <UButton
+          v-for="opt in groupByOptions"
+          :key="opt.key"
+          size="sm"
+          :color="groupBy === opt.key ? 'primary' : 'neutral'"
+          :variant="groupBy === opt.key ? 'soft' : 'ghost'"
+          :data-groupby="opt.key"
+          @click="groupBy = opt.key"
+        >
+          {{ opt.label }}
+        </UButton>
       </div>
-      <div v-else-if="!modules.length" class="py-10 text-center text-sm text-muted">
+      <div v-if="chaptersStatus === 'pending'" class="py-10 text-center text-sm text-muted">
+        分类加载中…
+      </div>
+      <div v-else-if="!chapters.length" class="py-10 text-center text-sm text-muted">
         题库暂无章节数据
       </div>
       <div v-else class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <UCard
-          v-for="m in modules"
-          :key="m.chapter"
+          v-for="m in chapters"
+          :key="m.key"
           class="cursor-pointer transition-shadow hover:shadow-md"
-          :data-module="m.chapter"
-          @click="startChapter(m.chapter)"
+          :data-module="m.key"
+          @click="startChapter(m.key, m.label)"
         >
           <div class="flex items-center justify-between gap-3">
             <div class="min-w-0">
               <p class="truncate font-semibold text-highlighted">
-                {{ m.chapter }}
+                {{ m.label }}
               </p>
               <p class="mt-1 text-sm text-muted">
                 共 {{ m.count }} 题 · 即时判分
@@ -114,7 +152,7 @@ async function startRandom() {
               icon="i-lucide-arrow-right"
               color="primary"
               variant="soft"
-              :loading="starting === m.chapter"
+              :loading="starting === m.key"
             />
           </div>
         </UCard>

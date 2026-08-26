@@ -117,7 +117,7 @@ function next() {
           </span>
           <UProgress :model-value="idx + 1" :max="total" class="flex-1 min-w-32" />
           <span v-if="current.chapter && current.chapter !== title" class="text-xs text-muted">
-            {{ current.chapter }}
+            {{ current.chapter }}<template v-if="current.textbookChapter"> · {{ textbookChapterLabel(current.textbookChapter) }}</template>
           </span>
         </div>
       </UCard>

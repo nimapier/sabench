@@ -1,13 +1,30 @@
 import { count } from 'drizzle-orm'
 import { question } from '../../database/schema'
+import { textbookChapterOrder } from '#shared/textbook-chapter'
 
-export default defineEventHandler(async () => {
+export default defineEventHandler(async (event) => {
+  const query = getQuery(event)
+  const byTextbook = query.by === 'textbook'
+
   const db = useDb()
   const rows = await db
-    .select({ chapter: question.chapter, count: count() })
+    .select({
+      chapter: byTextbook ? question.textbookChapter : question.chapter,
+      count: count(),
+    })
     .from(question)
-    .groupBy(question.chapter)
-    .orderBy(question.chapter)
+    .groupBy(byTextbook ? question.textbookChapter : question.chapter)
 
-  return { data: rows }
+  const data = rows
+    .filter(r => r.chapter)
+    .map(r => ({ chapter: r.chapter!, count: r.count }))
+
+  if (byTextbook) {
+    data.sort((a, b) => textbookChapterOrder(a.chapter) - textbookChapterOrder(b.chapter))
+  }
+  else {
+    data.sort((a, b) => a.chapter.localeCompare(b.chapter))
+  }
+
+  return { data }
 })

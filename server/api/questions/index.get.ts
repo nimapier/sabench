@@ -7,6 +7,9 @@ export default defineEventHandler(async (event) => {
   const chapter = typeof query.module === 'string' && query.module.trim()
     ? query.module.trim()
     : null
+  const tchapter = typeof query.tchapter === 'string' && query.tchapter.trim()
+    ? query.tchapter.trim()
+    : null
   const year = typeof query.year === 'string' && query.year.trim()
     ? query.year.trim()
     : null
@@ -16,6 +19,7 @@ export default defineEventHandler(async (event) => {
   const db = useDb()
   const conds = []
   if (chapter) conds.push(eq(question.chapter, chapter))
+  if (tchapter) conds.push(eq(question.textbookChapter, tchapter))
   if (year) conds.push(eq(question.year, year))
   const where = conds.length ? and(...conds) : undefined
 
@@ -24,6 +28,7 @@ export default defineEventHandler(async (event) => {
       id: question.id,
       year: question.year,
       chapter: question.chapter,
+      textbookChapter: question.textbookChapter,
       stem: question.stem,
       options: question.options,
     })

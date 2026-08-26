@@ -3,6 +3,7 @@ export interface QuizQuestion {
   id: number
   year: string | null
   chapter: string | null
+  textbookChapter?: string | null
   stem: string | null
   options: Record<string, string>
 }
