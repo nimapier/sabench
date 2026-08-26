@@ -14,6 +14,47 @@ const toast = useToast()
 
 const ERROR_REASONS = ['概念不清', '审题失误', '计算错误'] as const
 
+interface PracticeSession {
+  ids: number[]
+  idx: number
+  correct: number
+  ts: number
+}
+
+const storageKey = computed(() => `quiz-practice:${props.title}`)
+
+function loadSession(): PracticeSession | null {
+  if (!import.meta.client) return null
+  try {
+    const raw = localStorage.getItem(storageKey.value)
+    if (!raw) return null
+    const s = JSON.parse(raw) as PracticeSession
+    const ids = props.questions.map(q => q.id)
+    if (!Array.isArray(s.ids) || s.ids.length !== ids.length || s.ids.some((id, i) => id !== ids[i])) return null
+    if (typeof s.idx !== 'number' || s.idx <= 0 || s.idx >= ids.length) return null
+    return s
+  }
+  catch {
+    return null
+  }
+}
+
+function saveSession() {
+  if (!import.meta.client) return
+  const s: PracticeSession = {
+    ids: props.questions.map(q => q.id),
+    idx: idx.value,
+    correct: correctCount.value,
+    ts: Date.now(),
+  }
+  localStorage.setItem(storageKey.value, JSON.stringify(s))
+}
+
+function clearSession() {
+  if (!import.meta.client) return
+  localStorage.removeItem(storageKey.value)
+}
+
 const idx = ref(0)
 const selected = ref<string | null>(null)
 const grading = ref(false)
@@ -22,6 +63,26 @@ const correctCount = ref(0)
 const reasons = ref<Record<number, string>>({})
 const reasonOpen = ref(false)
 const finished = ref(false)
+const resumeOffer = ref<PracticeSession | null>(null)
+
+onMounted(() => {
+  const s = loadSession()
+  if (s) resumeOffer.value = s
+})
+
+function resumeSession() {
+  if (!resumeOffer.value) return
+  idx.value = resumeOffer.value.idx
+  correctCount.value = resumeOffer.value.correct
+  resumeOffer.value = null
+}
+
+function restartSession() {
+  resumeOffer.value = null
+  clearSession()
+  idx.value = 0
+  correctCount.value = 0
+}
 
 const current = computed(() => props.questions[idx.value])
 const total = computed(() => props.questions.length)
@@ -50,6 +111,7 @@ async function choose(letter: string) {
     else {
       reasonOpen.value = true
     }
+    saveSession()
   }
   catch {
     selected.value = null
@@ -70,11 +132,13 @@ function setReason(reason: string | null) {
 function next() {
   if (isLast.value) {
     finished.value = true
+    clearSession()
     return
   }
   idx.value += 1
   selected.value = null
   result.value = null
+  saveSession()
 }
 </script>
 
@@ -104,6 +168,27 @@ function next() {
         </UButton>
       </div>
     </div>
+
+    <!-- 断点恢复 -->
+    <UCard v-else-if="resumeOffer" data-resume-offer>
+      <div class="text-center space-y-3 py-4">
+        <UIcon name="i-lucide-history" class="size-10 text-primary mx-auto" />
+        <h2 class="text-lg font-bold text-highlighted">
+          检测到上次未完成的进度
+        </h2>
+        <p class="text-sm text-muted">
+          上次做到第 {{ resumeOffer.idx + 1 }} 题，已答对 {{ resumeOffer.correct }} 题
+        </p>
+        <div class="flex justify-center gap-3">
+          <UButton color="primary" icon="i-lucide-play" data-resume-continue @click="resumeSession">
+            从第 {{ resumeOffer.idx + 1 }} 题继续
+          </UButton>
+          <UButton color="neutral" variant="outline" data-resume-restart @click="restartSession">
+            重新开始
+          </UButton>
+        </div>
+      </div>
+    </UCard>
 
     <!-- 作答 -->
     <template v-else-if="current">
