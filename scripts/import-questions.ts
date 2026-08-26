@@ -8,6 +8,7 @@ interface QuestionItem {
   batch?: string
   no?: number
   chapter: string
+  textbook_chapter?: string
   stem: string
   options: Record<string, string>
   answer: string
@@ -61,6 +62,7 @@ async function main() {
   console.log(`[import] loaded ${rows.length} items from ${files.length} files`)
 
   let inserted = 0
+  let updated = 0
   let skipped = 0
   let invalid = 0
 
@@ -77,12 +79,23 @@ async function main() {
 
     // 2023 卷有共用题干甚至共用选项A的题组（答案不同），去重键须含 answer，故用 (year, stem, options.A, answer)
     const existing = await client.execute({
-      sql: 'SELECT id FROM question WHERE year = ? AND stem = ? AND json_extract(options, \'$.A\') = ? AND answer = ?',
+      sql: 'SELECT id, textbook_chapter FROM question WHERE year = ? AND stem = ? AND json_extract(options, \'$.A\') = ? AND answer = ?',
       args: [year, stem, item.options.A.trim(), item.answer.trim()],
     })
 
     if (existing.rows.length > 0) {
-      skipped++
+      const row = existing.rows[0]!
+      const tc = item.textbook_chapter?.trim()
+      if (tc && row.textbook_chapter !== tc) {
+        await client.execute({
+          sql: 'UPDATE question SET textbook_chapter = ? WHERE id = ?',
+          args: [tc, row.id],
+        })
+        updated++
+      }
+      else {
+        skipped++
+      }
       continue
     }
 
@@ -90,10 +103,11 @@ async function main() {
     for (const key of OPTION_KEYS) options[key] = item.options[key].trim()
 
     await client.execute({
-      sql: 'INSERT INTO question (year, chapter, stem, options, answer, analysis, derived) VALUES (?, ?, ?, ?, ?, ?, ?)',
+      sql: 'INSERT INTO question (year, chapter, textbook_chapter, stem, options, answer, analysis, derived) VALUES (?, ?, ?, ?, ?, ?, ?, ?)',
       args: [
         year,
         item.chapter.trim(),
+        item.textbook_chapter?.trim() || null,
         stem,
         JSON.stringify(options),
         item.answer.trim(),
@@ -105,7 +119,7 @@ async function main() {
   }
 
   const total = await client.execute('SELECT COUNT(*) AS n FROM question')
-  console.log(`[done] inserted=${inserted} skipped=${skipped} invalid=${invalid} total=${total.rows[0].n}`)
+  console.log(`[done] inserted=${inserted} updated=${updated} skipped=${skipped} invalid=${invalid} total=${total.rows[0].n}`)
 }
 
 main()

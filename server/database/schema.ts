@@ -65,6 +65,7 @@ export const question = sqliteTable('question', {
   id: integer('id').primaryKey({ autoIncrement: true }),
   year: text('year'),
   chapter: text('chapter'),
+  textbookChapter: text('textbook_chapter'),
   stem: text('stem'),
   options: text('options'), // JSON
   answer: text('answer'),
