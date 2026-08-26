@@ -9,7 +9,7 @@ const emit = defineEmits<{
 
 const toast = useToast()
 
-interface ModuleRow { chapter: string, count: number }
+interface ModuleRow { chapter: string, count: number, attempted: number, correct: number }
 interface YearRow { year: string, count: number }
 
 const { data: modulesData, status: modulesStatus } = await useFetch<{ data: ModuleRow[] }>('/api/questions/modules')
@@ -27,12 +27,16 @@ const groupByOptions = [
 
 const chapters = computed(() => {
   const rows = (groupBy.value === 'textbook' ? textbookData.value?.data : modulesData.value?.data) ?? []
-  if (groupBy.value === 'module') return rows.map(r => ({ key: r.chapter, label: r.chapter, count: r.count }))
+  if (groupBy.value === 'module') {
+    return rows.map(r => ({ key: r.chapter, label: r.chapter, count: r.count, attempted: r.attempted, correct: r.correct }))
+  }
   const known = new Set(TEXTBOOK_CHAPTERS.map(c => c.key))
   return rows.map(r => ({
     key: r.chapter,
     label: known.has(r.chapter) ? textbookChapterLabel(r.chapter) : r.chapter,
     count: r.count,
+    attempted: r.attempted,
+    correct: r.correct,
   }))
 })
 const chaptersStatus = computed(() => groupBy.value === 'textbook' ? textbookStatus.value : modulesStatus.value)
@@ -146,6 +150,10 @@ async function startRandom() {
               </p>
               <p class="mt-1 text-sm text-muted">
                 共 {{ m.count }} 题 · 即时判分
+              </p>
+              <p v-if="m.attempted" class="mt-1 text-xs" data-chapter-progress>
+                <span class="text-primary">已做 {{ m.attempted }}/{{ m.count }}</span>
+                <span class="text-muted"> · 答对 {{ m.correct }}（{{ Math.round(m.correct / m.attempted * 100) }}%）</span>
               </p>
             </div>
             <UButton
