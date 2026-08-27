@@ -280,10 +280,10 @@ function cellClass(q: QuizQuestion, i: number) {
       <div class="text-center space-y-3 py-4">
         <UIcon name="i-lucide-history" class="size-10 text-primary mx-auto" />
         <h2 class="text-lg font-bold text-highlighted">
-          本章你之前已做过 {{ dbOffer.done }} 题
+          本章你之前做过 {{ dbOffer.done }} 题
         </h2>
         <p class="text-sm text-muted">
-          可以从第一题开始完整刷，也可以直接从未做过的第 {{ dbOffer.idx + 1 }} 题继续
+          这 {{ dbOffer.done }} 题分散在本章各处（含套卷/随机练习里做过的）。第 {{ dbOffer.idx + 1 }} 题是你第一道没做过的题，可以从它继续，也可以从头完整刷一遍
         </p>
         <div class="flex justify-center gap-3">
           <UButton color="primary" icon="i-lucide-play" data-db-resume-continue @click="resumeFromDb">
