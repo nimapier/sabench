@@ -2,7 +2,7 @@
 
 软考（系统分析师）备考训练台。Nuxt 4 + Nuxt UI + Drizzle ORM（libsql）+ nuxt-auth-utils，单人使用，含周计划、项目背景库、限时论文写作器、案例训练场、选择题刷题与 SM-2 复习、学习统计。
 
-题库规模：**605 道选择题（247 道历年真题 + 358 道仿写题）+ 25 道案例分析题 + 8 张解题框架卡**。
+题库规模：**604 道选择题（247 道历年真题 + 357 道仿写题）+ 25 道案例分析题 + 8 张解题框架卡**。
 
 ## 技术栈
 
@@ -147,4 +147,4 @@ node_modules/.bin/tsx scripts/import-questions.ts
 | `pnpm db:push` | 按 `server/database/schema.ts` 推送表结构（读 `NUXT_TURSO_DATABASE_URL`，无则写本地文件） |
 | `tsx scripts/seed-framework-cards.ts` | 导入 8 张案例框架卡（幂等，按标题查重） |
 | `tsx scripts/import-cases.ts [过滤子串]` | 导入案例题（mock 5 + 真题 20，幂等；可选按文件名过滤） |
-| `tsx scripts/import-questions.ts [过滤子串]` | 导入选择题（真题 247 + 仿写 358，幂等按四元组查重；可选按文件名过滤） |
+| `tsx scripts/import-questions.ts [过滤子串]` | 导入选择题（真题 247 + 仿写 357，幂等按四元组查重；可选按文件名过滤） |
