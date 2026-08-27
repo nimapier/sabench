@@ -85,18 +85,17 @@ const prior = ref<Record<number, boolean>>({})
 
 onMounted(async () => {
   const s = loadSession()
-  if (s) {
-    resumeOffer.value = s
-    return
-  }
+  if (s) resumeOffer.value = s
   if (!props.resumeFilter) return
   try {
     const res = await $fetch<{ data: Array<{ id: number, correct: boolean }> }>('/api/questions/attempted', { query: props.resumeFilter })
     if (!res.data.length) return
     prior.value = Object.fromEntries(res.data.map(r => [r.id, r.correct]))
-    const firstNew = props.questions.findIndex(q => !(q.id in prior.value))
-    if (firstNew > 0) {
-      dbOffer.value = { idx: firstNew, done: props.questions.slice(0, firstNew).filter(q => q.id in prior.value).length }
+    if (!s) {
+      const firstNew = props.questions.findIndex(q => !(q.id in prior.value))
+      if (firstNew > 0) {
+        dbOffer.value = { idx: firstNew, done: props.questions.slice(0, firstNew).filter(q => q.id in prior.value).length }
+      }
     }
   }
   catch {
