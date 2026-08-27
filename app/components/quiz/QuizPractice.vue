@@ -81,6 +81,7 @@ const reasonOpen = ref(false)
 const finished = ref(false)
 const resumeOffer = ref<PracticeSession | null>(null)
 const dbOffer = ref<{ idx: number, done: number } | null>(null)
+const prior = ref<Record<number, boolean>>({})
 
 onMounted(async () => {
   const s = loadSession()
@@ -90,12 +91,12 @@ onMounted(async () => {
   }
   if (!props.resumeFilter) return
   try {
-    const res = await $fetch<{ data: number[] }>('/api/questions/attempted', { query: props.resumeFilter })
-    const done = new Set(res.data)
-    if (!done.size) return
-    const firstNew = props.questions.findIndex(q => !done.has(q.id))
+    const res = await $fetch<{ data: Array<{ id: number, correct: boolean }> }>('/api/questions/attempted', { query: props.resumeFilter })
+    if (!res.data.length) return
+    prior.value = Object.fromEntries(res.data.map(r => [r.id, r.correct]))
+    const firstNew = props.questions.findIndex(q => !(q.id in prior.value))
     if (firstNew > 0) {
-      dbOffer.value = { idx: firstNew, done: props.questions.slice(0, firstNew).filter(q => done.has(q.id)).length }
+      dbOffer.value = { idx: firstNew, done: props.questions.slice(0, firstNew).filter(q => q.id in prior.value).length }
     }
   }
   catch {
@@ -221,6 +222,7 @@ function cellClass(q: QuizQuestion, i: number) {
   const rec = records.value[q.id]
   if (rec?.correct) parts.push('bg-success text-white')
   else if (rec) parts.push('bg-error text-white')
+  else if (q.id in prior.value) parts.push(prior.value[q.id] ? 'bg-success/35 text-white' : 'bg-error/35 text-white')
   else parts.push('bg-elevated text-muted hover:bg-accented')
   if (i === idx.value) parts.push('outline outline-2 outline-offset-1 outline-highlighted')
   return parts.join(' ')
@@ -369,9 +371,11 @@ function cellClass(q: QuizQuestion, i: number) {
           <template #header>
             <div class="flex items-center justify-between text-xs text-muted">
               <span>题号</span>
-              <span class="flex items-center gap-2">
-                <span class="flex items-center gap-1"><i class="inline-block size-2.5 rounded-sm bg-success" />已答对</span>
-                <span class="flex items-center gap-1"><i class="inline-block size-2.5 rounded-sm bg-error" />已答错</span>
+              <span class="flex items-center gap-2 flex-wrap">
+                <span class="flex items-center gap-1"><i class="inline-block size-2.5 rounded-sm bg-success" />答对</span>
+                <span class="flex items-center gap-1"><i class="inline-block size-2.5 rounded-sm bg-error" />答错</span>
+                <span class="flex items-center gap-1"><i class="inline-block size-2.5 rounded-sm bg-success/35" />上次对</span>
+                <span class="flex items-center gap-1"><i class="inline-block size-2.5 rounded-sm bg-error/35" />上次错</span>
                 <span class="flex items-center gap-1"><i class="inline-block size-2.5 rounded-sm bg-elevated ring-1 ring-default" />未答</span>
               </span>
             </div>
