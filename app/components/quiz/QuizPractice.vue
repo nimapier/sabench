@@ -4,6 +4,8 @@ import type { QuizGradeResult, QuizQuestion } from '#shared/quiz'
 const props = defineProps<{
   title: string
   questions: QuizQuestion[]
+  sessionKey?: string
+  resumeFilter?: { tchapter?: string, module?: string }
 }>()
 
 const emit = defineEmits<{
@@ -29,7 +31,7 @@ interface PracticeSession {
   records?: Record<number, PracticeRecord>
 }
 
-const storageKey = computed(() => `quiz-practice:${props.title}`)
+const storageKey = computed(() => `quiz-practice:${props.sessionKey ?? props.title}`)
 
 function loadSession(): PracticeSession | null {
   if (!import.meta.client) return null
@@ -78,11 +80,39 @@ const reasons = ref<Record<number, string>>({})
 const reasonOpen = ref(false)
 const finished = ref(false)
 const resumeOffer = ref<PracticeSession | null>(null)
+const dbOffer = ref<{ idx: number, done: number } | null>(null)
 
-onMounted(() => {
+onMounted(async () => {
   const s = loadSession()
-  if (s) resumeOffer.value = s
+  if (s) {
+    resumeOffer.value = s
+    return
+  }
+  if (!props.resumeFilter) return
+  try {
+    const res = await $fetch<{ data: number[] }>('/api/questions/attempted', { query: props.resumeFilter })
+    const done = new Set(res.data)
+    if (!done.size) return
+    const firstNew = props.questions.findIndex(q => !done.has(q.id))
+    if (firstNew > 0) {
+      dbOffer.value = { idx: firstNew, done: props.questions.slice(0, firstNew).filter(q => done.has(q.id)).length }
+    }
+  }
+  catch {
+    // DB 兜底失败不阻塞正常刷题
+  }
 })
+
+function resumeFromDb() {
+  if (!dbOffer.value) return
+  idx.value = dbOffer.value.idx
+  dbOffer.value = null
+  saveSession()
+}
+
+function restartFromDb() {
+  dbOffer.value = null
+}
 
 function resumeSession() {
   if (!resumeOffer.value) return
@@ -240,6 +270,27 @@ function cellClass(q: QuizQuestion, i: number) {
           </UButton>
           <UButton color="neutral" variant="outline" data-resume-restart @click="restartSession">
             重新开始
+          </UButton>
+        </div>
+      </div>
+    </UCard>
+
+    <!-- DB 兜底恢复（无本地存档但题库记录显示本章已做过部分题） -->
+    <UCard v-else-if="dbOffer" data-db-resume-offer>
+      <div class="text-center space-y-3 py-4">
+        <UIcon name="i-lucide-history" class="size-10 text-primary mx-auto" />
+        <h2 class="text-lg font-bold text-highlighted">
+          本章你之前已做过 {{ dbOffer.done }} 题
+        </h2>
+        <p class="text-sm text-muted">
+          可以从第一题开始完整刷，也可以直接从未做过的第 {{ dbOffer.idx + 1 }} 题继续
+        </p>
+        <div class="flex justify-center gap-3">
+          <UButton color="primary" icon="i-lucide-play" data-db-resume-continue @click="resumeFromDb">
+            从第 {{ dbOffer.idx + 1 }} 题继续
+          </UButton>
+          <UButton color="neutral" variant="outline" data-db-resume-restart @click="restartFromDb">
+            从头开始
           </UButton>
         </div>
       </div>

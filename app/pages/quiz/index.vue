@@ -3,7 +3,7 @@ import type { QuizQuestion } from '#shared/quiz'
 
 type Phase =
   | { kind: 'select' }
-  | { kind: 'practice', title: string, questions: QuizQuestion[] }
+  | { kind: 'practice', title: string, questions: QuizQuestion[], sessionKey: string, resumeFilter?: { tchapter?: string, module?: string } }
   | { kind: 'paper', year: string }
 
 const phase = ref<Phase>({ kind: 'select' })
@@ -11,7 +11,7 @@ const phase = ref<Phase>({ kind: 'select' })
 const { data: reviewStats } = await useFetch<{ data: { dueToday: number, inQueue: number, graduated: number } }>('/api/review/stats')
 const reviewDueToday = computed(() => reviewStats.value?.data.dueToday ?? 0)
 
-function startPractice(payload: { title: string, questions: QuizQuestion[] }) {
+function startPractice(payload: { title: string, questions: QuizQuestion[], sessionKey: string, resumeFilter?: { tchapter?: string, module?: string } }) {
   phase.value = { kind: 'practice', ...payload }
 }
 
@@ -48,9 +48,11 @@ function backToSelect() {
     />
     <QuizPractice
       v-else-if="phase.kind === 'practice'"
-      :key="`practice-${phase.title}`"
+      :key="`practice-${phase.sessionKey}`"
       :title="phase.title"
       :questions="phase.questions"
+      :session-key="phase.sessionKey"
+      :resume-filter="phase.resumeFilter"
       @exit="backToSelect"
     />
     <QuizPaper

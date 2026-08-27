@@ -3,7 +3,7 @@ import type { QuizQuestion } from '#shared/quiz'
 import { TEXTBOOK_CHAPTERS, textbookChapterLabel } from '#shared/textbook-chapter'
 
 const emit = defineEmits<{
-  startPractice: [payload: { title: string, questions: QuizQuestion[] }]
+  startPractice: [payload: { title: string, questions: QuizQuestion[], sessionKey: string, resumeFilter?: { tchapter?: string, module?: string } }]
   startPaper: [payload: { year: string }]
 }>()
 
@@ -66,7 +66,12 @@ async function startChapter(key: string, label: string) {
       toast.add({ title: '该分类暂无题目', color: 'warning' })
       return
     }
-    emit('startPractice', { title: label, questions: res.data.list })
+    emit('startPractice', {
+      title: label,
+      questions: res.data.list,
+      sessionKey: groupBy.value === 'textbook' ? `tchapter:${key}` : `module:${key}`,
+      resumeFilter: groupBy.value === 'textbook' ? { tchapter: key } : { module: key },
+    })
   }
   catch {
     toast.add({ title: '题目加载失败，请重试', color: 'error' })
@@ -87,7 +92,7 @@ async function startRandom() {
       toast.add({ title: '题库暂无题目', color: 'warning' })
       return
     }
-    emit('startPractice', { title: '随机 50', questions: res.data })
+    emit('startPractice', { title: '随机 50', questions: res.data, sessionKey: 'random' })
   }
   catch {
     toast.add({ title: '题目加载失败，请重试', color: 'error' })
