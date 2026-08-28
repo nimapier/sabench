@@ -796,7 +796,10 @@
     },
     "answer": "D",
     "analysis": "物理块256号,字长32位,字编号=256÷32=8。",
-    "source": "2022系分上午卷真题.pdf"
+    "source": "2022系分上午卷真题.pdf",
+    "images": [
+      "/questions/2022-q47-bitmap.png"
+    ]
   },
   {
     "year": 2022,
@@ -813,7 +816,10 @@
     },
     "answer": "B",
     "analysis": "位号=256 mod 32=0,该块被占用应将该字位号0的位置置\"1\"。",
-    "source": "2022系分上午卷真题.pdf"
+    "source": "2022系分上午卷真题.pdf",
+    "images": [
+      "/questions/2022-q47-bitmap.png"
+    ]
   },
   {
     "year": 2022,
@@ -830,7 +836,11 @@
     },
     "answer": "A",
     "analysis": "信号量-边对应由已印内容唯一确定：P1→P2=S1（P1 结尾 V(S1)）、P2→P3=S2（P3 开头 P(S2)）。a 在 P2 开始前，P2 仅依赖 P1，故 a=P(S1)；b 在 P2 结束后，P2 需通知后继 P3、P4，故 b=V(S2)V(S3)（P2→P4=S3）。选 A。（前趋图与执行图已据 2022 年原卷补全为文字描述）",
-    "source": "2022系分上午卷真题.pdf"
+    "source": "2022系分上午卷真题.pdf",
+    "images": [
+      "/questions/2022-q49-precedence.png",
+      "/questions/2022-q49-process.png"
+    ]
   },
   {
     "year": 2022,
@@ -847,7 +857,11 @@
     },
     "answer": "D",
     "analysis": "c 在 P3 结束后，P3 的后继为 P4、P5：P3→P5=S5（P5 开头已印 P(S5)）、P3→P4=S4，故 c=V(S4)V(S5)；d 在 P4 开始前，P4 依赖 P2、P3，故 d=P(S3)P(S4)。选 D。（前趋图与执行图已据 2022 年原卷补全为文字描述）",
-    "source": "2022系分上午卷真题.pdf"
+    "source": "2022系分上午卷真题.pdf",
+    "images": [
+      "/questions/2022-q49-precedence.png",
+      "/questions/2022-q49-process.png"
+    ]
   },
   {
     "year": 2022,
@@ -864,7 +878,11 @@
     },
     "answer": "C",
     "analysis": "e 在 P5 结束后，P5 的后继仅 P6，对应剩余信号量 S7，故 e=V(S7)；f 在 P6 开始前，P6 依赖 P4（S6 已印）和 P5（S7），故 f=P(S7)。选 C。（前趋图与执行图已据 2022 年原卷补全为文字描述）",
-    "source": "2022系分上午卷真题.pdf"
+    "source": "2022系分上午卷真题.pdf",
+    "images": [
+      "/questions/2022-q49-precedence.png",
+      "/questions/2022-q49-process.png"
+    ]
   },
   {
     "year": 2022,
@@ -898,7 +916,10 @@
     },
     "answer": "C",
     "analysis": "关键路径 C→F→G→H = 2+2+3+4 = 11 天。加入 10 人约束排程：D(4人)与 F(7人)不能并行（11>10），故第1-2天 C+D（10人），第3-4天 F+B（9人），第5-7天 G+E（8人），第8-11天 H+A（7人），A 延续至第12天。总工期 12 天，故选 C。（作业表已据 2022 年原卷补全）",
-    "source": "2022系分上午卷真题.pdf"
+    "source": "2022系分上午卷真题.pdf",
+    "images": [
+      "/questions/2022-q53-jobs.png"
+    ]
   },
   {
     "year": 2022,
@@ -915,7 +936,10 @@
     },
     "answer": "D",
     "analysis": "按 12 天最优排程：第1-2天 C+D，第3-4天 F+B，第5-7天 G+E，第8-11天 H 与 A 并行，A 单独延续到第12天。作业A 安排在第8~12天，故选 D。验证其他选项不可行：A(6人)与 C(6人)、F(7人)、E(6人) 均无法在 10 人约束下并行，无法提前到第1~5/3~7/5~9天。（作业表已据 2022 年原卷补全）",
-    "source": "2022系分上午卷真题.pdf"
+    "source": "2022系分上午卷真题.pdf",
+    "images": [
+      "/questions/2022-q53-jobs.png"
+    ]
   },
   {
     "year": 2022,
@@ -932,7 +956,10 @@
     },
     "answer": "A",
     "analysis": "最小生成树（Kruskal）：按边长升序取 D-E 1.5、E-G 1.5、C-E 1.8、A-D 2（或 A-C 2）、D-F 3、B-G 4，连通 7 村且无回路，总长 1.5+1.5+1.8+2+3+4 = 13.8 公里，故选 A。（路线及路长已据 2022 年原卷补全）",
-    "source": "2022系分上午卷真题.pdf"
+    "source": "2022系分上午卷真题.pdf",
+    "images": [
+      "/questions/2022-q55-villages.png"
+    ]
   },
   {
     "year": 2022,
@@ -949,7 +976,10 @@
     },
     "answer": "D",
     "analysis": "注意\"优化路线\"指在建成的公路（即上题最小生成树）上行走。逐点验证到最远村的距离：建校于 A 时 B 最远 9 公里（A-D-E-G-B）；C 时 B 最远 7.3 公里；D 时 B 最远 7 公里；E 时 B 最远 5.5 公里（E-G-B）。E 村使最远路程最短，故选 D。（路线及路长已据 2022 年原卷补全）",
-    "source": "2022系分上午卷真题.pdf"
+    "source": "2022系分上午卷真题.pdf",
+    "images": [
+      "/questions/2022-q55-villages.png"
+    ]
   },
   {
     "year": 2022,
@@ -966,7 +996,10 @@
     },
     "answer": "C",
     "analysis": "最大流=最小割。割({S,A,B},{C,D,T})容量 = S→C(2)+S→D(1)+A→T(1)+B→C(3)+B→T(2) = 9；可构造流量为 9 的可行流（S→A=4 分 A→T=1、A→B=3；S→B=2 经 B→T；B→C=3；S→C=2；C→T=3；C→D=2；S→D=1；D→T=3），故最大输气能力为 9，选 C。注意 10 只是 S 出边容量之和，中间瓶颈达不到。（管线图已据 2022 年原卷补全为文字描述）",
-    "source": "2022系分上午卷真题.pdf"
+    "source": "2022系分上午卷真题.pdf",
+    "images": [
+      "/questions/2022-q57-pipeline.png"
+    ]
   },
   {
     "year": 2022,
