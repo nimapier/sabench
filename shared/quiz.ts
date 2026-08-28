@@ -5,6 +5,7 @@ export interface QuizQuestion {
   chapter: string | null
   textbookChapter?: string | null
   stem: string | null
+  images?: string[]
   options: Record<string, string>
 }
 

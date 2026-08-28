@@ -13,11 +13,12 @@ export default defineEventHandler(async (event) => {
       year: question.year,
       chapter: question.chapter,
       stem: question.stem,
+      images: question.images,
       options: question.options,
     })
     .from(question)
     .orderBy(sql`RANDOM()`)
     .limit(countParam)
 
-  return { data: rows.map(r => ({ ...r, options: JSON.parse(r.options ?? '{}') })) }
+  return { data: rows.map(r => ({ ...r, images: r.images ? JSON.parse(r.images) : [], options: JSON.parse(r.options ?? '{}') })) }
 })

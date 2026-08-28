@@ -30,6 +30,7 @@ export default defineEventHandler(async (event) => {
       chapter: question.chapter,
       textbookChapter: question.textbookChapter,
       stem: question.stem,
+      images: question.images,
       options: question.options,
     })
     .from(question)
@@ -42,7 +43,7 @@ export default defineEventHandler(async (event) => {
 
   return {
     data: {
-      list: rows.map(r => ({ ...r, options: JSON.parse(r.options ?? '{}') })),
+      list: rows.map(r => ({ ...r, images: r.images ? JSON.parse(r.images) : [], options: JSON.parse(r.options ?? '{}') })),
       total: totalRow?.total ?? 0,
     },
   }

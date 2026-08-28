@@ -67,6 +67,7 @@ export const question = sqliteTable('question', {
   chapter: text('chapter'),
   textbookChapter: text('textbook_chapter'),
   stem: text('stem'),
+  images: text('images'), // JSON 数组，题干配图路径（/questions/xxx.png）
   options: text('options'), // JSON
   answer: text('answer'),
   analysis: text('analysis'),

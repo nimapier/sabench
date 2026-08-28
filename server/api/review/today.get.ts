@@ -10,6 +10,7 @@ export default defineEventHandler(async () => {
     .select({
       questionId: reviewQueue.questionId,
       stem: question.stem,
+      images: question.images,
       options: question.options,
       chapter: question.chapter,
       level: reviewQueue.level,
@@ -22,6 +23,6 @@ export default defineEventHandler(async () => {
     .orderBy(asc(reviewQueue.dueDate), asc(reviewQueue.id))
 
   return {
-    data: rows.map(r => ({ ...r, options: JSON.parse(r.options ?? '{}') })),
+    data: rows.map(r => ({ ...r, images: r.images ? JSON.parse(r.images) : [], options: JSON.parse(r.options ?? '{}') })),
   }
 })
