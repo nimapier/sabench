@@ -164,6 +164,15 @@ async function submitPaper() {
             <p class="text-sm leading-6 text-default whitespace-pre-wrap">
               {{ row.question?.stem }}
             </p>
+            <div v-if="row.question?.images?.length" class="space-y-2">
+              <img
+                v-for="img in row.question.images"
+                :key="img"
+                :src="img"
+                alt="题图"
+                class="max-w-full rounded-md border border-default bg-white p-1"
+              >
+            </div>
             <div v-if="row.analysis" class="rounded-lg bg-elevated p-3 text-sm leading-6 text-default whitespace-pre-wrap">
               {{ row.analysis }}
             </div>
@@ -211,9 +220,20 @@ async function submitPaper() {
         <div class="space-y-4">
           <UCard v-if="current">
             <div class="flex items-start justify-between gap-3">
-              <p class="leading-7 text-default whitespace-pre-wrap" data-stem>
-                {{ idx + 1 }}. {{ current.stem }}
-              </p>
+              <div>
+                <p class="leading-7 text-default whitespace-pre-wrap" data-stem>
+                  {{ idx + 1 }}. {{ current.stem }}
+                </p>
+                <div v-if="current.images?.length" class="mt-3 space-y-2">
+                  <img
+                    v-for="img in current.images"
+                    :key="img"
+                    :src="img"
+                    alt="题图"
+                    class="max-w-full rounded-md border border-default bg-white p-1"
+                  >
+                </div>
+              </div>
               <UButton
                 :icon="marked.has(current.id) ? 'i-lucide-flag' : 'i-lucide-flag-off'"
                 :color="marked.has(current.id) ? 'warning' : 'neutral'"
