@@ -320,15 +320,7 @@ function cellClass(q: QuizQuestion, i: number) {
             <p class="leading-7 text-default whitespace-pre-wrap" data-stem>
               {{ idx + 1 }}. {{ current.stem }}
             </p>
-            <div v-if="current.images?.length" class="mt-3 space-y-2">
-              <img
-                v-for="img in current.images"
-                :key="img"
-                :src="img"
-                alt="题图"
-                class="max-w-full rounded-md border border-default bg-white p-1"
-              >
-            </div>
+            <QuizQuestionImages v-if="current.images?.length" :images="current.images" class="mt-3" />
           </UCard>
 
           <QuizOptionList

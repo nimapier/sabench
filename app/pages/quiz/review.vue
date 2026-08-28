@@ -235,15 +235,7 @@ function nextCard(item: ReviewItem) {
         <p class="whitespace-pre-wrap leading-relaxed">
           {{ item.stem }}
         </p>
-        <div v-if="item.images?.length" class="space-y-2">
-          <img
-            v-for="img in item.images"
-            :key="img"
-            :src="img"
-            alt="题图"
-            class="max-w-full rounded-md border border-(--ui-border) bg-white p-1"
-          >
-        </div>
+        <QuizQuestionImages v-if="item.images?.length" :images="item.images" />
 
         <div class="space-y-2">
           <div
