@@ -728,7 +728,10 @@
     },
     "answer": "B",
     "analysis": "先做选择（σ）可尽早缩减关系规模再连接，查询效率最高，对应E2的形式。",
-    "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+    "source": "2023上系分上午卷真题（综合知识·含解析）.pdf",
+    "images": [
+      "/questions/2023-q43-relations.png"
+    ]
   },
   {
     "year": 2023.5,
@@ -745,7 +748,10 @@
     },
     "answer": "B",
     "analysis": "等值连接R.A3=S.A3与两个选择条件为合取（AND）关系，且字符串常量需加引号，故选B。",
-    "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+    "source": "2023上系分上午卷真题（综合知识·含解析）.pdf",
+    "images": [
+      "/questions/2023-q43-relations.png"
+    ]
   },
   {
     "year": 2023.5,
@@ -833,7 +839,11 @@
     },
     "answer": "B",
     "analysis": "按前趋图（P1→P2,P1→P3,P2→P3,P2→P4,P3→P5,P4→P5,P5→P6）补全PV操作：①为P(S1)，②为V(S3)V(S4)。",
-    "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+    "source": "2023上系分上午卷真题（综合知识·含解析）.pdf",
+    "images": [
+      "/questions/2023-q51-precedence.png",
+      "/questions/2023-q51-pvcode.png"
+    ]
   },
   {
     "year": 2023.5,
@@ -850,7 +860,11 @@
     },
     "answer": "B",
     "analysis": "③为V(S3)，④为V(S5)，保证P3完成后通知后续进程。",
-    "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+    "source": "2023上系分上午卷真题（综合知识·含解析）.pdf",
+    "images": [
+      "/questions/2023-q51-precedence.png",
+      "/questions/2023-q51-pvcode.png"
+    ]
   },
   {
     "year": 2023.5,
@@ -867,7 +881,11 @@
     },
     "answer": "C",
     "analysis": "⑤为P(S5)P(S6)，⑥为V(S7)，使P5等待P3、P4完成后再执行并唤醒P6。",
-    "source": "2023上系分上午卷真题（综合知识·含解析）.pdf"
+    "source": "2023上系分上午卷真题（综合知识·含解析）.pdf",
+    "images": [
+      "/questions/2023-q51-precedence.png",
+      "/questions/2023-q51-pvcode.png"
+    ]
   },
   {
     "year": 2023.5,
