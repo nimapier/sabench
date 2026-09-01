@@ -702,12 +702,12 @@
     "no": 42,
     "chapter": "系统分析与设计",
     "textbook_chapter": "5",
-    "stem": "给定关系R（4,B,C,D,E）和关系s（D,E,F,G），对其进行自然连接运算R ▷◁S 后其结果集的属性列 为（42）。",
+    "stem": "给定关系R（A,B,C,D,E）和关系S（D,E,F,G），对其进行自然连接运算R ▷◁S 后其结果集的属性列为（42）。",
     "options": {
       "A": "R.A,R.B,R.C,R.D, R.E,S.D,S.E",
       "B": "R.A,R.B, R.C,R.D,R.E,S.F,S.G",
       "C": "R.A,R.B,R.C,R.D,R.E,S.E,S.F",
-      "D": "R.A,R.B,RC,R.D,R.E,S.D,S.E,S.F,S.G"
+      "D": "R.A,R.B,R.C,R.D,R.E,S.D,S.E,S.F,S.G"
     },
     "answer": "B",
     "analysis": "自然连接去重公共属性,结果为R.A,R.B,R.C,R.D,R.E,S.F,S.G。",
