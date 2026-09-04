@@ -719,7 +719,7 @@
     "no": 43,
     "chapter": "系统分析与设计",
     "textbook_chapter": "5",
-    "stem": "在关系R(A1, A2, A3)和S(A1, A2, A3)上进行关系运算的4 个等价的表达式E1、E2、E3 和 E4 如下所示： 如果严格按照表达式运算顺序，则查询效率最高的是( )，将该查询转换价的SQL 语句为: SELECT A1, A4 FROM R，S WHERE( )。",
+    "stem": "在关系R(A1, A2, A3)和S(A1, A2, A3)上进行关系运算的4 个等价的表达式E1、E2、E3 和 E4 如下所示： 如果严格按照表达式运算顺序，则查询效率最高的是( )，将该查询转换为等价的SQL语句为: SELECT A1, A4 FROM R，S WHERE( )。",
     "options": {
       "A": "E1",
       "B": "E2",
@@ -739,15 +739,15 @@
     "no": 44,
     "chapter": "系统分析与设计",
     "textbook_chapter": "5",
-    "stem": "在关系R(A1, A2, A3)和S(A1, A2, A3)上进行关系运算的4 个等价的表达式E1、E2、E3 和 E4 如下所示： 如果严格按照表达式运算顺序，则查询效率最高的是( )，将该查询转换价的SQL 语句为: SELECT A1, A4 FROM R，S WHERE( )。",
+    "stem": "在关系R(A1, A2, A3)和S(A1, A2, A3)上进行关系运算的4 个等价的表达式E1、E2、E3 和 E4 如下所示： 如果严格按照表达式运算顺序，则查询效率最高的是( )，将该查询转换为等价的SQL语句为: SELECT A1, A4 FROM R，S WHERE( )。",
     "options": {
-      "A": "R.A2 <2022' OR S.A4 <95'",
-      "B": "R.A2 <'2022' AND S. A4 <95'",
-      "C": "R.A2 <'2022' OR S.A4 <95' OR R.A3=S.A3",
-      "D": "R.A2 <2022 AND S.A4 <95' AND R.A3=S.A3"
+      "A": "R.A2 <'2022' OR S.A4 ='95'",
+      "B": "R.A2 <'2022' AND S.A4 ='95'",
+      "C": "R.A2 <'2022' OR S.A4 ='95' OR R.A3=S.A3",
+      "D": "R.A2 <'2022' AND S.A4 ='95' AND R.A3=S.A3"
     },
-    "answer": "B",
-    "analysis": "等值连接R.A3=S.A3与两个选择条件为合取（AND）关系，且字符串常量需加引号，故选B。",
+    "answer": "D",
+    "analysis": "FROM R,S 的等价 WHERE 必须同时含连接条件与两个选择条件，三者合取：R.A2<'2022' AND S.A4='95' AND R.A3=S.A3。A、B 缺 R.A3=S.A3 退化为笛卡尔积过滤，与原表达式不等价；C 用 OR 连接逻辑错误。字符串常量需加引号。选 D。（答案订正：原库误录为 B，B 缺连接条件）",
     "source": "2023上系分上午卷真题（综合知识·含解析）.pdf",
     "images": [
       "/questions/2023-q43-relations.png"
